@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://mdogbggv384b"]
+
+[node name="Node2D" type="Node2D" unique_id=730648271]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1298148854]
+transform = Transform3D(0.82100105, -0.43566322, 0.36899158, 0.5234079, 0.83249176, -0.1816637, -0.22803822, 0.3422792, 0.9115062, 0, 0, 0)
