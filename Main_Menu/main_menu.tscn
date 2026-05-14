@@ -23,6 +23,16 @@ grow_horizontal = 2
 theme_override_font_sizes/normal_font_size = 128
 text = "FLUIDA"
 
+[node name="Test_Button" type="Button" parent="." unique_id=2107790540]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 530.0
+offset_right = 656.0
+offset_bottom = 626.0
+theme_override_font_sizes/font_size = 64
+text = "Test
+"
+
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=813775324]
 layout_mode = 1
 anchors_preset = 8
@@ -58,6 +68,7 @@ text = "Quit
 
 "
 
+[connection signal="pressed" from="Test_Button" to="." method="_on_test_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/Quit_Button" to="." method="_on_quit_button_pressed"]
