@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bfgbkfci3k26r"
+path="res://.godot/imported/IT-S VERIFIED!!! _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash.wav-b4d574dee14c1bee7d78fc64945397e4.sample"
+
+[deps]
+
+source_file="res://IT-S VERIFIED!!! _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash.wav"
+dest_files=["res://.godot/imported/IT-S VERIFIED!!! _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash.wav-b4d574dee14c1bee7d78fc64945397e4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
