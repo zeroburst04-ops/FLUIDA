@@ -1,12 +1,32 @@
 [gd_scene format=3 uid="uid://cg3ay761aruim"]
 
 [ext_resource type="Script" uid="uid://bs7wokgeqx7qo" path="res://Main_Menu/main_menu.gd" id="1_e582s"]
+[ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
+
+[sub_resource type="Theme" id="Theme_ra02u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ytag"]
+bg_color = Color(0.12561956, 0.2825771, 0.6043385, 1)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_lpfbm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mp05l"]
+bg_color = Color(0.1662162, 0.16779771, 0.15652463, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_al2h2"]
+bg_color = Color(0.6627451, 0, 0, 1)
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_ali5n"]
 
 [node name="Main_Menu" type="Control" unique_id=465433766]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 1.577
+anchor_bottom = 1.7010001
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 0.2960205
+offset_bottom = -0.24804688
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_e582s")
@@ -16,39 +36,78 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -232.875
-offset_right = 232.875
-offset_bottom = 183.0
+offset_left = -815.5
+offset_top = 119.0
+offset_right = 473.5
+offset_bottom = 335.0
 grow_horizontal = 2
-theme_override_font_sizes/normal_font_size = 128
-text = "FLUIDA"
+theme_override_fonts/normal_font = ExtResource("2_6qckm")
+theme_override_font_sizes/normal_font_size = 149
+text = "SAVE THE KYOGRE"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=498992265]
 layout_mode = 0
-offset_top = 213.0
-offset_right = 542.0
-offset_bottom = 541.0
+offset_left = 73.54773
+offset_top = 379.42963
+offset_right = 619.3926
+offset_bottom = 636.709
 theme_override_constants/separation = 20
 
 [node name="Start_Button" type="Button" parent="VBoxContainer" unique_id=636712789]
 layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_ra02u")
+theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 64
-text = "Start
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ytag")
+text = "Start Game
 "
+icon = SubResource("CanvasTexture_lpfbm")
 
 [node name="Tutorial_Button" type="Button" parent="VBoxContainer" unique_id=1356985776]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp05l")
 text = "Tutorial
 
 "
 
 [node name="Quit_Button" type="Button" parent="VBoxContainer" unique_id=1862624043]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
+text = "Option
+
+"
+
+[node name="Quit_Button" type="Button" parent="." unique_id=1297160432]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 980.0
+offset_right = 268.0
+offset_bottom = 1068.0
+theme_override_fonts/font = ExtResource("3_2jvup")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
 text = "Quit
 
 "
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=344414164]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.123
+anchor_bottom = 1.0220001
+offset_left = -3.0
+offset_top = 3.0
+offset_right = -3.244995
+offset_bottom = 2.8218994
+stream = SubResource("VideoStreamTheora_ali5n")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=614918305]
+position = Vector2(575, 324)
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
