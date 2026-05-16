@@ -4,6 +4,7 @@
 [ext_resource type="VideoStream" uid="uid://b3ffs40mdhl2n" path="res://Untitled design.ogv" id="2_2jvup"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
+[ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
 
 [sub_resource type="Theme" id="Theme_ra02u"]
 
@@ -124,6 +125,12 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
 text = "Quit
 
 "
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1100564802]
+position = Vector2(1927, 1146)
+stream = ExtResource("5_ra02u")
+volume_db = 0.981
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
