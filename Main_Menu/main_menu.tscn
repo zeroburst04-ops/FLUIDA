@@ -49,8 +49,8 @@ anchor_right = 1.0530001
 anchor_bottom = 1.0990001
 offset_left = 268.307
 offset_top = 257.3
-offset_right = -80.34741
-offset_bottom = -93.305176
+offset_right = -96.34741
+offset_bottom = -88.305176
 stream = ExtResource("2_2jvup")
 autoplay = true
 expand = true
@@ -129,7 +129,7 @@ text = "Quit
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1100564802]
 position = Vector2(1927, 1146)
 stream = ExtResource("5_ra02u")
-volume_db = 0.981
+volume_db = 0.593
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
