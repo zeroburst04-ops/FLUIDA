@@ -54,21 +54,20 @@ theme_override_font_sizes/font_size = 48
 text = "Start
 "
 
-[node name="Tutorial_Button" type="Button" parent="HBoxContainer" unique_id=1356985776]
+[node name="Tutorial_Button" type="Button" parent="VBoxContainer" unique_id=1356985776]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Tutorial
 
 "
 
-[node name="Quit_Button" type="Button" parent="HBoxContainer" unique_id=1862624043]
+[node name="Quit_Button" type="Button" parent="VBoxContainer" unique_id=1862624043]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Quit
 
 "
 
-[connection signal="pressed" from="Test_Button" to="." method="_on_test_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Quit_Button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit_Button" to="." method="_on_quit_button_pressed"]
