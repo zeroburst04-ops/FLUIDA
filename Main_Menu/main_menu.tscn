@@ -114,7 +114,7 @@ text = "Tutorial
 
 "
 
-[node name="Quit_Button2" type="Button" parent="VBoxContainer" unique_id=1862624043]
+[node name="Settings_Button" type="Button" parent="VBoxContainer" unique_id=1862624043]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 128
@@ -141,3 +141,8 @@ position = Vector2(1927, 1146)
 stream = ExtResource("5_ra02u")
 volume_db = 0.593
 autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings_Button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Quit_Button" to="." method="_on_quit_button_pressed"]
