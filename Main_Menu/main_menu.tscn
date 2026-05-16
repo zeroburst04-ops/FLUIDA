@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cg3ay761aruim"]
 
 [ext_resource type="Script" uid="uid://bs7wokgeqx7qo" path="res://Main_Menu/main_menu.gd" id="1_e582s"]
-[ext_resource type="VideoStream" uid="uid://b3ffs40mdhl2n" path="res://Untitled design.ogv" id="2_2jvup"]
+[ext_resource type="VideoStream" path="res://Untitled design.ogv" id="2_2jvup"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
 [ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
@@ -9,7 +9,10 @@
 [sub_resource type="Theme" id="Theme_ra02u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ytag"]
-bg_color = Color(0.12561956, 0.2825771, 0.6043385, 1)
+bg_color = Color(0.1254902, 0.28235295, 0.6039216, 1)
+border_width_left = 350
+border_width_right = 350
+border_color = Color(0.1254902, 0.28235295, 0.6039216, 1)
 border_blend = true
 corner_radius_top_left = 75
 corner_radius_bottom_right = 75
@@ -76,30 +79,22 @@ theme_override_fonts/normal_font = ExtResource("2_6qckm")
 theme_override_font_sizes/normal_font_size = 300
 text = "SAVE THE KYOGRE"
 
-[node name="Test_Button" type="Button" parent="." unique_id=2107790540]
-layout_mode = 0
-offset_left = 111.0
-offset_top = 740.0
-offset_right = 1399.0
-offset_bottom = 1476.0
-theme_override_constants/separation = 20
-
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=813775324]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=8101889]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -279.5
-offset_top = -48.0
-offset_right = 279.5
-offset_bottom = 48.0
+offset_left = -1783.5
+offset_top = -339.5
+offset_right = -376.5
+offset_bottom = 114.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 35
 
-[node name="Start_Button" type="Button" parent="HBoxContainer" unique_id=636712789]
+[node name="Start_Button" type="Button" parent="VBoxContainer" unique_id=636712789]
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 theme = SubResource("Theme_ra02u")
@@ -119,7 +114,7 @@ text = "Tutorial
 
 "
 
-[node name="Quit_Button" type="Button" parent="VBoxContainer" unique_id=1862624043]
+[node name="Quit_Button2" type="Button" parent="VBoxContainer" unique_id=1862624043]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 128
@@ -146,7 +141,3 @@ position = Vector2(1927, 1146)
 stream = ExtResource("5_ra02u")
 volume_db = 0.981
 autoplay = true
-
-[connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit_Button" to="." method="_on_quit_button_pressed"]
