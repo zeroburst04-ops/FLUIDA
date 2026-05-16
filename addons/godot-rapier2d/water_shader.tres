@@ -1,4 +1,4 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cysnk7s2ll173"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cysnk7s2ll173"]
 
 [ext_resource type="Shader" path="res://addons/godot-rapier2d/water_shader.gdshader" id="1_wgm3x"]
 

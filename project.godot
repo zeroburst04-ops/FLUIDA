@@ -8,16 +8,6 @@
 
 config_version=5
 
-_global_script_classes=[{
-"base": "BitmapFont",
-"class": "TextureFont",
-"language": "GDScript",
-"path": "res://addons/texture_fonts/Classes/TextureFont.gd"
-}]
-_global_script_class_icons={
-"TextureFont": "res://addons/texture_fonts/Assets/TextureFont.svg"
-}
-
 [application]
 
 config/name="Texture Fonts"
@@ -35,7 +25,7 @@ window/size/height=628
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/texture_fonts/plugin.cfg")
+enabled=PackedStringArray()
 
 [global_group]
 
@@ -46,6 +36,7 @@ FLUID=""
 2d/physics_engine="Rapier2D"
 3d/physics_engine="Jolt Physics"
 common/enable_pause_aware_picking=true
+rapier/fluid/fluid_particle_radius_2d=10.0
 
 [rendering]
 
