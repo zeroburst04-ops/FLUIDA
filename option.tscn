@@ -1,3 +1,63 @@
 [gd_scene format=3 uid="uid://d2c4rr5uqttuv"]
 
-[node name="Option" type="Node2D" unique_id=1772517416]
+[ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="1_rtwqn"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_slay5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l82yo"]
+bg_color = Color(0.20582795, 0.10721364, 0.39286235, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhspr"]
+bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
+corner_radius_top_left = 75
+corner_radius_bottom_right = 75
+
+[node name="Options" type="Control" unique_id=1137774719]
+layout_mode = 3
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 1211.0
+offset_top = 651.0
+offset_right = 9542.0
+offset_bottom = 4458.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=518419974]
+position = Vector2(4454.5, 2208)
+scale = Vector2(12.104619, 10.748792)
+texture = ExtResource("1_rtwqn")
+
+[node name="Label" type="Label" parent="." unique_id=1113758819]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.36200002
+anchor_bottom = 0.293
+offset_left = 461.0
+offset_top = 608.0
+offset_right = -231.33423
+offset_bottom = -409.31506
+theme_override_colors/font_outline_color = Color(0.01849173, 0.010176518, 0.004012691, 1)
+theme_override_fonts/font = ExtResource("2_slay5")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_l82yo")
+text = "Background Music"
+horizontal_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1091040775]
+layout_mode = 0
+offset_left = 3288.0
+offset_top = 463.0
+offset_right = 7589.0
+offset_bottom = 1052.0
+
+[node name="Button" type="Button" parent="." unique_id=1788756263]
+layout_mode = 0
+offset_left = 546.0
+offset_top = 3680.0
+offset_right = 1531.0
+offset_bottom = 4094.0
+theme_override_fonts/font = ExtResource("2_slay5")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_uhspr")
+text = "Back"
+icon_alignment = 1
