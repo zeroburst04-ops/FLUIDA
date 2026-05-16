@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://d2c4rr5uqttuv"]
+[gd_scene format=3 uid="uid://daneswi6mqkrx"]
 
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="1_rtwqn"]
+[ext_resource type="Script" uid="uid://dhnpo5cvx56el" path="res://option.gd" id="1_slay5"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_slay5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l82yo"]
@@ -21,13 +22,18 @@ offset_right = 9542.0
 offset_bottom = 4458.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_slay5")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=518419974]
-position = Vector2(4454.5, 2208)
-scale = Vector2(12.104619, 10.748792)
+[node name="View" type="Camera2D" parent="." unique_id=1518698464]
+position = Vector2(4361, 2199)
+zoom = Vector2(0.14, 0.14)
+
+[node name="Background" type="Sprite2D" parent="." unique_id=518419974]
+position = Vector2(4454.5, 2170)
+scale = Vector2(13.719994, 12.18323)
 texture = ExtResource("1_rtwqn")
 
-[node name="Label" type="Label" parent="." unique_id=1113758819]
+[node name="Background_Music" type="Label" parent="." unique_id=1113758819]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.36200002
@@ -43,14 +49,14 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_l82yo")
 text = "Background Music"
 horizontal_alignment = 1
 
-[node name="HSlider" type="HSlider" parent="." unique_id=1091040775]
+[node name="BackGround_Music_SO" type="HSlider" parent="." unique_id=1091040775]
 layout_mode = 0
 offset_left = 3288.0
 offset_top = 463.0
 offset_right = 7589.0
 offset_bottom = 1052.0
 
-[node name="Button" type="Button" parent="." unique_id=1788756263]
+[node name="BackButton" type="Button" parent="." unique_id=1788756263]
 layout_mode = 0
 offset_left = 546.0
 offset_top = 3680.0
@@ -61,3 +67,5 @@ theme_override_font_sizes/font_size = 256
 theme_override_styles/normal = SubResource("StyleBoxFlat_uhspr")
 text = "Back"
 icon_alignment = 1
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
