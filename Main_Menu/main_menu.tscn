@@ -1,74 +1,147 @@
 [gd_scene format=3 uid="uid://cg3ay761aruim"]
 
 [ext_resource type="Script" uid="uid://bs7wokgeqx7qo" path="res://Main_Menu/main_menu.gd" id="1_e582s"]
+[ext_resource type="VideoStream" path="res://Untitled design.ogv" id="2_2jvup"]
+[ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
+[ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
+
+[sub_resource type="Theme" id="Theme_ra02u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ytag"]
+bg_color = Color(0.1254902, 0.28235295, 0.6039216, 1)
+border_width_left = 350
+border_width_right = 350
+border_color = Color(0.1254902, 0.28235295, 0.6039216, 1)
+border_blend = true
+corner_radius_top_left = 75
+corner_radius_bottom_right = 75
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_lpfbm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mp05l"]
+bg_color = Color(0.1662162, 0.16779771, 0.15652463, 1)
+corner_radius_top_left = 75
+corner_radius_bottom_right = 75
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_al2h2"]
+bg_color = Color(0.6627451, 0, 0, 1)
+corner_radius_top_left = 75
+corner_radius_bottom_right = 75
 
 [node name="Main_Menu" type="Control" unique_id=465433766]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 1.547
+anchor_top = 1.7080001
+anchor_right = 4.8450003
+anchor_bottom = 5.096
+offset_left = -0.14404297
+offset_top = 0.21594238
+offset_right = -0.4404297
+offset_bottom = -0.20800781
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_e582s")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=344414164]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.093
+anchor_top = -0.14
+anchor_right = 1.0530001
+anchor_bottom = 1.0990001
+offset_left = 268.307
+offset_top = 257.3
+offset_right = -96.34741
+offset_bottom = -88.305176
+stream = ExtResource("2_2jvup")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=614918305]
+position = Vector2(1916, 1132)
+zoom = Vector2(0.3, 0.287)
+limit_left = -10000006
+limit_top = -10000007
 
 [node name="Title_Screen" type="RichTextLabel" parent="." unique_id=510686096]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -232.875
-offset_right = 232.875
-offset_bottom = 183.0
+offset_left = -1834.5
+offset_top = 269.0
+offset_right = 762.5
+offset_bottom = 765.0
 grow_horizontal = 2
-theme_override_font_sizes/normal_font_size = 128
-text = "FLUIDA"
+theme_override_fonts/normal_font = ExtResource("2_6qckm")
+theme_override_font_sizes/normal_font_size = 300
+text = "SAVE THE KYOGRE"
 
-[node name="Test_Button" type="Button" parent="." unique_id=2107790540]
-layout_mode = 0
-offset_left = 518.0
-offset_top = 530.0
-offset_right = 656.0
-offset_bottom = 626.0
-theme_override_font_sizes/font_size = 64
-text = "Test
-"
-
-[node name="HBoxContainer" type="VBoxContainer" parent="." unique_id=1955952059]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=8101889]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -574.0
-offset_top = -124.0
-offset_right = 47.0
-offset_bottom = 234.0
+offset_left = -1783.5
+offset_top = -339.5
+offset_right = -376.5
+offset_bottom = 114.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 35
 
-[node name="Start_Button" type="Button" parent="HBoxContainer" unique_id=636712789]
+[node name="Start_Button" type="Button" parent="VBoxContainer" unique_id=636712789]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
-text = "Start
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_ra02u")
+theme_override_fonts/font = ExtResource("3_2jvup")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ytag")
+text = "Start Game
 "
+icon = SubResource("CanvasTexture_lpfbm")
 
-[node name="Tutorial_Button" type="Button" parent="HBoxContainer" unique_id=1356985776]
+[node name="Tutorial_Button" type="Button" parent="VBoxContainer" unique_id=1356985776]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_fonts/font = ExtResource("3_2jvup")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp05l")
 text = "Tutorial
 
 "
 
-[node name="Quit_Button" type="Button" parent="HBoxContainer" unique_id=1862624043]
+[node name="Settings_Button" type="Button" parent="VBoxContainer" unique_id=1862624043]
 layout_mode = 2
-theme_override_font_sizes/font_size = 48
+theme_override_fonts/font = ExtResource("3_2jvup")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
+text = "Option
+
+"
+
+[node name="Quit_Button" type="Button" parent="." unique_id=1297160432]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 1939.0
+offset_right = 601.0
+offset_bottom = 2113.0
+theme_override_fonts/font = ExtResource("3_2jvup")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
 text = "Quit
 
 "
 
-[connection signal="pressed" from="Test_Button" to="." method="_on_test_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
-[connection signal="pressed" from="HBoxContainer/Quit_Button" to="." method="_on_quit_button_pressed"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1100564802]
+position = Vector2(1927, 1146)
+stream = ExtResource("5_ra02u")
+volume_db = 0.593
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings_Button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Quit_Button" to="." method="_on_quit_button_pressed"]
