@@ -144,4 +144,3 @@ func _set(property: String, val):
 			_texture_mappings = val
 		"font_settings":
 			_font_settings = val
-

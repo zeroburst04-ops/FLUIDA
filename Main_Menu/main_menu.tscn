@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bs7wokgeqx7qo" path="res://Main_Menu/main_menu.gd" id="1_e582s"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
+[ext_resource type="VideoStream" uid="uid://c3voxmge6c7rr" path="res://mylivewallpapers-com-Kyogre-Pokemon-4K.ogv" id="4_2jvup"]
 
 [sub_resource type="Theme" id="Theme_ra02u"]
 
@@ -17,16 +18,14 @@ bg_color = Color(0.1662162, 0.16779771, 0.15652463, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_al2h2"]
 bg_color = Color(0.6627451, 0, 0, 1)
 
-[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_ali5n"]
-
 [node name="Main_Menu" type="Control" unique_id=465433766]
 layout_mode = 3
-anchor_right = 1.577
-anchor_bottom = 1.7010001
-offset_left = 2.0
-offset_top = 3.0
-offset_right = 0.2960205
-offset_bottom = -0.24804688
+anchor_right = 3.338
+anchor_bottom = 3.5110002
+offset_left = 18.0
+offset_top = -11.0
+offset_right = -0.37597656
+offset_bottom = -0.12817383
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_e582s")
@@ -36,21 +35,21 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -815.5
-offset_top = 119.0
-offset_right = 473.5
-offset_bottom = 335.0
+offset_left = -1730.5
+offset_top = 269.0
+offset_right = 866.5
+offset_bottom = 765.0
 grow_horizontal = 2
 theme_override_fonts/normal_font = ExtResource("2_6qckm")
-theme_override_font_sizes/normal_font_size = 149
+theme_override_font_sizes/normal_font_size = 300
 text = "SAVE THE KYOGRE"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=498992265]
 layout_mode = 0
-offset_left = 73.54773
-offset_top = 379.42963
-offset_right = 619.3926
-offset_bottom = 636.709
+offset_left = 189.0
+offset_top = 773.0
+offset_right = 1477.0
+offset_bottom = 1509.0
 theme_override_constants/separation = 20
 
 [node name="Start_Button" type="Button" parent="VBoxContainer" unique_id=636712789]
@@ -58,7 +57,7 @@ layout_mode = 2
 size_flags_stretch_ratio = 0.0
 theme = SubResource("Theme_ra02u")
 theme_override_fonts/font = ExtResource("3_2jvup")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 128
 theme_override_styles/normal = SubResource("StyleBoxFlat_2ytag")
 text = "Start Game
 "
@@ -67,7 +66,7 @@ icon = SubResource("CanvasTexture_lpfbm")
 [node name="Tutorial_Button" type="Button" parent="VBoxContainer" unique_id=1356985776]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_2jvup")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 128
 theme_override_styles/normal = SubResource("StyleBoxFlat_mp05l")
 text = "Tutorial
 
@@ -76,7 +75,7 @@ text = "Tutorial
 [node name="Quit_Button" type="Button" parent="VBoxContainer" unique_id=1862624043]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_2jvup")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 128
 theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
 text = "Option
 
@@ -84,12 +83,12 @@ text = "Option
 
 [node name="Quit_Button" type="Button" parent="." unique_id=1297160432]
 layout_mode = 0
-offset_left = 67.0
-offset_top = 980.0
-offset_right = 268.0
-offset_bottom = 1068.0
+offset_left = 198.0
+offset_top = 1991.0
+offset_right = 647.0
+offset_bottom = 2165.0
 theme_override_fonts/font = ExtResource("3_2jvup")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
 text = "Quit
 
@@ -98,16 +97,19 @@ text = "Quit
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=344414164]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.123
-anchor_bottom = 1.0220001
-offset_left = -3.0
-offset_top = 3.0
-offset_right = -3.244995
-offset_bottom = 2.8218994
-stream = SubResource("VideoStreamTheora_ali5n")
+anchor_right = 0.9990001
+anchor_bottom = 0.998
+offset_left = -15.0
+offset_top = 17.0
+offset_right = 1.8266602
+offset_bottom = -10.4279785
+stream = ExtResource("4_2jvup")
+autoplay = true
+loop = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=614918305]
-position = Vector2(575, 324)
+position = Vector2(1904, 1150)
+zoom = Vector2(0.3, 0.285)
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
