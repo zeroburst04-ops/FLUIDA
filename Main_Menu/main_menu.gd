@@ -9,3 +9,7 @@ func _on_tutorial_button_pressed() -> void:
 
 func _on_quit_button_pressed() -> void:
 	pass # Replace with function body.
+
+func _on_test_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://TestScene/test_scene.tscn")
+	

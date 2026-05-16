@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ciawel2xgywnc"]
+
+[ext_resource type="Script" uid="uid://icm7h672dfdf" path="res://Fluids/fluid_molecule.gd" id="1_om0cr"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_3y5ln"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_om0cr"]
+
+[node name="Fluid_Molecule" type="CharacterBody2D" unique_id=118566954]
+script = ExtResource("1_om0cr")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=735843263]
+modulate = Color(1, 0.80784315, 1, 1)
+scale = Vector2(7.345188, 7.345188)
+mesh = SubResource("SphereMesh_3y5ln")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1808673040]
+scale = Vector2(0.32589194, 0.32589194)
+shape = SubResource("CircleShape2D_om0cr")
