@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://d2c4rr5uqttuv"]
+[gd_scene format=3 uid="uid://daneswi6mqkrx"]
 
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="1_rtwqn"]
-[ext_resource type="Script" path="res://option.gd" id="1_slay5"]
+[ext_resource type="Script" uid="uid://dhnpo5cvx56el" path="res://option.gd" id="1_slay5"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_slay5"]
 [ext_resource type="Texture2D" uid="uid://by413gv22gi4q" path="res://Black_colour.jpg" id="3_l82yo"]
 [ext_resource type="AudioStream" uid="uid://bfgbkfci3k26r" path="res://IT-S VERIFIED!!! _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash.wav" id="5_uhspr"]
@@ -79,6 +79,9 @@ offset_top = 432.0
 offset_right = 7174.0
 offset_bottom = 1021.0
 theme_override_styles/slider = SubResource("StyleBoxFlat_c6ia3")
+max_value = 1.0
+step = 0.01
+value = 1.0
 
 [node name="BackButton" type="Button" parent="." unique_id=1788756263]
 layout_mode = 0
@@ -92,10 +95,13 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_uhspr")
 text = "Back"
 icon_alignment = 1
 
-[node name="Music_Option" type="AudioStreamPlayer2D" parent="." unique_id=1766509265]
+[node name="Music_Player" type="AudioStreamPlayer2D" parent="." unique_id=1766509265]
+unique_name_in_owner = true
 position = Vector2(4309, 2069)
 stream = ExtResource("5_uhspr")
-volume_db = 0.776
+volume_db = 0.726
+pitch_scale = 4.0
 autoplay = true
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="finished" from="Music_Player" to="." method="_on_music_player_finished"]
