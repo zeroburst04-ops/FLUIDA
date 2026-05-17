@@ -8,16 +8,6 @@
 
 config_version=5
 
-_global_script_classes=[{
-"base": "BitmapFont",
-"class": "TextureFont",
-"language": "GDScript",
-"path": "res://addons/texture_fonts/Classes/TextureFont.gd"
-}]
-_global_script_class_icons={
-"TextureFont": "res://addons/texture_fonts/Assets/TextureFont.svg"
-}
-
 [application]
 
 config/name="Texture Fonts"
@@ -36,10 +26,6 @@ window/size/height=628
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/texture_fonts/plugin.cfg")
-
-[global_group]
-
-FLUID=""
 
 [global_group]
 

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://st3sw2ypxfcb"]
 
+[ext_resource type="Script" uid="uid://d2ur1fd3lw6ah" path="res://TestScene/test_scene.gd" id="1_jtt75"]
 [ext_resource type="PackedScene" uid="uid://ciawel2xgywnc" path="res://Fluids/fluid_molecule.tscn" id="1_pg2wg"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_my77e"]
@@ -7,6 +8,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jtt75"]
 
 [node name="TestScene" type="Node2D" unique_id=2012258607]
+script = ExtResource("1_jtt75")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=147878158]
 
