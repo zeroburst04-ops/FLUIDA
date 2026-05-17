@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://dntg3alrvhf8"]
+
+[ext_resource type="Script" uid="uid://i0t4u0745yv0" path="res://level_select.gd" id="1_il3u1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uebnx"]
+bg_color = Color(0.5409904, 0.54099053, 0.5409904, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Level_Select" type="Control" unique_id=1512075892]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_il3u1")
+
+[node name="Panel" type="Panel" parent="." unique_id=1788870834]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_uebnx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2069383178]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 113.0
+offset_right = 1090.0
+offset_bottom = 586.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1270879671]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=545270711]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "1
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=224911994]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "2
+
+"
+
+[node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=839175273]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "3
+
+"
+
+[node name="Button4" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=2134435041]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button5" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1844681607]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button6" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1585414198]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button7" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=764098019]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button8" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=55311053]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button9" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1112763913]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button10" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=989132920]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button11" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1785625937]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[node name="Button12" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1660376236]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "4
+
+"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
