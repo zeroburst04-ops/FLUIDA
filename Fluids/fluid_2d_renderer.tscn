@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://btg2ynyll1j02"]
+
+[ext_resource type="Texture2D" uid="uid://cho3shol3rky2" path="res://addons/godot-rapier2d/Radial2D.svg" id="1_160in"]
+[ext_resource type="Script" path="res://addons/godot-rapier2d/fluid_2d_renderer.gd" id="2_0tyfj"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_oxllv"]
+_surfaces = [{
+"2d": true,
+"aabb": AABB(-16, -16, 0, 32, 32, 0),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63),
+"format": 34393296913,
+"index_count": 6,
+"index_data": PackedByteArray(3, 0, 0, 0, 1, 0, 1, 0, 2, 0, 3, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 128, 193, 0, 0, 128, 65, 0, 0, 128, 193, 0, 0, 128, 193, 0, 0, 128, 65, 0, 0, 128, 193, 0, 0, 128, 65, 0, 0, 128, 65)
+}]
+
+[sub_resource type="MultiMesh" id="MultiMesh_u4j1m"]
+use_colors = true
+mesh = SubResource("ArrayMesh_oxllv")
+
+[node name="Fluid2DRenderer" type="MultiMeshInstance2D" unique_id=1294908648]
+multimesh = SubResource("MultiMesh_u4j1m")
+texture = ExtResource("1_160in")
+script = ExtResource("2_0tyfj")
+color = Color(0, 0.9098039, 0.92941177, 0.6784314)

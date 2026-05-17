@@ -1,28 +1,30 @@
 [gd_scene format=3 uid="uid://st3sw2ypxfcb"]
 
-[ext_resource type="Script" uid="uid://d2ur1fd3lw6ah" path="res://TestScene/test_scene.gd" id="1_jtt75"]
-[ext_resource type="PackedScene" uid="uid://ciawel2xgywnc" path="res://Fluids/fluid_molecule.tscn" id="1_pg2wg"]
+[ext_resource type="PackedScene" uid="uid://btg2ynyll1j02" path="res://Fluids/fluid_2d_renderer.tscn" id="1_jtt75"]
+[ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="2_jtt75"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_my77e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jtt75"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_udmxp"]
+size = Vector2(19.26517, 3.1264133)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jtt75"]
+load_path = "res://.godot/imported/Radial2D.svg-4380d9841bddc115105cff2016be7c6a.ctex"
+
 [node name="TestScene" type="Node2D" unique_id=2012258607]
 script = ExtResource("1_jtt75")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=147878158]
+position = Vector2(0, -206)
+zoom = Vector2(0.75, 0.75)
 
 [node name="Floor" type="MeshInstance2D" parent="." unique_id=1220646582]
 modulate = Color(0, 0, 0, 1)
 position = Vector2(0, 277.00003)
 scale = Vector2(1200, 224.644)
 mesh = SubResource("BoxMesh_my77e")
-
-[node name="Fluid_Molecule" parent="." unique_id=118566954 instance=ExtResource("1_pg2wg")]
-position = Vector2(-14, 31)
-
-[node name="Fluid_Molecule2" parent="." unique_id=1027887164 instance=ExtResource("1_pg2wg")]
-position = Vector2(4, 31)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1808106839]
 position = Vector2(0, 283)
@@ -32,4 +34,39 @@ position = Vector2(0, -11)
 scale = Vector2(59.901768, 10.620368)
 shape = SubResource("RectangleShape2D_jtt75")
 
-[node name="Fluid_Parent" type="Node2D" parent="." unique_id=1918127405]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=823156914]
+position = Vector2(234.39815, 425.00885)
+rotation = 1.5707964
+scale = Vector2(59.901768, 10.620368)
+shape = SubResource("RectangleShape2D_udmxp")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=2109824065]
+position = Vector2(234.39815, -773)
+rotation = 1.5707964
+scale = Vector2(59.901768, 10.620368)
+shape = SubResource("RectangleShape2D_udmxp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1545802051]
+position = Vector2(-330, -320)
+rotation = 1.5707964
+scale = Vector2(59.901768, 10.620368)
+shape = SubResource("RectangleShape2D_jtt75")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=739319210]
+position = Vector2(-21.00003, -924)
+rotation = 3.1445296
+scale = Vector2(59.901768, 10.620368)
+shape = SubResource("RectangleShape2D_jtt75")
+
+[node name="Fluid_Node" parent="." unique_id=1909492113 instance=ExtResource("2_jtt75")]
+debug_draw = false
+density = 1000.0
+points = PackedVector2Array(0, 0, 20, 0, 40, 0, 60, 0, 80, 0, 100, 0, 120, 0, 140, 0, 160, 0, 180, 0, 0, 20, 20, 20, 40, 20, 60, 20, 80, 20, 100, 20, 120, 20, 140, 20, 160, 20, 180, 20, 0, 40, 20, 40, 40, 40, 60, 40, 80, 40, 100, 40, 120, 40, 140, 40, 160, 40, 180, 40, 0, 60, 20, 60, 40, 60, 60, 60, 80, 60, 100, 60, 120, 60, 140, 60, 160, 60, 180, 60, 0, 80, 20, 80, 40, 80, 60, 80, 80, 80, 100, 80, 120, 80, 140, 80, 160, 80, 180, 80, 0, 100, 20, 100, 40, 100, 60, 100, 80, 100, 100, 100, 120, 100, 140, 100, 160, 100, 180, 100, 0, 120, 20, 120, 40, 120, 60, 120, 80, 120, 100, 120, 120, 120, 140, 120, 160, 120, 180, 120, 0, 140, 20, 140, 40, 140, 60, 140, 80, 140, 100, 140, 120, 140, 140, 140, 160, 140, 180, 140, 0, 160, 20, 160, 40, 160, 60, 160, 80, 160, 100, 160, 120, 160, 140, 160, 160, 160, 180, 160, 0, 180, 20, 180, 40, 180, 60, 180, 80, 180, 100, 180, 120, 180, 140, 180, 160, 180, 180, 180, 0, 200, 20, 200, 40, 200, 60, 200, 80, 200, 100, 200, 120, 200, 140, 200, 160, 200, 180, 200, 0, 220, 20, 220, 40, 220, 60, 220, 80, 220, 100, 220, 120, 220, 140, 220, 160, 220, 180, 220, 0, 240, 20, 240, 40, 240, 60, 240, 80, 240, 100, 240, 120, 240, 140, 240, 160, 240, 180, 240, 0, 260, 20, 260, 40, 260, 60, 260, 80, 260, 100, 260, 120, 260, 140, 260, 160, 260, 180, 260, 0, 280, 20, 280, 40, 280, 60, 280, 80, 280, 100, 280, 120, 280, 140, 280, 160, 280, 180, 280, 0, 300, 20, 300, 40, 300, 60, 300, 80, 300, 100, 300, 120, 300, 140, 300, 160, 300, 180, 300, 0, 320, 20, 320, 40, 320, 60, 320, 80, 320, 100, 320, 120, 320, 140, 320, 160, 320, 180, 320, 0, 340, 20, 340, 40, 340, 60, 340, 80, 340, 100, 340, 120, 340, 140, 340, 160, 340, 180, 340, 0, 360, 20, 360, 40, 360, 60, 360, 80, 360, 100, 360, 120, 360, 140, 360, 160, 360, 180, 360, 0, 380, 20, 380, 40, 380, 60, 380, 80, 380, 100, 380, 120, 380, 140, 380, 160, 380, 180, 380, 0, 400, 20, 400, 40, 400, 60, 400, 80, 400, 100, 400, 120, 400, 140, 400, 160, 400, 180, 400, 0, 420, 20, 420, 40, 420, 60, 420, 80, 420, 100, 420, 120, 420, 140, 420, 160, 420, 180, 420, 0, 440, 20, 440, 40, 440, 60, 440, 80, 440, 100, 440, 120, 440, 140, 440, 160, 440, 180, 440, 0, 460, 20, 460, 40, 460, 60, 460, 80, 460, 100, 460, 120, 460, 140, 460, 160, 460, 180, 460, 0, 480, 20, 480, 40, 480, 60, 480, 80, 480, 100, 480, 120, 480, 140, 480, 160, 480, 180, 480, 0, 500, 20, 500, 40, 500, 60, 500, 80, 500, 100, 500, 120, 500, 140, 500, 160, 500, 180, 500, 0, 520, 20, 520, 40, 520, 60, 520, 80, 520, 100, 520, 120, 520, 140, 520, 160, 520, 180, 520, 0, 540, 20, 540, 40, 540, 60, 540, 80, 540, 100, 540, 120, 540, 140, 540, 160, 540, 180, 540, 0, 560, 20, 560, 40, 560, 60, 560, 80, 560, 100, 560, 120, 560, 140, 560, 160, 560, 180, 560, 0, 580, 20, 580, 40, 580, 60, 580, 80, 580, 100, 580, 120, 580, 140, 580, 160, 580, 180, 580)
+position = Vector2(-179, -456)
+height = 30
+
+[node name="Fluid2DRenderer" parent="." unique_id=1294908648 node_paths=PackedStringArray("fluid") instance=ExtResource("1_jtt75")]
+position = Vector2(-179, -456)
+texture = SubResource("CompressedTexture2D_jtt75")
+fluid = NodePath("../Fluid_Node")
+color = Color(0, 0.9098039, 0.92941177, 0.13725491)
