@@ -32,6 +32,7 @@ enabled=PackedStringArray()
 2d/physics_engine="Rapier2D"
 3d/physics_engine="Jolt Physics"
 common/enable_pause_aware_picking=true
+rapier/fluid/fluid_particle_radius_2d=10.0
 
 [rendering]
 

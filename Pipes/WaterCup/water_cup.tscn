@@ -5,13 +5,22 @@
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4o05"]
-size = Vector2(20.000002, 10)
+size = Vector2(120.00005, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6kspd"]
-size = Vector2(10, 56.00001)
+size = Vector2(10, 92.000046)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pv327"]
+size = Vector2(10, 102.000046)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
 size = Vector2(50, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2qn6r"]
+size = Vector2(10, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ufbm"]
+size = Vector2(120, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4tr5l"]
 size = Vector2(10, 36)
@@ -43,8 +52,8 @@ mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="BottomPlug_Collision" type="CollisionShape2D" parent="CupShape/Cup_Bottom/Bottom_Plug/StaticBody2D" unique_id=173640372]
 unique_name_in_owner = true
-position = Vector2(-1.4305114e-07, 0)
-scale = Vector2(0.049999986, 0.09999997)
+position = Vector2(-3.576278e-07, 0)
+scale = Vector2(0.049999975, 0.09999995)
 shape = SubResource("RectangleShape2D_n4o05")
 
 [node name="Cup_Left" type="Node2D" parent="CupShape" unique_id=593270751]
@@ -66,9 +75,9 @@ mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="BottomLeftPlug_Collision" type="CollisionShape2D" parent="CupShape/Cup_Left/Bottom-Left_Plug/StaticBody2D" unique_id=1298126870]
 unique_name_in_owner = true
-position = Vector2(7.1525574e-07, 0)
+position = Vector2(-0.44999933, 4.7683716e-07)
 rotation = -1.5707964
-scale = Vector2(0.09999996, 0.04999998)
+scale = Vector2(0.09999995, 0.049999975)
 shape = SubResource("RectangleShape2D_6kspd")
 
 [node name="Upper-Left_Plug" type="MeshInstance2D" parent="CupShape/Cup_Left" unique_id=557875402]
@@ -84,7 +93,7 @@ mesh = SubResource("QuadMesh_o6qpx")
 unique_name_in_owner = true
 position = Vector2(-0.075000286, 0)
 rotation = -1.5707964
-scale = Vector2(0.09999996, 0.04999998)
+scale = Vector2(0.09999995, 0.049999975)
 shape = SubResource("RectangleShape2D_6kspd")
 
 [node name="MiddleLeftWall" type="MeshInstance2D" parent="CupShape/Cup_Left" unique_id=1632068587]
@@ -119,9 +128,10 @@ mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="BottomRightPlug_Collision" type="CollisionShape2D" parent="CupShape/Cup_Right/Bottom-Right_Plug/StaticBody2D" unique_id=1400255977]
 unique_name_in_owner = true
+position = Vector2(0.25, 0)
 rotation = -1.5707964
-scale = Vector2(0.09999997, 0.049999986)
-shape = SubResource("RectangleShape2D_6kspd")
+scale = Vector2(0.09999995, 0.049999975)
+shape = SubResource("RectangleShape2D_pv327")
 
 [node name="Upper-Right_Plug" type="MeshInstance2D" parent="CupShape/Cup_Right" unique_id=1154293736]
 unique_name_in_owner = true
@@ -135,7 +145,7 @@ mesh = SubResource("QuadMesh_o6qpx")
 [node name="UpperRightPlug_Collision" type="CollisionShape2D" parent="CupShape/Cup_Right/Upper-Right_Plug/StaticBody2D" unique_id=134165072]
 unique_name_in_owner = true
 rotation = -1.5707964
-scale = Vector2(0.09999997, 0.049999986)
+scale = Vector2(0.09999996, 0.04999998)
 shape = SubResource("RectangleShape2D_6kspd")
 
 [node name="MiddleRightWall" type="MeshInstance2D" parent="CupShape/Cup_Right" unique_id=1536829603]
@@ -159,6 +169,18 @@ mesh = SubResource("QuadMesh_o6qpx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1361579710]
 position = Vector2(-35, 0)
 shape = SubResource("RectangleShape2D_cmy3s")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=10214919]
+position = Vector2(-55, -9)
+shape = SubResource("RectangleShape2D_2qn6r")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=594707291]
+position = Vector2(0, -147)
+shape = SubResource("RectangleShape2D_1ufbm")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1807080460]
+position = Vector2(55, -9)
+shape = SubResource("RectangleShape2D_2qn6r")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1466662568]
 position = Vector2(35, 0)
