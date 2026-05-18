@@ -139,10 +139,11 @@ text = "Quit
 [node name="BackGround_Music" type="AudioStreamPlayer2D" parent="." unique_id=1100564802]
 position = Vector2(1927, 1146)
 stream = ExtResource("5_ra02u")
-volume_db = 0.593
+volume_db = 24.0
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings_Button" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="Quit_Button" to="." method="_on_quit_button_pressed"]
+[connection signal="finished" from="BackGround_Music" to="." method="_on_back_ground_music_finished"]

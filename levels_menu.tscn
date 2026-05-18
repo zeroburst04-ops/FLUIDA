@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://docxh0udtebn7"]
 
 [ext_resource type="Texture2D" uid="uid://bvrab1ok3r7au" path="res://zsbynj4.jpg" id="1_e4bqk"]
+[ext_resource type="Script" uid="uid://cek5xwssbdgj3" path="res://levels_menu.gd" id="1_fyl7c"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_augb3"]
 [ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="3_fyl7c"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="4_6ym5a"]
+[ext_resource type="Script" uid="uid://bfx64opf1i0uj" path="res://back.gd" id="5_augb3"]
+[ext_resource type="AudioStream" uid="uid://bedplnkc704fj" path="res://Pokémon Center [Pokémon_ HeartGold & SoulSilver] (1).wav" id="7_6ym5a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
+bg_color = Color(0.5038092, 0, 0.0635143, 1)
 
 [node name="Levels_menu" type="Control" unique_id=971478389]
 layout_mode = 3
@@ -17,6 +23,7 @@ offset_right = 0.5119629
 offset_bottom = 0.2319336
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fyl7c")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1883314658]
 position = Vector2(473.00003, 274.5)
@@ -39,13 +46,13 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="background" type="Sprite2D" parent="." unique_id=1153044485]
-position = Vector2(289.75, 195.25)
-scale = Vector2(0.87597656, 0.13183597)
+position = Vector2(287.75003, 195.74998)
+scale = Vector2(0.8681641, 0.13378903)
 texture = ExtResource("3_fyl7c")
 
 [node name="background2" type="Sprite2D" parent="." unique_id=1507310412]
-position = Vector2(291.125, 295)
-scale = Vector2(0.8793946, 0.13183598)
+position = Vector2(289.5, 295)
+scale = Vector2(0.87304693, 0.13183598)
 texture = ExtResource("3_fyl7c")
 
 [node name="background3" type="Sprite2D" parent="." unique_id=1310491215]
@@ -66,24 +73,24 @@ texture = ExtResource("3_fyl7c")
 [node name="Level_1" type="Button" parent="." unique_id=546704909]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -1.138
-anchor_top = -1.715
-anchor_right = 10.190001
-anchor_bottom = 9.615001
-offset_left = 1372.9761
-offset_top = 1271.3201
-offset_right = -11223.881
-offset_bottom = -5998.5205
+anchor_left = 0.057000004
+anchor_top = 0.252
+anchor_right = 0.43600002
+anchor_bottom = 0.356
+offset_left = -3.6640015
+offset_top = -4.2960052
+offset_right = -6.2720337
+offset_bottom = 1.3119965
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 1"
 
 [node name="Level_4" type="Button" parent="." unique_id=1969654706]
 layout_mode = 0
-offset_left = 66.0
+offset_left = 63.0
 offset_top = 452.0
 offset_right = 511.0
-offset_bottom = 523.0
+offset_bottom = 526.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 4"
@@ -92,7 +99,7 @@ text = "LEVEL 4"
 layout_mode = 0
 offset_left = 63.0
 offset_top = 258.0
-offset_right = 516.0
+offset_right = 513.0
 offset_bottom = 330.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
@@ -100,7 +107,7 @@ text = "LEVEL 2"
 
 [node name="Level_5" type="Button" parent="." unique_id=1572075483]
 layout_mode = 0
-offset_left = 64.0
+offset_left = 63.0
 offset_top = 545.0
 offset_right = 513.0
 offset_bottom = 620.0
@@ -111,9 +118,30 @@ text = "LEVEL 5"
 [node name="Level_3" type="Button" parent="." unique_id=2018581802]
 layout_mode = 0
 offset_left = 66.0
-offset_top = 356.0
+offset_top = 353.0
 offset_right = 512.0
 offset_bottom = 428.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 3"
+
+[node name="BackButton" type="Button" parent="." unique_id=1735406266]
+layout_mode = 0
+offset_left = 994.0
+offset_top = 30.0
+offset_right = 1118.0
+offset_bottom = 92.0
+theme_override_fonts/font = ExtResource("4_6ym5a")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_fyl7c")
+text = "BACK"
+script = ExtResource("5_augb3")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=1185042216]
+position = Vector2(576, 378)
+stream = ExtResource("7_6ym5a")
+volume_db = 8.866
+autoplay = true
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]
