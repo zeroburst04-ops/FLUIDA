@@ -8,7 +8,7 @@
 size = Vector2(20.000002, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6kspd"]
-size = Vector2(10, 20.000015)
+size = Vector2(10, 56.00001)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
 size = Vector2(50, 10)
@@ -66,8 +66,9 @@ mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="BottomLeftPlug_Collision" type="CollisionShape2D" parent="CupShape/Cup_Left/Bottom-Left_Plug/StaticBody2D" unique_id=1298126870]
 unique_name_in_owner = true
+position = Vector2(7.1525574e-07, 0)
 rotation = -1.5707964
-scale = Vector2(0.09999997, 0.049999986)
+scale = Vector2(0.09999996, 0.04999998)
 shape = SubResource("RectangleShape2D_6kspd")
 
 [node name="Upper-Left_Plug" type="MeshInstance2D" parent="CupShape/Cup_Left" unique_id=557875402]
@@ -81,8 +82,9 @@ mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="UpperLeftPlug_Collision" type="CollisionShape2D" parent="CupShape/Cup_Left/Upper-Left_Plug/StaticBody2D" unique_id=1132347197]
 unique_name_in_owner = true
+position = Vector2(-0.075000286, 0)
 rotation = -1.5707964
-scale = Vector2(0.09999997, 0.049999986)
+scale = Vector2(0.09999996, 0.04999998)
 shape = SubResource("RectangleShape2D_6kspd")
 
 [node name="MiddleLeftWall" type="MeshInstance2D" parent="CupShape/Cup_Left" unique_id=1632068587]
