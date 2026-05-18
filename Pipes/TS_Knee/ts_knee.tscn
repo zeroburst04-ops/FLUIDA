@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://hp7rlpmv81ci"]
 
+[ext_resource type="Script" uid="uid://o4hdomj4e8sa" path="res://Pipes/TS_Knee/ts_knee.gd" id="1_78y1a"]
+[ext_resource type="PackedScene" uid="uid://bpm3we8knwue4" path="res://Pipes/TS_Socket/ts_socket.tscn" id="2_35av4"]
+
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2qn6r"]
@@ -15,6 +18,7 @@ size = Vector2(10, 20)
 size = Vector2(20, 10)
 
 [node name="TS_Knee" type="Node2D" unique_id=290491417]
+script = ExtResource("1_78y1a")
 
 [node name="TS_Knee Shape" type="Node2D" parent="." unique_id=1362508599]
 
@@ -61,3 +65,7 @@ shape = SubResource("RectangleShape2D_1ufbm")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1786867326]
 position = Vector2(-20, 20)
 shape = SubResource("RectangleShape2D_837hq")
+
+[node name="TS_Socket" parent="." unique_id=2136074797 instance=ExtResource("2_35av4")]
+position = Vector2(-29, 35)
+CurrentState = 0
