@@ -68,4 +68,3 @@ shape = SubResource("RectangleShape2D_837hq")
 
 [node name="TS_Socket" parent="." unique_id=2136074797 instance=ExtResource("2_35av4")]
 position = Vector2(-29, 35)
-CurrentState = 0
