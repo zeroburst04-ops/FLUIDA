@@ -1,4 +1,5 @@
 extends Node2D
 
-func _ready() -> void:
-	print("pfpfpfpf")
+func _process(delta: float) -> void:
+	%FPS.text = str(Engine.get_frames_per_second()) + "FPS"
+	
