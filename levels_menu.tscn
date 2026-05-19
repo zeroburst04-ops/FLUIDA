@@ -5,7 +5,6 @@
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_augb3"]
 [ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="3_fyl7c"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="4_6ym5a"]
-[ext_resource type="Script" uid="uid://bfx64opf1i0uj" path="res://back.gd" id="5_augb3"]
 [ext_resource type="AudioStream" uid="uid://bedplnkc704fj" path="res://Pokémon Center [Pokémon_ HeartGold & SoulSilver] (1).wav" id="7_6ym5a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
@@ -142,9 +141,9 @@ theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_fyl7c")
 text = "BACK"
-script = ExtResource("5_augb3")
 
 [node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=1185042216]
+unique_name_in_owner = true
 position = Vector2(576, 378)
 stream = ExtResource("7_6ym5a")
 volume_db = 8.866

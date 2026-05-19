@@ -15,6 +15,10 @@ run/main_scene="uid://cg3ay761aruim"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.png"
 
+[autoload]
+
+Settings="*uid://bl70did4ww25u"
+
 [display]
 
 window/size/mode=2
@@ -25,7 +29,7 @@ window/size/height=628
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/texture_fonts/plugin.cfg")
+enabled=PackedStringArray()
 
 [global_group]
 
