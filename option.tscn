@@ -106,7 +106,7 @@ icon_alignment = 1
 unique_name_in_owner = true
 position = Vector2(4309, 2069)
 stream = SubResource("AudioStreamWAV_l82yo")
-volume_db = 9.626
+volume_db = 18.939
 autoplay = true
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
