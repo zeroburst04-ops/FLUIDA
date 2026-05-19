@@ -29,3 +29,7 @@ func _ready() -> void:
 			%"Upper-Left_Plug".modulate.a = 0
 			%UpperLeftPlug_Collision.disabled = true
 			
+
+
+func _on_bottom_snap_ac_area_entered(area: Area2D) -> void:
+	pass # Replace with function body.

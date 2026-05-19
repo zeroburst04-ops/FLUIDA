@@ -15,20 +15,32 @@ size = Vector2(40, 15)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yuw7e"]
 size = Vector2(17.248169, 9.939847)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_inntj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ln8ka"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_acasf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yuw7e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_emfqa"]
+
 [node name="TS_Socket" type="Node2D" unique_id=2136074797]
+scale = Vector2(15, 15)
 script = ExtResource("1_inntj")
 CurrentState = 1
 
 [node name="TS_Socket Shape" type="Node2D" parent="." unique_id=1015244065]
+position = Vector2(40, 0)
 
 [node name="Bottom_Left6" type="MeshInstance2D" parent="TS_Socket Shape" unique_id=1889436847]
-position = Vector2(-41.000015, 15)
+position = Vector2(-50, 15)
 rotation = -3.1415925
 scale = Vector2(80, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Bottom_Left7" type="MeshInstance2D" parent="TS_Socket Shape" unique_id=2105193946]
-position = Vector2(-41.000015, -14.999998)
+position = Vector2(-50, -15)
 rotation = -3.1415925
 scale = Vector2(80, 10)
 mesh = SubResource("QuadMesh_o6qpx")
@@ -37,41 +49,43 @@ mesh = SubResource("QuadMesh_o6qpx")
 unique_name_in_owner = true
 
 [node name="Reducer_BottomSeg" type="MeshInstance2D" parent="TS_Socket Shape/Reducer" unique_id=823215665]
-position = Vector2(-61, 7.5)
+position = Vector2(-69.933334, 7.5)
 rotation = -3.1415925
 scale = Vector2(40, 5)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Reducer_TopSeg" type="MeshInstance2D" parent="TS_Socket Shape/Reducer" unique_id=2146862329]
-position = Vector2(-61, -7.5)
+position = Vector2(-69.933334, -7.5)
 rotation = -3.1415925
 scale = Vector2(40, 5)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Smoother" type="MeshInstance2D" parent="TS_Socket Shape/Reducer" unique_id=694241198]
-position = Vector2(-41, 7.999999)
+position = Vector2(-49.933334, 7.999999)
 rotation = -3.1415925
 scale = Vector2(40, 6)
 mesh = SubResource("PrismMesh_ln8ka")
 
 [node name="Smoother2" type="MeshInstance2D" parent="TS_Socket Shape/Reducer" unique_id=772436089]
-position = Vector2(-41, -7.999999)
+position = Vector2(-49.933334, -7.999999)
 scale = Vector2(40, 6)
 mesh = SubResource("PrismMesh_ln8ka")
 
 [node name="TS_Socket Collision" type="Node2D" parent="." unique_id=330850099]
+position = Vector2(40, 0)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Socket Collision" unique_id=1362007560]
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=385632814]
-position = Vector2(-41, 15)
+position = Vector2(-49.933334, 15)
 shape = SubResource("RectangleShape2D_rj66r")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=1715470166]
-position = Vector2(-41, -15)
+position = Vector2(-49.933334, -15)
 shape = SubResource("RectangleShape2D_rj66r")
 
 [node name="TS_Socket_Reducer Collision" type="Node2D" parent="TS_Socket Collision" unique_id=1579723521]
+position = Vector2(-8.933333, 0)
 
 [node name="TS_Socket_Reducer Collision" type="StaticBody2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision" unique_id=1042689526]
 unique_name_in_owner = true
@@ -93,3 +107,18 @@ shape = SubResource("RectangleShape2D_yuw7e")
 position = Vector2(-34, 12.32)
 rotation = 0.2932153
 shape = SubResource("RectangleShape2D_yuw7e")
+
+[node name="Drag" type="Button" parent="." unique_id=228389192]
+offset_left = -41.0
+offset_top = -20.0
+offset_right = -33.0
+offset_bottom = -12.0
+scale = Vector2(10.042618, 5.016236)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_inntj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ln8ka")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_acasf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yuw7e")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_emfqa")
+
+[connection signal="button_down" from="Drag" to="." method="_on_drag_button_down"]
+[connection signal="button_up" from="Drag" to="." method="_on_drag_button_up"]
