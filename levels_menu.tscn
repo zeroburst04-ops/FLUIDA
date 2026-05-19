@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_augb3"]
 [ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="3_fyl7c"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="4_6ym5a"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="7_5f8d8"]
 [ext_resource type="AudioStream" uid="uid://bedplnkc704fj" path="res://Pokémon Center [Pokémon_ HeartGold & SoulSilver] (1).wav" id="7_6ym5a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
@@ -148,6 +149,14 @@ position = Vector2(576, 378)
 stream = ExtResource("7_6ym5a")
 volume_db = 8.866
 autoplay = true
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_5f8d8")]
+layout_mode = 1
+offset_left = -2032.0
+offset_top = -1569.0
+offset_right = 1751.0
+offset_bottom = 1912.0
+mouse_filter = 2
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
