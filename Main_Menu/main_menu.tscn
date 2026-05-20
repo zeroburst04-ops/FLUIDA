@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cg3ay761aruim"]
 
 [ext_resource type="Script" uid="uid://bs7wokgeqx7qo" path="res://Main_Menu/main_menu.gd" id="1_e582s"]
-[ext_resource type="VideoStream" path="res://Untitled design.ogv" id="2_2jvup"]
+[ext_resource type="VideoStream" uid="uid://b3ffs40mdhl2n" path="res://Untitled design.ogv" id="2_2jvup"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
 [ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
@@ -138,6 +138,7 @@ text = "Quit
 "
 
 [node name="BackGround_Music" type="AudioStreamPlayer2D" parent="." unique_id=1100564802]
+unique_name_in_owner = true
 position = Vector2(1927, 1146)
 stream = ExtResource("5_ra02u")
 volume_db = 18.955
