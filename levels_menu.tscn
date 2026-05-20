@@ -10,6 +10,8 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
 bg_color = Color(0.5038092, 0, 0.0635143, 1)
+corner_radius_top_left = 32
+corner_radius_bottom_right = 32
 
 [node name="Levels_menu" type="Control" unique_id=971478389]
 layout_mode = 3
@@ -25,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fyl7c")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1883314658]
+[node name="BACKGROUND" type="Sprite2D" parent="." unique_id=1883314658]
 position = Vector2(471.00003, 299)
 scale = Vector2(0.5453125, 0.5534723)
 texture = ExtResource("1_e4bqk")
