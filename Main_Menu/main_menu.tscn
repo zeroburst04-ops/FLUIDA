@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
 [ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
-[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="6_2ytag"]
+[ext_resource type="PackedScene" path="res://brightness_overlay.tscn" id="6_2ytag"]
 
 [sub_resource type="Theme" id="Theme_ra02u"]
 
@@ -147,10 +147,10 @@ autoplay = true
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
 z_as_relative = false
 layout_mode = 1
-offset_left = -1995.0
-offset_top = -1390.0
-offset_right = 1788.0
-offset_bottom = 2091.0
+offset_left = -1195.0
+offset_top = -476.0
+offset_right = 367.0
+offset_bottom = 568.0
 mouse_filter = 2
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]

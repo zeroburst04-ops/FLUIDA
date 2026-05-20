@@ -1,11 +1,11 @@
-[gd_scene format=3 uid="uid://docxh0udtebn7"]
+[gd_scene format=3 uid="uid://cftb6c0ngds1g"]
 
 [ext_resource type="Texture2D" uid="uid://bvrab1ok3r7au" path="res://zsbynj4.jpg" id="1_e4bqk"]
-[ext_resource type="Script" uid="uid://cek5xwssbdgj3" path="res://levels_menu.gd" id="1_fyl7c"]
+[ext_resource type="Script" path="res://levels_menu.gd" id="1_fyl7c"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_augb3"]
 [ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="3_fyl7c"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="4_6ym5a"]
-[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="7_5f8d8"]
+[ext_resource type="PackedScene" path="res://brightness_overlay.tscn" id="7_5f8d8"]
 [ext_resource type="AudioStream" uid="uid://bedplnkc704fj" path="res://Pokémon Center [Pokémon_ HeartGold & SoulSilver] (1).wav" id="7_6ym5a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
@@ -152,10 +152,10 @@ autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_5f8d8")]
 layout_mode = 1
-offset_left = -2032.0
-offset_top = -1569.0
-offset_right = 1751.0
-offset_bottom = 1912.0
+offset_left = -359.0
+offset_top = -250.0
+offset_right = 186.0
+offset_bottom = 201.0
 mouse_filter = 2
 
 [node name="Button" type="Button" parent="." unique_id=1553499670]
