@@ -107,10 +107,10 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_jaxmp")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_tax5g")]
 layout_mode = 1
-offset_left = -399.0
-offset_top = -259.0
-offset_right = 146.0
-offset_bottom = 192.0
+offset_left = -248.0
+offset_top = -149.0
+offset_right = 87.0
+offset_bottom = 93.0
 mouse_filter = 2
 
 [connection signal="pressed" from="Back_button" to="." method="_on_back_button_pressed"]
