@@ -57,6 +57,7 @@ offset_top = 257.3
 offset_right = -96.34741
 offset_bottom = -88.305176
 stream = ExtResource("2_2ytag")
+volume_db = -80.0
 autoplay = true
 expand = true
 loop = true
@@ -151,7 +152,6 @@ volume_db = 24.0
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
-visible = false
 z_as_relative = false
 layout_mode = 1
 offset_left = -1195.0

@@ -24,7 +24,7 @@ func _on_test_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://TestScene/test_scene.tscn")
 	
 func _ready():
-	$kyogre_cry.volume_db = -3.0
+	$kyogre_cry.volume_db = -2.5
 	await get_tree().create_timer(5.0).timeout
 	$kyogre_cry.play()
 	while true:

@@ -84,7 +84,7 @@ icon_alignment = 1
 
 [node name="Music_Player" type="AudioStreamPlayer2D" parent="." unique_id=1766509265]
 unique_name_in_owner = true
-position = Vector2(4309, 2069)
+position = Vector2(4309, 2054)
 stream = ExtResource("5_c6ia3")
 volume_db = 18.955
 autoplay = true
