@@ -19,6 +19,9 @@ size = Vector2(10, 19.933334)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_837hq"]
 size = Vector2(15.06666, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3uoie"]
+size = Vector2(43.533337, 58.933334)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x06lp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yui3m"]
@@ -34,6 +37,7 @@ scale = Vector2(15, 15)
 script = ExtResource("1_hc0wy")
 
 [node name="TS_Knee Shape" type="Node2D" parent="." unique_id=1362508599]
+unique_name_in_owner = true
 
 [node name="Bottom_Left2" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=682878590]
 position = Vector2(-10.000002, -14.999988)
@@ -65,29 +69,38 @@ rotation = -3.1415925
 scale = Vector2(5, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
-[node name="TS_Knee Collision" type="Node2D" parent="." unique_id=1410117010]
+[node name="TS_Tee Collision" type="Node2D" parent="." unique_id=1410117010]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="TS_Knee Collision" unique_id=1727964198]
+[node name="StaticBody2D" type="StaticBody2D" parent="TS_Tee Collision" unique_id=1727964198]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1291910943]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Tee Collision/StaticBody2D" unique_id=1291910943]
 position = Vector2(20, 5)
 shape = SubResource("RectangleShape2D_2qn6r")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=2063821400]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TS_Tee Collision/StaticBody2D" unique_id=2063821400]
 position = Vector2(-12.533337, 20.000017)
 shape = SubResource("RectangleShape2D_pv327")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=2065290238]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TS_Tee Collision/StaticBody2D" unique_id=2065290238]
 position = Vector2(-10.000001, -15.000001)
 shape = SubResource("RectangleShape2D_1ufbm")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=580133154]
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TS_Tee Collision/StaticBody2D" unique_id=580133154]
 position = Vector2(-10.000005, 24.900003)
 shape = SubResource("RectangleShape2D_m35ar")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1786867326]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Tee Collision/StaticBody2D" unique_id=1786867326]
 position = Vector2(-12.533337, -10.000009)
 shape = SubResource("RectangleShape2D_837hq")
+
+[node name="TS_Tee Area" type="Node2D" parent="." unique_id=1051887705]
+
+[node name="Pipe_Area" type="Area2D" parent="TS_Tee Area" unique_id=441945799]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Tee Area/Pipe_Area" unique_id=1254589384]
+position = Vector2(2.4333353, 4.9999995)
+shape = SubResource("RectangleShape2D_3uoie")
 
 [node name="Drag" type="Button" parent="." unique_id=1391456150]
 unique_name_in_owner = true

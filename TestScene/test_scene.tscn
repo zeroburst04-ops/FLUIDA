@@ -10,6 +10,36 @@
 [node name="TestScene" type="Node2D" unique_id=2012258607]
 script = ExtResource("1_eaejv")
 
+[node name="Pipes" type="Node2D" parent="." unique_id=1795396596]
+unique_name_in_owner = true
+
+[node name="TS_Knee2" parent="Pipes" unique_id=2116690963 instance=ExtResource("5_lrovu")]
+position = Vector2(5175, -2951)
+scale = Vector2(9.999999, 9.999999)
+
+[node name="TS_Knee3" parent="Pipes" unique_id=611143766 instance=ExtResource("5_lrovu")]
+position = Vector2(4350, -3450)
+scale = Vector2(10, 10)
+
+[node name="TS_Knee4" parent="Pipes" unique_id=143777972 instance=ExtResource("5_lrovu")]
+position = Vector2(3408, -3285)
+rotation = 3.1415925
+scale = Vector2(10, 10)
+
+[node name="TS_Socket" parent="Pipes" unique_id=2136074797 instance=ExtResource("6_nvnny")]
+position = Vector2(4625, -2900.9995)
+scale = Vector2(10, 10)
+
+[node name="TS_Socket2" parent="Pipes" unique_id=1248794591 instance=ExtResource("6_nvnny")]
+position = Vector2(3883, -2300.0002)
+rotation = -1.5707964
+scale = Vector2(10, 10)
+
+[node name="TS_Tee" parent="Pipes" unique_id=2043194950 instance=ExtResource("7_hxw8s")]
+position = Vector2(3926, -2868)
+rotation = 3.1415925
+scale = Vector2(10, 10)
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=147878158]
 position = Vector2(5252, -2839)
 zoom = Vector2(0.25, 0.25)
@@ -36,33 +66,6 @@ theme_override_font_sizes/font_size = 128
 text = "60FPS
 "
 
-[node name="TS_Knee2" parent="." unique_id=2116690963 instance=ExtResource("5_lrovu")]
-position = Vector2(5175, -2951)
-scale = Vector2(9.999999, 9.999999)
-
-[node name="TS_Knee3" parent="." unique_id=611143766 instance=ExtResource("5_lrovu")]
-position = Vector2(4350, -3450)
-scale = Vector2(10, 10)
-
-[node name="TS_Knee4" parent="." unique_id=143777972 instance=ExtResource("5_lrovu")]
-position = Vector2(3408, -3285)
-rotation = -3.1415927
-scale = Vector2(10, 10)
-
-[node name="TS_Socket" parent="." unique_id=2136074797 instance=ExtResource("6_nvnny")]
-position = Vector2(4625, -2900.9995)
-scale = Vector2(10, 10)
-
-[node name="TS_Socket2" parent="." unique_id=1248794591 instance=ExtResource("6_nvnny")]
-position = Vector2(3900, -2300)
-rotation = -1.5707964
-scale = Vector2(10, 10)
-
-[node name="TS_Tee" parent="." unique_id=2043194950 instance=ExtResource("7_hxw8s")]
-position = Vector2(3950, -2850)
-rotation = -3.1415927
-scale = Vector2(10, 10)
-
 [node name="Start" type="Button" parent="." unique_id=1673629997]
 custom_minimum_size = Vector2(40, 40)
 offset_left = 6718.0
@@ -71,6 +74,16 @@ offset_right = 7027.0
 offset_bottom = -3873.0
 theme_override_font_sizes/font_size = 128
 text = "Start"
+
+[node name="Overlap_text" type="Label" parent="Start" unique_id=1745979734]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -271.0
+offset_top = 202.0
+offset_right = 657.0
+offset_bottom = 290.0
+theme_override_font_sizes/font_size = 64
+text = "DO NOT OVERLAP PLS PLS PLS"
 
 [node name="End" type="Button" parent="." unique_id=672449243]
 custom_minimum_size = Vector2(40, 40)

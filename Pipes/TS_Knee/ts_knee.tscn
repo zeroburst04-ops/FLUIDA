@@ -16,6 +16,9 @@ size = Vector2(10, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_837hq"]
 size = Vector2(20, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x06lp"]
+size = Vector2(54.481483, 54.074066)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x06lp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yui3m"]
@@ -62,7 +65,6 @@ mesh = SubResource("QuadMesh_o6qpx")
 unique_name_in_owner = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Knee Collision" unique_id=1727964198]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1291910943]
 position = Vector2(20, 0)
@@ -81,26 +83,12 @@ position = Vector2(-15, -10)
 shape = SubResource("RectangleShape2D_837hq")
 
 [node name="Pipe_Area" type="Area2D" parent="TS_Knee Collision" unique_id=1662446701 groups=["Pipe"]]
+unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Knee Collision/Pipe_Area" unique_id=1943459684]
-position = Vector2(20.000002, 0)
-scale = Vector2(0.9, 0.9)
-shape = SubResource("RectangleShape2D_2qn6r")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="TS_Knee Collision/Pipe_Area" unique_id=299674097]
-position = Vector2(0, 20)
-scale = Vector2(0.9, 0.9)
-shape = SubResource("RectangleShape2D_pv327")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="TS_Knee Collision/Pipe_Area" unique_id=324376633]
-position = Vector2(-10, -15)
-scale = Vector2(0.9, 0.9)
-shape = SubResource("RectangleShape2D_1ufbm")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Knee Collision/Pipe_Area" unique_id=626481734]
-position = Vector2(-15, -10)
-scale = Vector2(0.9, 0.9)
-shape = SubResource("RectangleShape2D_837hq")
+position = Vector2(-0.016664634, -0.13333304)
+scale = Vector2(0.90000015, 0.90000015)
+shape = SubResource("RectangleShape2D_x06lp")
 
 [node name="Drag" type="Button" parent="." unique_id=1391456150]
 unique_name_in_owner = true
@@ -115,7 +103,5 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_78y1a")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_35av4")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_wfpxw")
 
-[connection signal="area_entered" from="TS_Knee Collision/Pipe_Area" to="." method="_on_pipe_area_area_entered"]
-[connection signal="area_exited" from="TS_Knee Collision/Pipe_Area" to="." method="_on_pipe_area_area_exited"]
 [connection signal="button_down" from="Drag" to="." method="_on_drag_button_down"]
 [connection signal="button_up" from="Drag" to="." method="_on_drag_button_up"]
