@@ -12,7 +12,6 @@ func _process(delta: float) -> void:
 	%FPS.text = str(Engine.get_frames_per_second()) + "FPS"
 	if %Overlap_text.visible:
 		overlap_text_timer += delta
-		print(overlap_text_timer)
 		if overlap_text_timer >= 1:
 			
 			overlap_text_timer = 0
