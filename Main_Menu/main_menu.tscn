@@ -145,7 +145,6 @@ volume_db = 18.955
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
-visible = false
 z_as_relative = false
 layout_mode = 1
 offset_left = -1195.0

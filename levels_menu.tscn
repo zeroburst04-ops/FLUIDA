@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cftb6c0ngds1g"]
 
 [ext_resource type="Texture2D" uid="uid://bvrab1ok3r7au" path="res://zsbynj4.jpg" id="1_e4bqk"]
-[ext_resource type="Script" path="res://levels_menu.gd" id="1_fyl7c"]
+[ext_resource type="Script" uid="uid://cek5xwssbdgj3" path="res://levels_menu.gd" id="1_fyl7c"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_augb3"]
 [ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="3_fyl7c"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="4_6ym5a"]
@@ -153,7 +153,6 @@ volume_db = 8.866
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_5f8d8")]
-visible = false
 layout_mode = 1
 offset_left = -359.0
 offset_top = -250.0

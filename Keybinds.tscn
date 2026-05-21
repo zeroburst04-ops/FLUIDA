@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ci5vcmrmicfgk"]
 
-[ext_resource type="Script" path="res://keybinds.gd" id="1_4k8yr"]
+[ext_resource type="Script" uid="uid://d022f3wkf51vv" path="res://keybinds.gd" id="1_4k8yr"]
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="2_4k8yr"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_uwa2i"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_tax5g"]
@@ -107,7 +107,6 @@ offset_bottom = 288.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_jaxmp")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_tax5g")]
-visible = false
 layout_mode = 1
 offset_left = -399.0
 offset_top = -259.0

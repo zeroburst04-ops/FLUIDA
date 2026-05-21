@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://ffvskjybhape"]
 
-[ext_resource type="Script" path="res://loading__screen.gd" id="1_4kwrw"]
-[ext_resource type="Script" path="res://video_stream_player.gd" id="2_308ny"]
+[ext_resource type="Script" uid="uid://cvehd5g40oapn" path="res://loading__screen.gd" id="1_4kwrw"]
+[ext_resource type="Script" uid="uid://bqvqd8uowtpw1" path="res://video_stream_player.gd" id="2_308ny"]
 [ext_resource type="VideoStream" uid="uid://hektmik61yxb" path="res://untitled-design-2-cgthub.ogv" id="2_fp7nw"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_fp7nw"]
 
 [node name="loading_screen" type="Node2D" unique_id=35056486]
 script = ExtResource("1_4kwrw")
@@ -21,3 +22,10 @@ autoplay = true
 expand = true
 loop = true
 script = ExtResource("2_308ny")
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_fp7nw")]
+offset_left = 783.0
+offset_top = 676.0
+offset_right = 7559.0
+offset_bottom = 4503.0
+mouse_filter = 2
