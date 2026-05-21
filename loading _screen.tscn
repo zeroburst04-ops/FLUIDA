@@ -11,7 +11,7 @@ script = ExtResource("1_4kwrw")
 position = Vector2(3948, 2589)
 zoom = Vector2(0.2, 0.2)
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1504430600]
+[node name="Background" type="VideoStreamPlayer" parent="." unique_id=1504430600]
 offset_left = 992.0
 offset_top = 858.0
 offset_right = 6933.0

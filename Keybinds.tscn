@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://ci5vcmrmicfgk"]
 
-[ext_resource type="Script" uid="uid://d022f3wkf51vv" path="res://keybinds.gd" id="1_4k8yr"]
+[ext_resource type="Script" path="res://keybinds.gd" id="1_4k8yr"]
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="2_4k8yr"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_uwa2i"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_tax5g"]
+[ext_resource type="AudioStream" uid="uid://cnwka6jmfp2bu" path="res://Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav" id="5_tax5g"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k8yr"]
 bg_color = Color(0.5899807, 0.10816281, 0.19988194, 1)
@@ -113,5 +114,10 @@ offset_top = -259.0
 offset_right = 146.0
 offset_bottom = 192.0
 mouse_filter = 2
+
+[node name="Background_music" type="AudioStreamPlayer2D" parent="." unique_id=99942990]
+position = Vector2(603, 364)
+stream = ExtResource("5_tax5g")
+autoplay = true
 
 [connection signal="pressed" from="Back_button" to="." method="_on_back_button_pressed"]
