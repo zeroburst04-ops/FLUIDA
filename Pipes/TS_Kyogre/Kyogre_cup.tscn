@@ -15,6 +15,9 @@ size = Vector2(13, 157)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
 size = Vector2(120, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlida"]
+size = Vector2(115, 154)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_tlida"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlida"]
@@ -26,6 +29,7 @@ size = Vector2(118, 18)
 script = ExtResource("1_tlida")
 
 [node name="CupShape" type="Node2D" parent="." unique_id=712156449]
+unique_name_in_owner = true
 
 [node name="Cup_Bottom" type="Node2D" parent="CupShape" unique_id=3103218]
 
@@ -70,11 +74,20 @@ shape = SubResource("RectangleShape2D_2qn6r")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1466662568]
 shape = SubResource("RectangleShape2D_cmy3s")
 
+[node name="Pipe_Area" type="Node2D" parent="CupHitbox" unique_id=1811284041]
+
+[node name="Pipe_Area" type="Area2D" parent="CupHitbox/Pipe_Area" unique_id=971251517]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/Pipe_Area/Pipe_Area" unique_id=1240017202]
+position = Vector2(-0.5, -75)
+shape = SubResource("RectangleShape2D_tlida")
+
 [node name="Kyogre" type="RigidBody2D" parent="." unique_id=416759536]
 unique_name_in_owner = true
 position = Vector2(0, -48)
 collision_mask = 9
-mass = 25.0
+mass = 20.0
 script = ExtResource("2_n6hbu")
 metadata/_custom_type_script = "uid://unwhnooi7g2c"
 

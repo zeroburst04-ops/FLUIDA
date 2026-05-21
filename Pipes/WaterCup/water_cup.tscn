@@ -22,6 +22,9 @@ size = Vector2(10, 28)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ufbm"]
 size = Vector2(120, 12)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_837hq"]
+size = Vector2(117, 156)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4tr5l"]
 size = Vector2(10, 36)
 
@@ -30,6 +33,7 @@ script = ExtResource("1_2qn6r")
 Openedside = 1
 
 [node name="CupShape" type="Node2D" parent="." unique_id=712156449]
+unique_name_in_owner = true
 
 [node name="Cup_Bottom" type="Node2D" parent="CupShape" unique_id=3103218]
 
@@ -189,6 +193,15 @@ shape = SubResource("RectangleShape2D_2qn6r")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1466662568]
 position = Vector2(35, 0)
 shape = SubResource("RectangleShape2D_cmy3s")
+
+[node name="CupHitbox_Area" type="Node2D" parent="CupHitbox" unique_id=451328181]
+
+[node name="Pipe_Area" type="Area2D" parent="CupHitbox/CupHitbox_Area" unique_id=1241855784 groups=["Pipe"]]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Area/Pipe_Area" unique_id=1847306520]
+position = Vector2(-0.5, -75)
+shape = SubResource("RectangleShape2D_837hq")
 
 [node name="CupHitbox_Left" type="Node2D" parent="CupHitbox" unique_id=656048958]
 position = Vector2(15, 0)
