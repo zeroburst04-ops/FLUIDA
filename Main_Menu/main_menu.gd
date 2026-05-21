@@ -29,4 +29,4 @@ func _ready():
 	$kyogre_cry.play()
 	while true:
 		$kyogre_cry.play()
-		await get_tree().create_timer(13.0).timeout 
+		await get_tree().create_timer(18.0).timeout 
