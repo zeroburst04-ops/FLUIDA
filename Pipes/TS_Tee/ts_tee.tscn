@@ -8,7 +8,7 @@
 size = Vector2(10, 60.333336)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pv327"]
-size = Vector2(12.466665, 10)
+size = Vector2(14.933331, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ufbm"]
 size = Vector2(10, 20)
@@ -17,7 +17,7 @@ size = Vector2(10, 20)
 size = Vector2(10, 19.933334)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_837hq"]
-size = Vector2(12.466663, 10)
+size = Vector2(15.06666, 10)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x06lp"]
 
@@ -54,15 +54,15 @@ scale = Vector2(60, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Bottom_Left5" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=1301948608]
-position = Vector2(-16.25, -10)
+position = Vector2(-17.5, -10)
 rotation = -3.1415925
-scale = Vector2(2.5, 10)
+scale = Vector2(5, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Bottom_Left7" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=2097391138]
-position = Vector2(-16.25, 20)
+position = Vector2(-17.5, 20)
 rotation = -3.1415925
-scale = Vector2(2.5, 10)
+scale = Vector2(5, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="TS_Knee Collision" type="Node2D" parent="." unique_id=1410117010]
@@ -74,7 +74,7 @@ position = Vector2(20, 5)
 shape = SubResource("RectangleShape2D_2qn6r")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=2063821400]
-position = Vector2(-11.300001, 20.000011)
+position = Vector2(-12.533337, 20.000017)
 shape = SubResource("RectangleShape2D_pv327")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=2065290238]
@@ -86,7 +86,7 @@ position = Vector2(-10.000005, 24.900003)
 shape = SubResource("RectangleShape2D_m35ar")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1786867326]
-position = Vector2(-11.233335, -10.000004)
+position = Vector2(-12.533337, -10.000009)
 shape = SubResource("RectangleShape2D_837hq")
 
 [node name="Drag" type="Button" parent="." unique_id=1391456150]

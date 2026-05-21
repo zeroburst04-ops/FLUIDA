@@ -8,6 +8,7 @@ enum States {
 @export var CurrentState = States.Normal
 
 func _ready() -> void:
+	Snapfunc()
 	match CurrentState:
 		States.Normal:
 			%Reducer.visible = false
@@ -23,11 +24,20 @@ var offset = Vector2(0, 0)
 
 var Snap = 50
 
+func Snapfunc() -> void:
+	global_position.x -= int(global_position.x) % 50
+	global_position.y -= int(global_position.y) % 50
+	
+	
+	
 func _process(delta: float) -> void:
+	Snapfunc()
 	if Is_Dragging:
 		var NewPos = get_global_mouse_position() - offset
 		position = Vector2(snapped(NewPos.x, Snap), snapped(NewPos.y, Snap))
-		
+		if Input.is_action_just_pressed("Rotate"):
+			rotation_degrees += 90
+			
 func _on_drag_button_down() -> void:
 	Is_Dragging = true
 	offset = get_global_mouse_position() - global_position

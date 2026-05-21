@@ -27,6 +27,7 @@ size = Vector2(10, 36)
 
 [node name="WaterCup" type="Node2D" unique_id=570814531]
 script = ExtResource("1_2qn6r")
+Openedside = 1
 
 [node name="CupShape" type="Node2D" parent="." unique_id=712156449]
 
@@ -178,7 +179,7 @@ position = Vector2(-55, -9)
 shape = SubResource("RectangleShape2D_2qn6r")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=594707291]
-position = Vector2(0, -238)
+position = Vector2(0, -149)
 shape = SubResource("RectangleShape2D_1ufbm")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1807080460]
