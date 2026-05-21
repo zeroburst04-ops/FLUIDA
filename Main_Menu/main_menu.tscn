@@ -139,7 +139,7 @@ text = "QUIT
 "
 
 [node name="kyogre_cry" type="AudioStreamPlayer2D" parent="." unique_id=1476485511]
-position = Vector2(1898, 1175)
+position = Vector2(1898, 1165)
 stream = ExtResource("5_lpfbm")
 volume_db = 12.181
 
