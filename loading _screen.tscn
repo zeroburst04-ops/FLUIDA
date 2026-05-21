@@ -11,6 +11,7 @@ position = Vector2(3948, 2589)
 zoom = Vector2(0.2, 0.2)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1504430600]
+visible = false
 offset_left = 966.0
 offset_top = 874.0
 offset_right = 6934.0
