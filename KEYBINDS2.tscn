@@ -63,6 +63,7 @@ autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_8wdwb")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.44432542
@@ -123,6 +124,7 @@ theme_override_styles/slider = SubResource("StyleBoxFlat_1h18l")
 max_value = 1.0
 step = 0.01
 value = 1.0
+editable = false
 
 [node name="Brightness" type="HBoxContainer" parent="Setting Container" unique_id=893681580]
 layout_mode = 2
@@ -148,6 +150,7 @@ theme_override_styles/slider = SubResource("StyleBoxFlat_1h18l")
 max_value = 1.0
 step = 0.01
 value = 1.0
+editable = false
 
 [node name="hiasan" type="Label" parent="." unique_id=1960479656]
 layout_mode = 0
@@ -166,6 +169,7 @@ offset_bottom = 1589.0
 theme_override_fonts/font = ExtResource("5_ot8rv")
 theme_override_font_sizes/font_size = 256
 theme_override_styles/normal = SubResource("StyleBoxFlat_2ubpn")
+disabled = true
 text = "KEYBINDS"
 icon_alignment = 1
 
