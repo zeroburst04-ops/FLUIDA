@@ -25,5 +25,5 @@ func _on_music_player_finished() -> void:
 	%Music_Player.play()
 
 func _on_key_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Keybinds.tscn")
+	get_tree().change_scene_to_file("res://KEYBINDS2.tscn")
 	

@@ -66,8 +66,8 @@ position = Vector2(4361, 2199)
 zoom = Vector2(0.14, 0.14)
 
 [node name="Background" type="Sprite2D" parent="." unique_id=518419974]
-position = Vector2(4454.255, 2224.1338)
-scale = Vector2(12.175936, 12.443796)
+position = Vector2(4346.7554, 2193.6343)
+scale = Vector2(11.883818, 12.296455)
 texture = ExtResource("1_rtwqn")
 
 [node name="BackButton" type="Button" parent="." unique_id=1788756263]
