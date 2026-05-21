@@ -12,13 +12,11 @@ position = Vector2(3948, 2589)
 zoom = Vector2(0.2, 0.2)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1504430600]
-visible = false
-offset_left = 966.0
-offset_top = 874.0
-offset_right = 6934.0
-offset_bottom = 4349.0
+offset_left = 447.0
+offset_top = 701.0
+offset_right = 7824.0
+offset_bottom = 4670.0
 stream = ExtResource("2_fp7nw")
-volume_db = -12.75
 autoplay = true
 loop = true
 script = ExtResource("2_308ny")
