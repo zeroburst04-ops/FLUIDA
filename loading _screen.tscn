@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ccfo6ygtnidn6"]
+
+[ext_resource type="Script" uid="uid://cvehd5g40oapn" path="res://loading__screen.gd" id="1_4kwrw"]
+[ext_resource type="Script" uid="uid://bqvqd8uowtpw1" path="res://video_stream_player.gd" id="2_308ny"]
+
+[node name="loading_screen" type="Node2D" unique_id=35056486]
+script = ExtResource("1_4kwrw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2094332010]
+position = Vector2(681, 401)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1504430600]
+offset_left = 83.0
+offset_top = 52.0
+offset_right = 1277.0
+offset_bottom = 749.0
+script = ExtResource("2_308ny")
