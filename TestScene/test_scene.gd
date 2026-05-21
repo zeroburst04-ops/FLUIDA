@@ -2,6 +2,8 @@ extends Node2D
 
 @onready var Pipe_parent : = %Pipes
 func _ready() -> void:
+	LevelData.I_Running = false
+	
 	%Overlap_text.visible = false
 	Engine.time_scale = 0
 	Snapfunc()
@@ -26,10 +28,11 @@ func _on_start_pressed() -> void:
 			return
 			
 	Engine.time_scale = 1
-
+	LevelData.I_Running = true
+	
 func Snapfunc() -> void:
 	global_position.x -= int(global_position.x) % 50
 	global_position.y -= int(global_position.y) % 50
-	
 
-	
+func _on_end_pressed() -> void:
+	get_tree().reload_current_scene()

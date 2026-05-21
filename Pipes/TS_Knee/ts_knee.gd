@@ -47,8 +47,10 @@ func Overlap() -> void:
 		Is_Overlapping = false
 		
 func _on_drag_button_down() -> void:
-	Is_Dragging = true
-	offset = get_global_mouse_position() - global_position
+	if not LevelData.I_Running:
+		Is_Dragging = true
+		offset = get_global_mouse_position() - global_position
 	
 func _on_drag_button_up() -> void:
-	Is_Dragging = false
+	if not LevelData.I_Running:
+		Is_Dragging = false
