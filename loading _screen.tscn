@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cvehd5g40oapn" path="res://loading__screen.gd" id="1_4kwrw"]
 [ext_resource type="Script" uid="uid://bqvqd8uowtpw1" path="res://video_stream_player.gd" id="2_308ny"]
+[ext_resource type="VideoStream" uid="uid://hektmik61yxb" path="res://untitled-design-2-cgthub.ogv" id="2_fp7nw"]
 
 [node name="loading_screen" type="Node2D" unique_id=35056486]
 script = ExtResource("1_4kwrw")
@@ -16,6 +17,7 @@ offset_left = 966.0
 offset_top = 874.0
 offset_right = 6934.0
 offset_bottom = 4349.0
+stream = ExtResource("2_fp7nw")
 volume_db = -12.75
 autoplay = true
 loop = true
