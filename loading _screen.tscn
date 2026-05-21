@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://bqvqd8uowtpw1" path="res://video_stream_player.gd" id="2_308ny"]
 [ext_resource type="VideoStream" uid="uid://hektmik61yxb" path="res://untitled-design-2-cgthub.ogv" id="2_fp7nw"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_fp7nw"]
+[ext_resource type="AudioStream" uid="uid://0bthdurucdxv" path="res://382 Primal Kyogre Cry [qCCM--kUFbo].wav" id="5_hpxh0"]
 
 [node name="loading_screen" type="Node2D" unique_id=35056486]
 script = ExtResource("1_4kwrw")
@@ -29,3 +30,8 @@ offset_top = 676.0
 offset_right = 7559.0
 offset_bottom = 4503.0
 mouse_filter = 2
+
+[node name="kyogre_cry" type="AudioStreamPlayer2D" parent="." unique_id=1313715810]
+position = Vector2(3903, 2520)
+stream = ExtResource("5_hpxh0")
+volume_db = 12.181

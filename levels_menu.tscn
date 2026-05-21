@@ -147,7 +147,7 @@ text = "BACK"
 
 [node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=1185042216]
 unique_name_in_owner = true
-position = Vector2(576, 378)
+position = Vector2(576, 316)
 stream = ExtResource("7_6ym5a")
 volume_db = 18.955
 autoplay = true

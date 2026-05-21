@@ -4,10 +4,14 @@ extends Node2D
 func _physics_process(delta:float) -> void:
 	Brightness.modulate.a = Settings.Brightness
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func _ready():
+	$kyogre_cry.volume_db = -3.0
+	await get_tree().create_timer(5.0).timeout
+	$kyogre_cry.play()
+	while true:
+		$kyogre_cry.play()
+		await get_tree().create_timer(13.0).timeout 

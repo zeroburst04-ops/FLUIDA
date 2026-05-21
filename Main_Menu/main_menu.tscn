@@ -4,6 +4,7 @@
 [ext_resource type="VideoStream" uid="uid://gxj3sntu4rv2" path="res://untitled-design-3-zwu2pw.ogv" id="2_2ytag"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
+[ext_resource type="AudioStream" uid="uid://0bthdurucdxv" path="res://382 Primal Kyogre Cry [qCCM--kUFbo].wav" id="5_lpfbm"]
 [ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="6_2ytag"]
 
@@ -137,6 +138,11 @@ text = "QUIT
 
 "
 
+[node name="kyogre_cry" type="AudioStreamPlayer2D" parent="." unique_id=1476485511]
+position = Vector2(1898, 1175)
+stream = ExtResource("5_lpfbm")
+volume_db = 12.181
+
 [node name="BackGround_Music" type="AudioStreamPlayer2D" parent="." unique_id=1100564802]
 unique_name_in_owner = true
 position = Vector2(1927, 1146)
@@ -145,6 +151,7 @@ volume_db = 24.0
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
+visible = false
 z_as_relative = false
 layout_mode = 1
 offset_left = -1195.0
