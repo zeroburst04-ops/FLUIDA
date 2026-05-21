@@ -36,6 +36,7 @@ enabled=PackedStringArray()
 
 FLUID=""
 Pipe=""
+OUT_OF_BOUNDS=""
 
 [input]
 

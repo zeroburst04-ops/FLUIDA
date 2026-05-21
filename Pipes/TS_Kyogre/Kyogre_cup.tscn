@@ -15,6 +15,8 @@ size = Vector2(13, 157)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
 size = Vector2(120, 10)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_tlida"]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlida"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uy483"]
@@ -76,6 +78,17 @@ mass = 25.0
 script = ExtResource("2_n6hbu")
 metadata/_custom_type_script = "uid://unwhnooi7g2c"
 
+[node name="Area2D" type="Area2D" parent="Kyogre" unique_id=926021890]
+z_index = 4
+z_as_relative = false
+position = Vector2(0, 48)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Kyogre/Area2D" unique_id=1933148822]
+position = Vector2(0, -48)
+rotation = 1.5707964
+scale = Vector2(1.2053697, 1.2451755)
+shape = SubResource("CircleShape2D_tlida")
+
 [node name="Model" type="Sprite2D" parent="Kyogre" unique_id=1968620751]
 scale = Vector2(0.04629394, 0.04629394)
 texture = ExtResource("2_uy483")
@@ -100,3 +113,5 @@ offset_top = 7.0
 offset_right = 43.0
 offset_bottom = 30.0
 text = "You Won !!"
+
+[connection signal="area_entered" from="Kyogre/Area2D" to="." method="_on_area_2d_area_entered"]
