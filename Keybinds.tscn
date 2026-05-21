@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://ci5vcmrmicfgk"]
+
+[ext_resource type="Script" path="res://keybinds.gd" id="1_4k8yr"]
+[ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="2_4k8yr"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_uwa2i"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_tax5g"]
+[ext_resource type="AudioStream" uid="uid://cnwka6jmfp2bu" path="res://Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav" id="5_tax5g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k8yr"]
+bg_color = Color(0.5899807, 0.10816281, 0.19988194, 1)
+corner_radius_top_left = 32
+corner_radius_bottom_right = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tax5g"]
+bg_color = Color(0.20655426, 0.2065543, 0.20655417, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3m2pt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fmxp0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kremw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jaxmp"]
+
+[node name="Control" type="Control" unique_id=878527695]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 248.0
+offset_top = 155.0
+offset_right = 289.0
+offset_bottom = 199.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4k8yr")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=201893347]
+position = Vector2(596, 349)
+
+[node name="BACKGROUND" type="Sprite2D" parent="." unique_id=500182958]
+position = Vector2(597.50006, 352)
+scale = Vector2(1.6508152, 1.7246377)
+texture = ExtResource("2_4k8yr")
+
+[node name="Back_button" type="Button" parent="." unique_id=953440987]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 553.0
+offset_right = 212.0
+offset_bottom = 634.0
+theme_override_fonts/font = ExtResource("2_uwa2i")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_4k8yr")
+text = "BACK"
+
+[node name="TITLE" type="Label" parent="." unique_id=1132973847]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 101.0
+offset_right = 940.0
+offset_bottom = 229.0
+theme_override_fonts/font = ExtResource("2_uwa2i")
+theme_override_font_sizes/font_size = 64
+text = "KEYBINDS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fake_Container" type="Label" parent="." unique_id=1392566873]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 219.0
+offset_right = 808.0
+offset_bottom = 548.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_tax5g")
+
+[node name="4" type="Label" parent="." unique_id=1901676175]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 474.0
+offset_right = 799.0
+offset_bottom = 533.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3m2pt")
+
+[node name="3" type="Label" parent="." unique_id=771110346]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 396.0
+offset_right = 798.0
+offset_bottom = 454.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fmxp0")
+
+[node name="2" type="Label" parent="." unique_id=1402497381]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 309.0
+offset_right = 797.0
+offset_bottom = 373.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kremw")
+
+[node name="1" type="Label" parent="." unique_id=140800791]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 231.0
+offset_right = 795.0
+offset_bottom = 288.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jaxmp")
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_tax5g")]
+visible = false
+layout_mode = 1
+offset_left = -399.0
+offset_top = -259.0
+offset_right = 146.0
+offset_bottom = 192.0
+mouse_filter = 2
+
+[node name="Background_music" type="AudioStreamPlayer2D" parent="." unique_id=99942990]
+position = Vector2(603, 364)
+stream = ExtResource("5_tax5g")
+autoplay = true
+
+[connection signal="pressed" from="Back_button" to="." method="_on_back_button_pressed"]

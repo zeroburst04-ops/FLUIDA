@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ffvskjybhape"]
+
+[ext_resource type="Script" path="res://loading__screen.gd" id="1_4kwrw"]
+[ext_resource type="Script" path="res://video_stream_player.gd" id="2_308ny"]
+[ext_resource type="VideoStream" uid="uid://hektmik61yxb" path="res://untitled-design-2-cgthub.ogv" id="2_fp7nw"]
+
+[node name="loading_screen" type="Node2D" unique_id=35056486]
+script = ExtResource("1_4kwrw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2094332010]
+position = Vector2(3948, 2589)
+zoom = Vector2(0.2, 0.2)
+
+[node name="Background" type="VideoStreamPlayer" parent="." unique_id=1504430600]
+offset_left = 992.0
+offset_top = 858.0
+offset_right = 6933.0
+offset_bottom = 4282.0
+stream = ExtResource("2_fp7nw")
+autoplay = true
+expand = true
+loop = true
+script = ExtResource("2_308ny")

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cg3ay761aruim"]
 
 [ext_resource type="Script" uid="uid://bs7wokgeqx7qo" path="res://Main_Menu/main_menu.gd" id="1_e582s"]
-[ext_resource type="VideoStream" uid="uid://b3ffs40mdhl2n" path="res://Untitled design.ogv" id="2_2jvup"]
+[ext_resource type="VideoStream" uid="uid://gxj3sntu4rv2" path="res://untitled-design-3-zwu2pw.ogv" id="2_2ytag"]
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_6qckm"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
 [ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
@@ -55,7 +55,7 @@ offset_left = 268.307
 offset_top = 257.3
 offset_right = -96.34741
 offset_bottom = -88.305176
-stream = ExtResource("2_2jvup")
+stream = ExtResource("2_2ytag")
 autoplay = true
 expand = true
 loop = true
@@ -133,7 +133,7 @@ offset_bottom = 2113.0
 theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_al2h2")
-text = "Quit
+text = "QUIT
 
 "
 
@@ -145,12 +145,13 @@ volume_db = 18.955
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
+visible = false
 z_as_relative = false
 layout_mode = 1
-offset_left = -1995.0
-offset_top = -1390.0
-offset_right = 1788.0
-offset_bottom = 2091.0
+offset_left = -1195.0
+offset_top = -476.0
+offset_right = 367.0
+offset_bottom = 568.0
 mouse_filter = 2
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
