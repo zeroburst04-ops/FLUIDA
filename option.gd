@@ -1,5 +1,9 @@
 extends Control
 
+@onready var Brightness : = $Brightness_Overlay
+func _physics_process(delta:float) -> void:
+	Brightness.modulate.a = Settings.Brightness
+	
 func _ready() -> void:
 	%Brightness_SO.value = Settings.Brightness_Slider
 	%BackGround_Music_SO.value = Settings.BackGround_Music_Slider
@@ -22,3 +26,4 @@ func _on_music_player_finished() -> void:
 
 func _on_key_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Keybinds.tscn")
+	

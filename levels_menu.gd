@@ -1,5 +1,9 @@
 extends Control
 
+@onready var Brightness : = $Brightness_Overlay
+func _physics_process(delta:float) -> void:
+	Brightness.modulate.a = Settings.Brightness
+
 func _process(delta: float) -> void:
 	%Music.volume_db = Settings.BackGround_Music
 	
