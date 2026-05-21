@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://8vo18oqoopgy"]
+
+[ext_resource type="Script" uid="uid://2xo3tj1juqqi" path="res://Pipes/TS_Kyogre/kyogre_cup.gd" id="1_tlida"]
+[ext_resource type="Script" uid="uid://unwhnooi7g2c" path="res://addons/godot-rapier2d/custom_nodes/rapier_rigid_body_2d.gd" id="2_n6hbu"]
+[ext_resource type="Texture2D" uid="uid://c8rcl4vtgbmic" path="res://Kyogres.webp" id="2_uy483"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qvji"]
+size = Vector2(12, 157)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2qn6r"]
+size = Vector2(13, 157)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
+size = Vector2(120, 10)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlida"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uy483"]
+size = Vector2(118, 18)
+
+[node name="KyogreCup" type="Node2D" unique_id=570814531]
+script = ExtResource("1_tlida")
+
+[node name="CupShape" type="Node2D" parent="." unique_id=712156449]
+
+[node name="Cup_Bottom" type="Node2D" parent="CupShape" unique_id=3103218]
+
+[node name="Bottom_Left" type="MeshInstance2D" parent="CupShape/Cup_Bottom" unique_id=2068668587]
+scale = Vector2(120.00001, 10)
+mesh = SubResource("QuadMesh_o6qpx")
+
+[node name="Cup_Left" type="Node2D" parent="CupShape" unique_id=593270751]
+position = Vector2(15, 0)
+scale = Vector2(1.25, 1)
+
+[node name="BottomLeftWall" type="MeshInstance2D" parent="CupShape/Cup_Left" unique_id=332572722]
+position = Vector2(-54.999996, -78.55678)
+rotation = 1.5707964
+scale = Vector2(147.44656, 10)
+mesh = SubResource("QuadMesh_o6qpx")
+
+[node name="Cup_Right" type="Node2D" parent="CupShape" unique_id=603188844]
+position = Vector2(122, 0)
+scale = Vector2(1.25, 1)
+
+[node name="BottomRightWall" type="MeshInstance2D" parent="CupShape/Cup_Right" unique_id=911119611]
+position = Vector2(-54.999996, -78.76883)
+rotation = 1.5707964
+scale = Vector2(147.87065, 10)
+mesh = SubResource("QuadMesh_o6qpx")
+
+[node name="CupHitbox" type="Node2D" parent="." unique_id=868602689]
+
+[node name="CupHitbox_Bottom" type="Node2D" parent="CupHitbox" unique_id=785765985]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CupHitbox/CupHitbox_Bottom" unique_id=199416293]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=10214919]
+position = Vector2(-54, -73.5)
+shape = SubResource("RectangleShape2D_5qvji")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1807080460]
+position = Vector2(53.5, -73.5)
+shape = SubResource("RectangleShape2D_2qn6r")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1466662568]
+shape = SubResource("RectangleShape2D_cmy3s")
+
+[node name="Kyogre" type="RigidBody2D" parent="." unique_id=416759536]
+unique_name_in_owner = true
+position = Vector2(0, -48)
+collision_mask = 9
+mass = 25.0
+script = ExtResource("2_n6hbu")
+metadata/_custom_type_script = "uid://unwhnooi7g2c"
+
+[node name="Model" type="Sprite2D" parent="Kyogre" unique_id=1968620751]
+scale = Vector2(0.04629394, 0.04629394)
+texture = ExtResource("2_uy483")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kyogre" unique_id=1181809938]
+rotation = 1.5707964
+scale = Vector2(1.2053697, 1.2451755)
+shape = SubResource("CapsuleShape2D_tlida")
+
+[node name="Okbro" type="StaticBody2D" parent="." unique_id=415515661]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Okbro" unique_id=527284912]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_uy483")
+
+[node name="Win_Label" type="Label" parent="." unique_id=146262662]
+unique_name_in_owner = true
+offset_left = -39.0
+offset_top = 7.0
+offset_right = 43.0
+offset_bottom = 30.0
+text = "You Won !!"

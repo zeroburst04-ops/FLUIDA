@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+Settings="*uid://bl70did4ww25u"
 LevelData="*uid://ccquig12rjt1d"
 
 [display]
@@ -33,6 +34,7 @@ enabled=PackedStringArray()
 
 [global_group]
 
+FLUID=""
 Pipe=""
 
 [input]
