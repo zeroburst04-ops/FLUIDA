@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ci5vcmrmicfgk"]
 
 [ext_resource type="Script" uid="uid://d022f3wkf51vv" path="res://keybinds.gd" id="1_4k8yr"]
-[ext_resource type="Texture2D" uid="uid://bvrab1ok3r7au" path="res://zsbynj4.jpg" id="1_p8jg0"]
+[ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="2_4k8yr"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_uwa2i"]
-[ext_resource type="PackedScene" path="res://brightness_overlay.tscn" id="4_tax5g"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_tax5g"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k8yr"]
 bg_color = Color(0.5899807, 0.10816281, 0.19988194, 1)
@@ -38,9 +38,9 @@ script = ExtResource("1_4k8yr")
 position = Vector2(596, 349)
 
 [node name="BACKGROUND" type="Sprite2D" parent="." unique_id=500182958]
-position = Vector2(515, 302.24997)
-scale = Vector2(0.5796875, 0.5579861)
-texture = ExtResource("1_p8jg0")
+position = Vector2(597.50006, 352)
+scale = Vector2(1.6508152, 1.7246377)
+texture = ExtResource("2_4k8yr")
 
 [node name="Back_button" type="Button" parent="." unique_id=953440987]
 layout_mode = 0
@@ -106,11 +106,12 @@ offset_bottom = 288.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_jaxmp")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_tax5g")]
+visible = false
 layout_mode = 1
-offset_left = -248.0
-offset_top = -149.0
-offset_right = 87.0
-offset_bottom = 93.0
+offset_left = -399.0
+offset_top = -259.0
+offset_right = 146.0
+offset_bottom = 192.0
 mouse_filter = 2
 
 [connection signal="pressed" from="Back_button" to="." method="_on_back_button_pressed"]

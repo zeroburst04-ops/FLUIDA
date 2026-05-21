@@ -7,11 +7,15 @@
 script = ExtResource("1_4kwrw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2094332010]
-position = Vector2(681, 401)
+position = Vector2(3948, 2589)
+zoom = Vector2(0.2, 0.2)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1504430600]
-offset_left = 83.0
-offset_top = 52.0
-offset_right = 1277.0
-offset_bottom = 749.0
+offset_left = 966.0
+offset_top = 874.0
+offset_right = 6934.0
+offset_bottom = 4349.0
+volume_db = -12.75
+autoplay = true
+loop = true
 script = ExtResource("2_308ny")

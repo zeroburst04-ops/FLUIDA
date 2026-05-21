@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="1_rtwqn"]
 [ext_resource type="Script" uid="uid://dhnpo5cvx56el" path="res://option.gd" id="1_slay5"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_slay5"]
-[ext_resource type="PackedScene" path="res://brightness_overlay.tscn" id="2_uhspr"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="2_uhspr"]
 [ext_resource type="Texture2D" uid="uid://by413gv22gi4q" path="res://Black_colour.jpg" id="3_l82yo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhspr"]
@@ -55,6 +55,7 @@ script = ExtResource("1_slay5")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_uhspr")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.04761905
