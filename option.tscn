@@ -86,7 +86,7 @@ icon_alignment = 1
 unique_name_in_owner = true
 position = Vector2(4309, 2069)
 stream = ExtResource("5_c6ia3")
-volume_db = 18.939
+volume_db = 18.955
 autoplay = true
 
 [node name="Background_Option" type="Sprite2D" parent="." unique_id=442382598]

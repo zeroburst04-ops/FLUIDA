@@ -58,7 +58,7 @@ script = ExtResource("1_8wdwb")
 unique_name_in_owner = true
 position = Vector2(4254.143, 1971.1018)
 stream = ExtResource("1_krui6")
-volume_db = 18.939
+volume_db = 18.955
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_8wdwb")]
