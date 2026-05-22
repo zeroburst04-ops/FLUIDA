@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 		if timer < 1:
 			%Win_Label.text = "YOU WIN !!"
 			LevelData.I_Win = true
-			get_tree().change_scene_to_file(W)
+			get_tree().change_scene_to_file("res://win_scene.tscn")
 			
 	else:
 		timer = 6

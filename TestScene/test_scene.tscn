@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bpm3we8knwue4" path="res://Pipes/TS_Socket/ts_socket.tscn" id="6_nvnny"]
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="7_2i3e7"]
 [ext_resource type="PackedScene" uid="uid://djx710u7gms6d" path="res://Pipes/TS_Tee/ts_tee.tscn" id="7_hxw8s"]
+[ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_xd3t6"]
 
 [sub_resource type="FluidEffect2DViscosityArtificial" id="FluidEffect2DViscosityArtificial_hxw8s"]
 fluid_viscosity_coefficient = 150.0
@@ -122,6 +123,9 @@ text = "Restart"
 [node name="KyogreCup" parent="." unique_id=170371696 instance=ExtResource("7_2i3e7")]
 position = Vector2(6794, -2070)
 scale = Vector2(5, 5)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874395895]
+stream = ExtResource("9_xd3t6")
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=152809505]
 

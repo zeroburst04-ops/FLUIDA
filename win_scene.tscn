@@ -1,3 +1,47 @@
 [gd_scene format=3 uid="uid://xxpb84yxdo6p"]
 
+[ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="1_2cral"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_sel2p"]
+[ext_resource type="VideoStream" uid="uid://n2xkt2lxbror" path="res://untitled-design-2-noplfv.ogv" id="3_y8qen"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_226jj"]
+bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
+corner_radius_top_left = 32
+corner_radius_bottom_right = 32
+shadow_color = Color(0.08379587, 0.16032109, 0.25999233, 0.6)
+shadow_size = 100
+
 [node name="WIN_scene" type="Node2D" unique_id=568679066]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1153418407]
+position = Vector2(725, 429)
+
+[node name="Label" type="Label" parent="Camera2D" unique_id=1263116506]
+offset_left = -272.0
+offset_top = -67.0
+offset_right = 266.0
+offset_bottom = 65.0
+theme_override_fonts/font = ExtResource("1_2cral")
+theme_override_font_sizes/font_size = 128
+text = "YOU WIN"
+
+[node name="BackButton" type="Button" parent="." unique_id=1073080204]
+offset_left = 182.0
+offset_top = 656.0
+offset_right = 356.0
+offset_bottom = 722.0
+theme_override_fonts/font = ExtResource("2_sel2p")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_226jj")
+text = "BACK"
+icon_alignment = 1
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2086403350]
+offset_left = 118.0
+offset_top = 83.0
+offset_right = 1321.0
+offset_bottom = 782.0
+stream = ExtResource("3_y8qen")
+autoplay = true
+expand = true
+loop = true
