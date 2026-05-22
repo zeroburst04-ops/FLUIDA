@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://2xo3tj1juqqi" path="res://Pipes/TS_Kyogre/kyogre_cup.gd" id="1_tlida"]
 [ext_resource type="Script" uid="uid://unwhnooi7g2c" path="res://addons/godot-rapier2d/custom_nodes/rapier_rigid_body_2d.gd" id="2_n6hbu"]
-[ext_resource type="Texture2D" uid="uid://c8rcl4vtgbmic" path="res://Kyogres.webp" id="2_uy483"]
+[ext_resource type="Texture2D" uid="uid://de8aefhig7eax" path="res://TryCozymealpreprecipesthatturnordinaryplansintobeautifulideaspeoplewanttocopyfastforideasworthsavingrightnow-Pin-857021004135597390-ezgif.com-gif-to-sprite-converter.png" id="3_tlida"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
@@ -20,6 +20,189 @@ size = Vector2(115, 154)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tlida"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6hbu"]
+atlas = ExtResource("3_tlida")
+region = Rect2(0, 0, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y46su"]
+atlas = ExtResource("3_tlida")
+region = Rect2(450, 0, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qvji"]
+atlas = ExtResource("3_tlida")
+region = Rect2(900, 0, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fmin"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1350, 0, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q55lh"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1800, 0, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmfnh"]
+atlas = ExtResource("3_tlida")
+region = Rect2(0, 350, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4s4w"]
+atlas = ExtResource("3_tlida")
+region = Rect2(450, 350, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uv53"]
+atlas = ExtResource("3_tlida")
+region = Rect2(900, 350, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kl0mt"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1350, 350, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0dmf"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1800, 350, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cncqc"]
+atlas = ExtResource("3_tlida")
+region = Rect2(0, 700, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lplx"]
+atlas = ExtResource("3_tlida")
+region = Rect2(450, 700, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xx1mq"]
+atlas = ExtResource("3_tlida")
+region = Rect2(900, 700, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvws8"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1350, 700, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htj23"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1800, 700, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bbmt"]
+atlas = ExtResource("3_tlida")
+region = Rect2(0, 1050, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdjoo"]
+atlas = ExtResource("3_tlida")
+region = Rect2(450, 1050, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b826i"]
+atlas = ExtResource("3_tlida")
+region = Rect2(900, 1050, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4l8vo"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1350, 1050, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvd23"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1800, 1050, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phnfy"]
+atlas = ExtResource("3_tlida")
+region = Rect2(0, 1400, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owqo4"]
+atlas = ExtResource("3_tlida")
+region = Rect2(450, 1400, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rca1f"]
+atlas = ExtResource("3_tlida")
+region = Rect2(900, 1400, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8wqv"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1350, 1400, 450, 350)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54hxi"]
+atlas = ExtResource("3_tlida")
+region = Rect2(1800, 1400, 450, 350)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qg2px"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6hbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y46su")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qvji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fmin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q55lh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmfnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4s4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1uv53")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kl0mt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0dmf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cncqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6lplx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xx1mq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvws8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htj23")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bbmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdjoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b826i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4l8vo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvd23")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phnfy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owqo4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rca1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8wqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54hxi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlida"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n6hbu"]
@@ -30,6 +213,8 @@ height = 30.517788
 size = Vector2(118, 18)
 
 [node name="KyogreCup" type="Node2D" unique_id=570814531]
+process_mode = 3
+process_priority = 8
 script = ExtResource("1_tlida")
 
 [node name="CupShape" type="Node2D" parent="." unique_id=712156449]
@@ -106,9 +291,13 @@ rotation = 1.5707964
 scale = Vector2(1.2053697, 1.2451755)
 shape = SubResource("CircleShape2D_tlida")
 
-[node name="Model" type="Sprite2D" parent="Kyogre" unique_id=1968620751]
-scale = Vector2(0.04629394, 0.04629394)
-texture = ExtResource("2_uy483")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Kyogre" unique_id=996020923]
+process_mode = 3
+position = Vector2(-34, -25)
+scale = Vector2(0.15777777, 0.15714286)
+sprite_frames = SubResource("SpriteFrames_qg2px")
+frame_progress = 0.55660325
+centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kyogre" unique_id=1181809938]
 rotation = 1.5707964
