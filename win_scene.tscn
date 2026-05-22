@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://xxpb84yxdo6p"]
 
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="1_2cral"]
+[ext_resource type="Script" uid="uid://dyefwt8anjgg8" path="res://win_scene.gd" id="1_226jj"]
+[ext_resource type="AudioStream" uid="uid://nftoplxwaq5u" path="res://Pokémon Legends： Z-A - Rogue Primal Kyogre & Groudon Battle Music (HQ).wav" id="1_sel2p"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_sel2p"]
 [ext_resource type="VideoStream" uid="uid://n2xkt2lxbror" path="res://untitled-design-2-noplfv.ogv" id="3_y8qen"]
+[ext_resource type="Script" uid="uid://bw7oyvrskim6m" path="res://back_button.gd" id="5_6gymp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_226jj"]
 bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
@@ -12,18 +15,26 @@ shadow_color = Color(0.08379587, 0.16032109, 0.25999233, 0.6)
 shadow_size = 100
 
 [node name="WIN_scene" type="Node2D" unique_id=568679066]
+script = ExtResource("1_226jj")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1153418407]
 position = Vector2(725, 429)
 
-[node name="Label" type="Label" parent="Camera2D" unique_id=1263116506]
-offset_left = -272.0
-offset_top = -67.0
-offset_right = 266.0
-offset_bottom = 65.0
-theme_override_fonts/font = ExtResource("1_2cral")
-theme_override_font_sizes/font_size = 128
-text = "YOU WIN"
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=109537543]
+position = Vector2(734, 428)
+stream = ExtResource("1_sel2p")
+volume_db = 2.716
+autoplay = true
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2086403350]
+offset_left = 118.0
+offset_top = 83.0
+offset_right = 1321.0
+offset_bottom = 782.0
+stream = ExtResource("3_y8qen")
+autoplay = true
+expand = true
+loop = true
 
 [node name="BackButton" type="Button" parent="." unique_id=1073080204]
 offset_left = 182.0
@@ -35,13 +46,15 @@ theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_226jj")
 text = "BACK"
 icon_alignment = 1
+script = ExtResource("5_6gymp")
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2086403350]
-offset_left = 118.0
-offset_top = 83.0
-offset_right = 1321.0
-offset_bottom = 782.0
-stream = ExtResource("3_y8qen")
-autoplay = true
-expand = true
-loop = true
+[node name="Label" type="Label" parent="." unique_id=1263116506]
+offset_left = 453.0
+offset_top = 362.0
+offset_right = 991.0
+offset_bottom = 494.0
+theme_override_fonts/font = ExtResource("1_2cral")
+theme_override_font_sizes/font_size = 128
+text = "YOU WIN"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

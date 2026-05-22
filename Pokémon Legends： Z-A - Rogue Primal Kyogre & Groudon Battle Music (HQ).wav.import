@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://nftoplxwaq5u"
+path="res://.godot/imported/Pokémon Legends： Z-A - Rogue Primal Kyogre & Groudon Battle Music (HQ).wav-1f538b2208dc768ad5fabdb3847f8ff0.sample"
+
+[deps]
+
+source_file="res://Pokémon Legends： Z-A - Rogue Primal Kyogre & Groudon Battle Music (HQ).wav"
+dest_files=["res://.godot/imported/Pokémon Legends： Z-A - Rogue Primal Kyogre & Groudon Battle Music (HQ).wav-1f538b2208dc768ad5fabdb3847f8ff0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -126,6 +126,7 @@ scale = Vector2(5, 5)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874395895]
 stream = ExtResource("9_xd3t6")
+autoplay = true
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=152809505]
 

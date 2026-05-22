@@ -44,6 +44,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_e582s")
 
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
+z_as_relative = false
+layout_mode = 1
+offset_left = -622.0
+offset_top = -475.0
+offset_right = 548.0
+offset_bottom = 546.0
+
 [node name="Background_Animation" type="VideoStreamPlayer" parent="." unique_id=344414164]
 layout_mode = 1
 anchors_preset = -1
@@ -144,12 +152,6 @@ position = Vector2(1927, 1146)
 stream = ExtResource("5_ra02u")
 volume_db = 24.0
 autoplay = true
-
-[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
-visible = false
-z_as_relative = false
-layout_mode = 1
-offset_left = -1195.0
 
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
