@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://7vsklorsvnsu"]
 
 [ext_resource type="Script" uid="uid://dgq3nx62b2n3m" path="res://keybinds_2.gd" id="1_8wdwb"]
-[ext_resource type="AudioStream" uid="uid://cnwka6jmfp2bu" path="res://Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav" id="1_krui6"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="2_8wdwb"]
+[ext_resource type="AudioStream" uid="uid://lo45f5d7rqtf" path="res://pokemon-d-p-music-oreburgh-city-midday-52-dft-0.wav" id="2_pb4p8"]
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="3_pb4p8"]
 [ext_resource type="Texture2D" uid="uid://by413gv22gi4q" path="res://Black_colour.jpg" id="4_jsbbh"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="5_ot8rv"]
@@ -57,7 +57,7 @@ script = ExtResource("1_8wdwb")
 [node name="Music_Player" type="AudioStreamPlayer2D" parent="." unique_id=823225762]
 unique_name_in_owner = true
 position = Vector2(4254.143, 1971.1018)
-stream = ExtResource("1_krui6")
+stream = ExtResource("2_pb4p8")
 volume_db = 18.955
 autoplay = true
 
