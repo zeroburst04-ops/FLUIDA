@@ -1,10 +1,12 @@
 extends Control
 
+@onready var W = %kyogre_cry
 @onready var BGM = %BackGround_Music
 func _process(delta: float) -> void:
 	BGM.volume_db = Settings.BackGround_Music
+	W.volume_db = Settings.BackGround_Music
 	
-@onready var Brightness : = $Brightness_Overlay
+@onready var Brightness = $Brightness_Overlay
 func _physics_process(delta:float) -> void:
 	Brightness.modulate.a = Settings.Brightness
 
@@ -24,7 +26,8 @@ func _on_test_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://TestScene/test_scene.tscn")
 	
 func _ready():
-	$kyogre_cry.volume_db = -2.5
+	$BackGround_Music.volume_db = 5.5
+	$kyogre_cry.volume_db = -10.0
 	await get_tree().create_timer(5.0).timeout
 	$kyogre_cry.play()
 	while true:

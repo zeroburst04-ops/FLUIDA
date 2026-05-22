@@ -140,6 +140,7 @@ text = "QUIT
 "
 
 [node name="kyogre_cry" type="AudioStreamPlayer2D" parent="." unique_id=1476485511]
+unique_name_in_owner = true
 position = Vector2(1898, 1165)
 stream = ExtResource("5_lpfbm")
 volume_db = 12.181
@@ -164,4 +165,5 @@ mouse_filter = 2
 [connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings_Button" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="Quit_Button" to="." method="_on_quit_button_pressed"]
+[connection signal="finished" from="kyogre_cry" to="." method="_on_kyogre_cry_finished"]
 [connection signal="finished" from="BackGround_Music" to="." method="_on_back_ground_music_finished"]
