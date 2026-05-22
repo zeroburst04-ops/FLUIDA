@@ -1,0 +1,241 @@
+[gd_scene format=3 uid="uid://7vsklorsvnsu"]
+
+[ext_resource type="Script" uid="uid://dgq3nx62b2n3m" path="res://keybinds_2.gd" id="1_8wdwb"]
+[ext_resource type="AudioStream" uid="uid://cnwka6jmfp2bu" path="res://Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav" id="1_krui6"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="2_8wdwb"]
+[ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="3_pb4p8"]
+[ext_resource type="Texture2D" uid="uid://by413gv22gi4q" path="res://Black_colour.jpg" id="4_jsbbh"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="5_ot8rv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_unkeg"]
+bg_color = Color(0.20582795, 0.10721364, 0.39286235, 1)
+shadow_color = Color(0.12298488, 0.12298488, 0.12298488, 0.6)
+shadow_size = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1h18l"]
+content_margin_left = 505.0
+content_margin_top = 123.0
+content_margin_right = 202.0
+content_margin_bottom = 47.0
+bg_color = Color(0.0714215, 0.25310317, 0.669026, 1)
+shadow_color = Color(0.22670749, 0.22670749, 0.22670746, 0.6)
+shadow_size = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_awgt1"]
+bg_color = Color(0.326184, 0.326184, 0.32618386, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ubpn"]
+bg_color = Color(0.218061, 0.21806106, 0.21806088, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wdo7i"]
+bg_color = Color(0.20655426, 0.2065543, 0.20655417, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uud82"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8enj4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fnu6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ew0j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhi22"]
+bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
+corner_radius_top_left = 128
+corner_radius_bottom_right = 128
+shadow_color = Color(0.08379587, 0.16032109, 0.25999233, 0.6)
+shadow_size = 100
+
+[node name="keybinds1" type="Control" unique_id=514660658]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8wdwb")
+
+[node name="Music_Player" type="AudioStreamPlayer2D" parent="." unique_id=823225762]
+unique_name_in_owner = true
+position = Vector2(4254.143, 1971.1018)
+stream = ExtResource("1_krui6")
+volume_db = 18.955
+autoplay = true
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_8wdwb")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.44432542
+anchor_top = -1.385762
+anchor_right = 8.993923
+anchor_bottom = 8.444446
+offset_left = 215.86288
+offset_top = 380.97375
+offset_right = 0.0
+offset_bottom = 0.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=492427117]
+position = Vector2(4346.7554, 2193.6343)
+scale = Vector2(11.883818, 12.296455)
+texture = ExtResource("3_pb4p8")
+
+[node name="View" type="Camera2D" parent="." unique_id=209374485]
+position = Vector2(4361, 2199)
+zoom = Vector2(0.14, 0.14)
+
+[node name="Background_Option" type="Sprite2D" parent="." unique_id=1303703130]
+self_modulate = Color(1, 1, 1, 0.60784316)
+position = Vector2(4384.5, 1876)
+scale = Vector2(8.061459, 2.559375)
+texture = ExtResource("4_jsbbh")
+
+[node name="Setting Container" type="VBoxContainer" parent="." unique_id=1220315640]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 354.0
+offset_right = 8217.0
+offset_bottom = 3486.0
+theme_override_constants/separation = 160
+
+[node name="BackGround_Music" type="HBoxContainer" parent="Setting Container" unique_id=1700320111]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="Background_Music" type="Label" parent="Setting Container/BackGround_Music" unique_id=749223552]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.01849173, 0.010176518, 0.004012691, 1)
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_unkeg")
+text = "Background Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackGround_Music_SO" type="HSlider" parent="Setting Container/BackGround_Music" unique_id=1492844611]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(4800, 300)
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_1h18l")
+max_value = 1.0
+step = 0.01
+value = 1.0
+editable = false
+
+[node name="Brightness" type="HBoxContainer" parent="Setting Container" unique_id=893681580]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="Brightness" type="Label" parent="Setting Container/Brightness" unique_id=2114605370]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.01849173, 0.010176518, 0.004012691, 1)
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_unkeg")
+text = "         Brightness         "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Brightness_SO" type="HSlider" parent="Setting Container/Brightness" unique_id=980571076]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(4800, 300)
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_1h18l")
+max_value = 1.0
+step = 0.01
+value = 1.0
+editable = false
+
+[node name="hiasan" type="Label" parent="." unique_id=1960479656]
+layout_mode = 0
+offset_left = 679.0
+offset_top = 1264.0
+offset_right = 8089.0
+offset_bottom = 1651.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_awgt1")
+
+[node name="key_button" type="Button" parent="." unique_id=1750545241]
+layout_mode = 0
+offset_left = 730.0
+offset_top = 1262.0
+offset_right = 8090.0
+offset_bottom = 1589.0
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ubpn")
+disabled = true
+text = "KEYBINDS"
+icon_alignment = 1
+
+[node name="Fake_Container" type="Label" parent="." unique_id=1472805079]
+layout_mode = 0
+offset_left = 2497.0
+offset_top = 88.0
+offset_right = 6528.0
+offset_bottom = 3957.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wdo7i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TITLE" type="Label" parent="Fake_Container" unique_id=827438108]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 142.0
+offset_right = 3670.0
+offset_bottom = 910.0
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 526
+text = "KEYBINDS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Label" parent="Fake_Container" unique_id=1719041321]
+layout_mode = 0
+offset_left = 189.00024
+offset_top = 3150.0
+offset_right = 3869.0002
+offset_bottom = 3658.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_uud82")
+
+[node name="2" type="Label" parent="Fake_Container" unique_id=1485004070]
+layout_mode = 0
+offset_left = 184.00024
+offset_top = 2443.0
+offset_right = 3864.0002
+offset_bottom = 2969.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8enj4")
+
+[node name="3" type="Label" parent="Fake_Container" unique_id=1827403140]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 1759.0
+offset_right = 3862.0
+offset_bottom = 2290.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5fnu6")
+
+[node name="4" type="Label" parent="Fake_Container" unique_id=1978877715]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 1045.0
+offset_right = 3861.0
+offset_bottom = 1570.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ew0j")
+
+[node name="BackButton" type="Button" parent="." unique_id=35635621]
+layout_mode = 0
+offset_left = 792.0
+offset_top = 3742.0
+offset_right = 1777.0
+offset_bottom = 4156.0
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_lhi22")
+text = "BACK"
+icon_alignment = 1
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

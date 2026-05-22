@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnwka6jmfp2bu"
+path="res://.godot/imported/Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav-5e027a45dd00ad103554c283c2d573fb.sample"
+
+[deps]
+
+source_file="res://Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav"
+dest_files=["res://.godot/imported/Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav-5e027a45dd00ad103554c283c2d573fb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

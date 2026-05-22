@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://br7o42f1dujmh"]
+
+[ext_resource type="Script" uid="uid://cylbwet47mp32" path="res://brightness_overlay.gd" id="1_xjcqm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4yl2"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Brightness_Overlay" type="Panel" unique_id=632565448]
+self_modulate = Color(0, 0, 0, 1)
+z_index = 900
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1672.0
+offset_top = -1579.0
+offset_right = 2111.0
+offset_bottom = 1902.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4yl2")
+script = ExtResource("1_xjcqm")
