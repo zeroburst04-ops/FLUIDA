@@ -3,16 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="1_rtwqn"]
 [ext_resource type="Script" uid="uid://dhnpo5cvx56el" path="res://option.gd" id="1_slay5"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_slay5"]
-[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="2_uhspr"]
 [ext_resource type="Texture2D" uid="uid://by413gv22gi4q" path="res://Black_colour.jpg" id="3_l82yo"]
-[ext_resource type="AudioStream" uid="uid://cnwka6jmfp2bu" path="res://Accumula Town_ Remastered FURRET WALK MUSIC REMASTERED.wav" id="5_c6ia3"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhspr"]
-bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
-corner_radius_top_left = 128
-corner_radius_bottom_right = 128
-shadow_color = Color(0.08379587, 0.16032109, 0.25999233, 0.6)
-shadow_size = 100
+[ext_resource type="AudioStream" uid="uid://bfgbkfci3k26r" path="res://IT-S VERIFIED!!! _ Tidal Wave [NEW TOP 1] - in Perfect Quality (4K, 60fps) - Geometry Dash.wav" id="5_uhspr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l82yo"]
 bg_color = Color(0.20582795, 0.10721364, 0.39286235, 1)
@@ -28,11 +20,12 @@ bg_color = Color(0.0714215, 0.25310317, 0.669026, 1)
 shadow_color = Color(0.22670749, 0.22670749, 0.22670746, 0.6)
 shadow_size = 100
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4yl2"]
-bg_color = Color(0.326184, 0.326184, 0.32618386, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_piv12"]
-bg_color = Color(0.218061, 0.21806106, 0.21806088, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhspr"]
+bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
+corner_radius_top_left = 75
+corner_radius_bottom_right = 75
+shadow_color = Color(0.08379587, 0.16032109, 0.25999233, 0.6)
+shadow_size = 100
 
 [node name="Options" type="Control" unique_id=1137774719]
 layout_mode = 3
@@ -46,29 +39,49 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_slay5")
 
-[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_uhspr")]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.04761905
-anchor_top = -0.15107754
-anchor_right = 1.0952381
-anchor_bottom = 1.1586314
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 0.0
-offset_bottom = 0.0
-mouse_filter = 2
-metadata/_edit_use_anchors_ = true
-
 [node name="View" type="Camera2D" parent="." unique_id=1518698464]
 position = Vector2(4361, 2199)
 zoom = Vector2(0.14, 0.14)
 
 [node name="Background" type="Sprite2D" parent="." unique_id=518419974]
-position = Vector2(4346.7554, 2193.6343)
-scale = Vector2(11.883818, 12.296455)
+position = Vector2(4454.255, 2224.1338)
+scale = Vector2(12.175936, 12.443796)
 texture = ExtResource("1_rtwqn")
+
+[node name="Background_Option" type="Sprite2D" parent="." unique_id=442382598]
+self_modulate = Color(1, 1, 1, 0.60784316)
+position = Vector2(4384.5, 1876)
+scale = Vector2(8.061459, 2.559375)
+texture = ExtResource("3_l82yo")
+
+[node name="Background_Music" type="Label" parent="." unique_id=1113758819]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.36200002
+anchor_bottom = 0.293
+offset_left = 768.0
+offset_top = 547.0
+offset_right = 75.66577
+offset_bottom = -332.31506
+theme_override_colors/font_outline_color = Color(0.01849173, 0.010176518, 0.004012691, 1)
+theme_override_fonts/font = ExtResource("2_slay5")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_l82yo")
+text = "Background Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackGround_Music_SO" type="HSlider" parent="." unique_id=1091040775]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 0
+offset_left = 3933.0
+offset_top = 432.0
+offset_right = 7174.0
+offset_bottom = 1021.0
+theme_override_styles/slider = SubResource("StyleBoxFlat_c6ia3")
+max_value = 1.0
+step = 0.01
+value = 1.0
 
 [node name="BackButton" type="Button" parent="." unique_id=1788756263]
 layout_mode = 0
@@ -79,7 +92,7 @@ offset_bottom = 4156.0
 theme_override_fonts/font = ExtResource("2_slay5")
 theme_override_font_sizes/font_size = 256
 theme_override_styles/normal = SubResource("StyleBoxFlat_uhspr")
-text = "BACK"
+text = "Back"
 icon_alignment = 1
 
 [node name="Music_Player" type="AudioStreamPlayer2D" parent="." unique_id=1766509265]
@@ -89,90 +102,5 @@ stream = ExtResource("5_uhspr")
 volume_db = 0.726
 autoplay = true
 
-[node name="Background_Option" type="Sprite2D" parent="." unique_id=442382598]
-self_modulate = Color(1, 1, 1, 0.60784316)
-position = Vector2(4384.5, 1876)
-scale = Vector2(8.061459, 2.559375)
-texture = ExtResource("3_l82yo")
-
-[node name="Setting Container" type="VBoxContainer" parent="." unique_id=1825934469]
-layout_mode = 0
-offset_left = 545.0
-offset_top = 354.0
-offset_right = 8217.0
-offset_bottom = 3486.0
-theme_override_constants/separation = 160
-
-[node name="BackGround_Music" type="HBoxContainer" parent="Setting Container" unique_id=1202402758]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 300
-alignment = 1
-
-[node name="Background_Music" type="Label" parent="Setting Container/BackGround_Music" unique_id=1113758819]
-layout_mode = 2
-theme_override_colors/font_outline_color = Color(0.01849173, 0.010176518, 0.004012691, 1)
-theme_override_fonts/font = ExtResource("2_slay5")
-theme_override_font_sizes/font_size = 256
-theme_override_styles/normal = SubResource("StyleBoxFlat_l82yo")
-text = "Background Music"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="BackGround_Music_SO" type="HSlider" parent="Setting Container/BackGround_Music" unique_id=1091040775]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(4800, 300)
-layout_mode = 2
-theme_override_styles/slider = SubResource("StyleBoxFlat_c6ia3")
-max_value = 1.0
-step = 0.01
-value = 1.0
-
-[node name="Brightness" type="HBoxContainer" parent="Setting Container" unique_id=1344500709]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 300
-alignment = 1
-
-[node name="Brightness" type="Label" parent="Setting Container/Brightness" unique_id=508666818]
-layout_mode = 2
-theme_override_colors/font_outline_color = Color(0.01849173, 0.010176518, 0.004012691, 1)
-theme_override_fonts/font = ExtResource("2_slay5")
-theme_override_font_sizes/font_size = 256
-theme_override_styles/normal = SubResource("StyleBoxFlat_l82yo")
-text = "         Brightness         "
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Brightness_SO" type="HSlider" parent="Setting Container/Brightness" unique_id=1850867606]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(4800, 300)
-layout_mode = 2
-theme_override_styles/slider = SubResource("StyleBoxFlat_c6ia3")
-max_value = 1.0
-step = 0.01
-value = 1.0
-
-[node name="hiasan" type="Label" parent="." unique_id=102168394]
-layout_mode = 0
-offset_left = 679.0
-offset_top = 1264.0
-offset_right = 8089.0
-offset_bottom = 1651.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_v4yl2")
-
-[node name="key_button" type="Button" parent="." unique_id=371938637]
-layout_mode = 0
-offset_left = 730.0
-offset_top = 1262.0
-offset_right = 8090.0
-offset_bottom = 1589.0
-theme_override_fonts/font = ExtResource("2_slay5")
-theme_override_font_sizes/font_size = 256
-theme_override_styles/normal = SubResource("StyleBoxFlat_piv12")
-text = "KEYBINDS"
-icon_alignment = 1
-
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="finished" from="Music_Player" to="." method="_on_music_player_finished"]
-[connection signal="pressed" from="key_button" to="." method="_on_key_button_pressed"]
