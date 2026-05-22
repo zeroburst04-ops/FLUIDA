@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://bba5ee8omd8ro"]
 
+[ext_resource type="Texture2D" uid="uid://da36pqj1wjsl1" path="res://images (2).jpg" id="1_uyir5"]
+
 [node name="Level_1" type="Node2D" unique_id=22120492]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1594132460]
+position = Vector2(680.75, 399.25)
+scale = Vector2(4.430909, 3.8989072)
+texture = ExtResource("1_uyir5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1349201059]
 position = Vector2(682, 396)

@@ -18,9 +18,13 @@ func _physics_process(delta: float) -> void:
 		timer -= delta
 		%Win_Label.visible = true
 		%Win_Label.text = str(int(timer))
+		
+		# Pindah scene ditaruh di sini (di dalam fungsi jalannya game)
 		if timer < 1:
 			%Win_Label.text = "YOU WIN !!"
 			LevelData.I_Win = true
+			get_tree().change_scene_to_file(W)
+			
 	else:
 		timer = 6
 		%Win_Label.text = "3"
