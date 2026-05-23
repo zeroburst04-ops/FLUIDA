@@ -9,11 +9,16 @@ enum States {
 @export var CurrentState = States.Normal
 var Is_Overlapping : bool = false
 
+var Is_Dragging : bool = false
+var offset = Vector2(0, 0)
+var Snap = 25
+
 func _ready() -> void:
 	Snapfunc()
 	match CurrentState:
 		States.Normal:
 			%Reducer.visible = false
+			# Disabling unnecessary collision shapes for Normal mode
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D7".disabled = true
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D8".disabled = true
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D9".disabled = true
@@ -21,22 +26,16 @@ func _ready() -> void:
 		States.Reducer:
 			pass
 
-var Is_Dragging : bool = false
-var offset = Vector2(0, 0)
-
-var Snap = 50
-
 func Snapfunc() -> void:
-	global_position.x -= int(global_position.x) % 50
-	global_position.y -= int(global_position.y) % 50
-	
-	
+	# Godot 4 built-in snapping math (handles negative coordinates perfectly)
+	global_position = global_position.snapped(Vector2(Snap, Snap))
 	
 func _process(delta: float) -> void:
-	Snapfunc()
 	if Is_Dragging:
 		var NewPos = get_global_mouse_position() - offset
-		position = Vector2(snapped(NewPos.x, Snap), snapped(NewPos.y, Snap))
+		# Snap the position to the grid WHILE dragging
+		global_position = NewPos.snapped(Vector2(Snap, Snap))
+		
 		if Input.is_action_just_pressed("Rotate"):
 			rotation_degrees += 90
 		
@@ -47,16 +46,15 @@ func Overlap() -> void:
 	if Pipe_Area == null:
 		return
 		
-	# 2. Check if the array contains any overlapping areas
 	if Pipe_Area.get_overlapping_areas().size() > 0:
-		# Areas are overlapping: Remove green and blue (turns the shape Red)
+		# Turns the shape Red (No Green, No Blue)
 		%"TS_Socket Shape".modulate.g = 0.0
 		%"TS_Socket Shape".modulate.b = 0.0
 		Is_Overlapping = true
 	else:
-		# No overlaps: Reset green and blue to normal (turns the shape back to White/Normal)
-		%"TS_Socket Shape".modulate.g = 255
-		%"TS_Socket Shape".modulate.b = 255
+		# Resets back to standard White (1.0 is max)
+		%"TS_Socket Shape".modulate.g = 1.0
+		%"TS_Socket Shape".modulate.b = 1.0
 		Is_Overlapping = false
 		
 func _on_drag_button_down() -> void:
@@ -67,3 +65,4 @@ func _on_drag_button_down() -> void:
 func _on_drag_button_up() -> void:
 	if not LevelData.I_Running:
 		Is_Dragging = false
+		Snapfunc() # Make sure it firmly locks into place upon release

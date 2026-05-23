@@ -9,8 +9,8 @@ var Snap = 50
 var Is_Overlapping : bool = false
 
 func Snapfunc() -> void:
-	global_position.x -= int(global_position.x) % 50
-	global_position.y -= int(global_position.y) % 50
+	global_position.x = floor(global_position.x / 50.0) * 50
+	global_position.y = floor(global_position.y / 50.0) * 50
 	
 func _ready() -> void:
 	Snapfunc()

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://hp7rlpmv81ci" path="res://Pipes/TS_Knee/ts_knee.tscn" id="3_0pl5t"]
 [ext_resource type="PackedScene" uid="uid://bpm3we8knwue4" path="res://Pipes/TS_Socket/ts_socket.tscn" id="4_s21lk"]
 [ext_resource type="PackedScene" uid="uid://djx710u7gms6d" path="res://Pipes/TS_Tee/ts_tee.tscn" id="5_3b20i"]
-[ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="6_sinh8"]
+[ext_resource type="PackedScene" path="res://Fluids/fluid_node.tscn" id="6_sinh8"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="7_kutt7"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="8_yt63f"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_bada6"]
@@ -24,7 +24,6 @@ bg_color = Color(0.7251792, 0, 0.20635924, 1)
 size = Vector2(20257.125, 798)
 
 [node name="Level_1" type="Node2D" unique_id=22120492]
-position = Vector2(7380, -5174)
 script = ExtResource("1_qhhij")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1594132460]
@@ -41,58 +40,57 @@ unique_name_in_owner = true
 position = Vector2(22, -42)
 
 [node name="TS_Knee6" parent="Pipes" unique_id=290491417 instance=ExtResource("3_0pl5t")]
-position = Vector2(-2086.9998, 564)
-rotation = -4.7001953
+position = Vector2(-2000, 564)
+rotation = -4.712389
 scale = Vector2(10, 10)
 
 [node name="TS_Knee5" parent="Pipes" unique_id=1146872132 instance=ExtResource("3_0pl5t")]
-position = Vector2(-468.00024, -236.00024)
-rotation = 1.5809276
+position = Vector2(-450, -236)
+rotation = 1.5707964
 scale = Vector2(10, 10)
 
 [node name="TS_Knee2" parent="Pipes" unique_id=1199253182 instance=ExtResource("3_0pl5t")]
-position = Vector2(32, -226)
+position = Vector2(50, -226)
 scale = Vector2(9.999999, 9.999999)
 
 [node name="TS_Knee3" parent="Pipes" unique_id=1368771050 instance=ExtResource("3_0pl5t")]
-position = Vector2(-2077, -738.99976)
-rotation = -3.1385655
+position = Vector2(-2050, -750)
+rotation = -3.1415927
 scale = Vector2(10, 10)
 
 [node name="TS_Knee4" parent="Pipes" unique_id=551425943 instance=ExtResource("3_0pl5t")]
-position = Vector2(-565.9999, -738.0002)
-rotation = 4.728323
+position = Vector2(-550, -750)
+rotation = 4.712389
 scale = Vector2(10, 10)
 
 [node name="TS_Socket" parent="Pipes" unique_id=2136074797 instance=ExtResource("4_s21lk")]
-position = Vector2(830.00024, -780.0002)
+position = Vector2(850, -800)
 scale = Vector2(10, 10)
 
 [node name="TS_Socket5" parent="Pipes" unique_id=1483940892 instance=ExtResource("4_s21lk")]
-position = Vector2(-532.9999, 620.99994)
+position = Vector2(-550, 650)
 scale = Vector2(10, 10)
 
 [node name="TS_Socket4" parent="Pipes" unique_id=1911701412 instance=ExtResource("4_s21lk")]
-position = Vector2(-1531, 616.9999)
+position = Vector2(-1600, 600)
 rotation = 3.1415925
 scale = Vector2(10, 10)
 
 [node name="TS_Socket2" parent="Pipes" unique_id=830651164 instance=ExtResource("4_s21lk")]
-position = Vector2(-2131.0005, -186.99994)
+position = Vector2(-2150, -200)
 rotation = -1.5707964
 scale = Vector2(10, 10)
 
 [node name="TS_Socket3" parent="Pipes" unique_id=373479526 instance=ExtResource("4_s21lk")]
-position = Vector2(-1196, -786)
-rotation = 6.2746906
+position = Vector2(-1200, -800)
 scale = Vector2(12.495177, 10.104787)
 
 [node name="TS_Tee2" parent="Pipes" unique_id=2100354738 instance=ExtResource("5_3b20i")]
-position = Vector2(1320.9998, -826.99994)
+position = Vector2(1300, -850)
 scale = Vector2(10, 10)
 
 [node name="TS_Tee" parent="Pipes" unique_id=709189546 instance=ExtResource("5_3b20i")]
-position = Vector2(129.00024, -728.0002)
+position = Vector2(150, -750)
 rotation = 3.1415925
 scale = Vector2(10, 10)
 
@@ -106,7 +104,7 @@ height = 65
 width = 40
 
 [node name="WaterCup" parent="." unique_id=570814531 instance=ExtResource("7_kutt7")]
-position = Vector2(98.999886, -1169)
+position = Vector2(100, -1200)
 scale = Vector2(10, 10)
 Openedside = 0
 
