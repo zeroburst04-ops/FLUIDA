@@ -1,11 +1,11 @@
-extends Node2D
+extends Control
 
 var Is_Dragging : bool = false
 var offset = Vector2(0, 0)
 
 var Snap = 50
 @onready var Pipe_Area : = %Pipe_Area
-
+@onready var Pipe_Node : = %Pipes
 var Is_Overlapping : bool = false
 
 func Snapfunc() -> void:
@@ -14,11 +14,19 @@ func Snapfunc() -> void:
 	
 func _ready() -> void:
 	Snapfunc()
+	Pipe_Area.monitorable = false
+	Pipe_Area.monitoring = false
 	
 var overlap_timer: float = 0.0
 
 func _process(delta: float) -> void:
-	# Handle movement every frame
+	if $".".get_parent() == Pipe_Node:
+		Pipe_Area.monitorable = true
+		Pipe_Area.monitoring = true
+		
+	if Input.is_action_just_released("Grab"):
+		Is_Dragging = false
+		
 	if Is_Dragging:
 		var NewPos = get_global_mouse_position() - offset
 		position = Vector2(snapped(NewPos.x, Snap), snapped(NewPos.y, Snap))
@@ -48,9 +56,15 @@ func Overlap() -> void:
 		
 func _on_drag_button_down() -> void:
 	if not LevelData.I_Running:
+		if $".".get_parent() == %PipeContainer:
+			$".".reparent(%Pipes)
 		Is_Dragging = true
 		offset = get_global_mouse_position() - global_position
-	
+	else:
+		Is_Dragging = false
+		
 func _on_drag_button_up() -> void:
+	print("p")
 	if not LevelData.I_Running:
+		
 		Is_Dragging = false

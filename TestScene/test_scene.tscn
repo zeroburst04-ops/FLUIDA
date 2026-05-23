@@ -49,33 +49,6 @@ mouse_filter = 2
 [node name="Pipes" type="Node2D" parent="." unique_id=1795396596]
 unique_name_in_owner = true
 
-[node name="TS_Knee2" parent="Pipes" unique_id=2116690963 instance=ExtResource("5_lrovu")]
-position = Vector2(5169, -3561)
-scale = Vector2(9.999999, 9.999999)
-
-[node name="TS_Knee3" parent="Pipes" unique_id=611143766 instance=ExtResource("5_lrovu")]
-position = Vector2(3851, -4116)
-scale = Vector2(10, 10)
-
-[node name="TS_Knee4" parent="Pipes" unique_id=143777972 instance=ExtResource("5_lrovu")]
-position = Vector2(6783, -3405.0002)
-rotation = 3.1415925
-scale = Vector2(10, 10)
-
-[node name="TS_Socket" parent="Pipes" unique_id=2136074797 instance=ExtResource("6_nvnny")]
-position = Vector2(4589.0005, -3567)
-scale = Vector2(10, 10)
-
-[node name="TS_Socket2" parent="Pipes" unique_id=1248794591 instance=ExtResource("6_nvnny")]
-position = Vector2(3819, -2900.0002)
-rotation = -1.5707964
-scale = Vector2(10, 10)
-
-[node name="TS_Tee" parent="Pipes" unique_id=2043194950 instance=ExtResource("7_hxw8s")]
-position = Vector2(3899, -3484.9998)
-rotation = 3.1415925
-scale = Vector2(10, 10)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=147878158]
 position = Vector2(5252, -2839)
 zoom = Vector2(0.2, 0.2)
@@ -163,12 +136,51 @@ position = Vector2(5176, -384)
 scale = Vector2(1.3126838, 2.2333567)
 shape = SubResource("RectangleShape2D_hxw8s")
 
-[node name="Panel" type="Panel" parent="." unique_id=39600048]
-custom_minimum_size = Vector2(4750, 750)
-offset_left = 2856.0
+[node name="Pipe_panel" type="Panel" parent="." unique_id=39600048]
+custom_minimum_size = Vector2(5250, 750)
+offset_left = 2614.0
 offset_top = -2108.0
-offset_right = 7606.0
+offset_right = 7864.0
 offset_bottom = -1358.0
+mouse_filter = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Pipe_panel" unique_id=673997455]
+custom_minimum_size = Vector2(5250, 750)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_bottom = 41.99994
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Pipe_panel/ScrollContainer" unique_id=667685105]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 350
+theme_override_constants/margin_top = 375
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = -350
+
+[node name="PipeContainer" type="HBoxContainer" parent="Pipe_panel/ScrollContainer/MarginContainer" unique_id=1668498788]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(5250, 750)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 750
+
+[node name="TS_Knee3" parent="Pipe_panel/ScrollContainer/MarginContainer/PipeContainer" unique_id=611143766 instance=ExtResource("5_lrovu")]
+layout_mode = 2
+
+[node name="TS_Knee4" parent="Pipe_panel/ScrollContainer/MarginContainer/PipeContainer" unique_id=143777972 instance=ExtResource("5_lrovu")]
+layout_mode = 2
+
+[node name="TS_Socket" parent="Pipe_panel/ScrollContainer/MarginContainer/PipeContainer" unique_id=2136074797 instance=ExtResource("6_nvnny")]
+layout_mode = 2
+
+[node name="TS_Socket2" parent="Pipe_panel/ScrollContainer/MarginContainer/PipeContainer" unique_id=1248794591 instance=ExtResource("6_nvnny")]
+layout_mode = 2
+
+[node name="TS_Tee" parent="Pipe_panel/ScrollContainer/MarginContainer/PipeContainer" unique_id=2043194950 instance=ExtResource("7_hxw8s")]
+layout_mode = 2
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]
