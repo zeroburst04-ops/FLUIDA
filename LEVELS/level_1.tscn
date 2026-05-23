@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bba5ee8omd8ro"]
 
 [ext_resource type="Script" uid="uid://cpeb8idgjnstk" path="res://LEVELS/level_1.gd" id="1_qhhij"]
-[ext_resource type="Texture2D" uid="uid://da36pqj1wjsl1" path="res://images (2).jpg" id="1_uyir5"]
+[ext_resource type="Texture2D" uid="uid://stp23x0l4rff" path="res://istockphoto-1545637815-612x612.jpg" id="2_0pl5t"]
 [ext_resource type="PackedScene" uid="uid://hp7rlpmv81ci" path="res://Pipes/TS_Knee/ts_knee.tscn" id="3_0pl5t"]
 [ext_resource type="PackedScene" uid="uid://bpm3we8knwue4" path="res://Pipes/TS_Socket/ts_socket.tscn" id="4_s21lk"]
 [ext_resource type="PackedScene" uid="uid://djx710u7gms6d" path="res://Pipes/TS_Tee/ts_tee.tscn" id="5_3b20i"]
@@ -28,9 +28,9 @@ size = Vector2(20257.125, 798)
 script = ExtResource("1_qhhij")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1594132460]
-position = Vector2(71, -74)
-scale = Vector2(21.884544, 18.741802)
-texture = ExtResource("1_uyir5")
+position = Vector2(-950.33527, -86.56012)
+scale = Vector2(18.546848, 18.673355)
+texture = ExtResource("2_0pl5t")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1349201059]
 position = Vector2(39, -83)
