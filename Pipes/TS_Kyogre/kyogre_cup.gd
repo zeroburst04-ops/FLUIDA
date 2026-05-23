@@ -11,6 +11,10 @@ var direction : float = 0.0
 
 func _ready() -> void:
 	%Win_Label.visible = false
+	$Timer.start() # Starts your countdown
+
+func _on_timer_timeout():
+	$Area2D/AnimatedSprite2D.play("default")
 	
 func _physics_process(delta: float) -> void:
 	# --- Logika Kondisi Menang ---

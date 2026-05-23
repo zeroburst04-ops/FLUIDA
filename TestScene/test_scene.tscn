@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://djx710u7gms6d" path="res://Pipes/TS_Tee/ts_tee.tscn" id="7_hxw8s"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="8_k8tjy"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_xd3t6"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="11_oisa6"]
 
 [sub_resource type="FluidEffect2DViscosityArtificial" id="FluidEffect2DViscosityArtificial_hxw8s"]
 fluid_viscosity_coefficient = 150.0
@@ -30,6 +31,18 @@ script = ExtResource("1_eaejv")
 position = Vector2(5217, -2833.8123)
 scale = Vector2(17.381819, 15.291668)
 texture = ExtResource("2_2i3e7")
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_oisa6")]
+z_as_relative = false
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 664.0
+offset_top = -5990.0
+offset_right = 10267.0
+offset_bottom = -716.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [node name="Pipes" type="Node2D" parent="." unique_id=1795396596]
 unique_name_in_owner = true

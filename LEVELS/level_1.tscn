@@ -10,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="8_yt63f"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_bada6"]
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="10_2qqyp"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="11_0pl5t"]
 
 [sub_resource type="FluidEffect2DViscosityArtificial" id="FluidEffect2DViscosityArtificial_hxw8s"]
 fluid_viscosity_coefficient = 150.0
@@ -176,6 +177,13 @@ autoplay = true
 [node name="KyogreCup" parent="." unique_id=1877442037 instance=ExtResource("10_2qqyp")]
 position = Vector2(2285.0002, 1156.0002)
 scale = Vector2(5, 5)
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_0pl5t")]
+z_as_relative = false
+offset_left = -4151.0
+offset_top = -3818.0
+offset_right = 4716.5107
+offset_bottom = 3676.1553
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=1939999224]
 position = Vector2(118, -138)

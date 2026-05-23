@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="2_sel2p"]
 [ext_resource type="VideoStream" uid="uid://n2xkt2lxbror" path="res://untitled-design-2-noplfv.ogv" id="3_y8qen"]
 [ext_resource type="Script" uid="uid://bw7oyvrskim6m" path="res://back_button.gd" id="5_6gymp"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="7_6gymp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_226jj"]
 bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
@@ -57,5 +58,12 @@ offset_bottom = 494.0
 theme_override_fonts/font = ExtResource("1_2cral")
 theme_override_font_sizes/font_size = 128
 text = "YOU WIN"
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_6gymp")]
+z_as_relative = false
+offset_left = 37.0
+offset_top = -141.0
+offset_right = 1400.0
+offset_bottom = 880.0
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
