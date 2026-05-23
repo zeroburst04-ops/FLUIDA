@@ -29,13 +29,17 @@ size = Vector2(54.481483, 54.074066)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfpxw"]
 
-[node name="TS_Knee" type="Node2D" unique_id=290491417]
-scale = Vector2(15, 15)
+[node name="TS_Knee" type="Control" unique_id=46857798]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(2, 2)
 script = ExtResource("1_78y1a")
 
 [node name="TS_Knee Shape" type="Node2D" parent="." unique_id=1362508599]
 unique_name_in_owner = true
 modulate = Color(18.892157, 18.892157, 18.892157, 1)
+scale = Vector2(10, 10)
 
 [node name="Bottom_Left2" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=682878590]
 position = Vector2(-10.000002, -14.999988)
@@ -63,6 +67,7 @@ mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="TS_Knee Collision" type="Node2D" parent="." unique_id=1410117010]
 unique_name_in_owner = true
+scale = Vector2(10, 10)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Knee Collision" unique_id=1727964198]
 
@@ -92,11 +97,12 @@ shape = SubResource("RectangleShape2D_x06lp")
 
 [node name="Drag" type="Button" parent="." unique_id=1391456150]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = -27.466667
 offset_top = -27.666666
 offset_right = -19.466667
 offset_bottom = -19.666666
-scale = Vector2(6.9352465, 6.994604)
+scale = Vector2(10, 10)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x06lp")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_yui3m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_78y1a")
