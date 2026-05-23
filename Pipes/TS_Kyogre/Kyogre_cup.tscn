@@ -204,10 +204,12 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlida"]
+radius = 12.849595
+height = 36.942585
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n6hbu"]
-radius = 4.818598
-height = 30.517788
+radius = 9.955452
+height = 30.517792
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uy483"]
 size = Vector2(118, 18)
@@ -293,8 +295,8 @@ shape = SubResource("CircleShape2D_tlida")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Kyogre" unique_id=996020923]
 process_mode = 3
-position = Vector2(-34, -25)
-scale = Vector2(0.15777777, 0.15714286)
+position = Vector2(-58, -38.999992)
+scale = Vector2(0.25777778, 0.24857141)
 sprite_frames = SubResource("SpriteFrames_qg2px")
 frame = 24
 centered = false

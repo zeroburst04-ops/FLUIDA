@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c2awvcje2atdu"]
 
 [ext_resource type="Script" uid="uid://cb66g6yfl8dy2" path="res://Pipes/WaterCup/water_cup.gd" id="1_2qn6r"]
+[ext_resource type="Texture2D" uid="uid://yyfcmnrujxkc" path="res://Untitled_design-removebg-preview.png" id="2_n4o05"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
@@ -34,8 +35,10 @@ Openedside = 1
 
 [node name="CupShape" type="Node2D" parent="." unique_id=712156449]
 unique_name_in_owner = true
+visible = false
 
 [node name="Cup_Bottom" type="Node2D" parent="CupShape" unique_id=3103218]
+visible = false
 
 [node name="Bottom_Left" type="MeshInstance2D" parent="CupShape/Cup_Bottom" unique_id=2068668587]
 position = Vector2(-35.000004, 0)
@@ -62,6 +65,7 @@ scale = Vector2(0.049999975, 0.09999995)
 shape = SubResource("RectangleShape2D_n4o05")
 
 [node name="Cup_Left" type="Node2D" parent="CupShape" unique_id=593270751]
+visible = false
 position = Vector2(15, 0)
 scale = Vector2(1.25, 1)
 
@@ -116,6 +120,7 @@ scale = Vector2(36.333, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Cup_Right" type="Node2D" parent="CupShape" unique_id=603188844]
+visible = false
 position = Vector2(122, 0)
 scale = Vector2(1.25, 1)
 
@@ -169,6 +174,11 @@ scale = Vector2(36.333, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="CupHitbox" type="Node2D" parent="." unique_id=868602689]
+
+[node name="Sprite2D" type="Sprite2D" parent="CupHitbox" unique_id=1450229260]
+position = Vector2(3.4999952, -79)
+scale = Vector2(0.88333327, 0.5714286)
+texture = ExtResource("2_n4o05")
 
 [node name="CupHitbox_Bottom" type="Node2D" parent="CupHitbox" unique_id=785765985]
 
