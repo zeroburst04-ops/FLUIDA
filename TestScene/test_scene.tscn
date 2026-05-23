@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://st3sw2ypxfcb"]
 
 [ext_resource type="Script" uid="uid://d2ur1fd3lw6ah" path="res://TestScene/test_scene.gd" id="1_eaejv"]
-[ext_resource type="PackedScene" path="res://Fluids/fluid_node.tscn" id="2_jtt75"]
+[ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="2_jtt75"]
 [ext_resource type="Texture2D" uid="uid://stp23x0l4rff" path="res://istockphoto-1545637815-612x612.jpg" id="2_oisa6"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="3_udmxp"]
 [ext_resource type="PackedScene" uid="uid://hp7rlpmv81ci" path="res://Pipes/TS_Knee/ts_knee.tscn" id="5_lrovu"]
@@ -32,7 +32,6 @@ scale = Vector2(10.082517, 9.711171)
 texture = ExtResource("2_oisa6")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_oisa6")]
-visible = false
 z_as_relative = false
 anchors_preset = 0
 anchor_right = 0.0
@@ -54,11 +53,6 @@ zoom = Vector2(0.2, 0.2)
 
 [node name="WaterCup" parent="." unique_id=570814531 instance=ExtResource("3_udmxp")]
 position = Vector2(5200, -4100)
-scale = Vector2(10, 10)
-Openedside = 0
-
-[node name="WaterCup2" parent="." unique_id=480276385 instance=ExtResource("3_udmxp")]
-position = Vector2(5225, -3718.9998)
 scale = Vector2(10, 10)
 Openedside = 0
 

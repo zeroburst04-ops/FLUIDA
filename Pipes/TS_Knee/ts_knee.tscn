@@ -70,6 +70,7 @@ scale = Vector2(0.16518815, 0.16100629)
 texture = ExtResource("2_yui3m")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Knee Collision" unique_id=1727964198]
+visible = false
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1056869247]
 position = Vector2(18.516674, -4.1773467)

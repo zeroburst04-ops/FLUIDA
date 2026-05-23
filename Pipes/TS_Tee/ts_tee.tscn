@@ -41,6 +41,7 @@ script = ExtResource("1_hc0wy")
 
 [node name="TS_Knee Shape" type="Node2D" parent="." unique_id=1362508599]
 unique_name_in_owner = true
+visible = false
 position = Vector2(-24.933334, -52.133335)
 scale = Vector2(10, 10)
 
@@ -89,6 +90,7 @@ scale = Vector2(0.14824133, 0.14943236)
 texture = ExtResource("2_3uoie")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Tee Collision" unique_id=1727964198]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Tee Collision/StaticBody2D" unique_id=1291910943]
 visible = false
