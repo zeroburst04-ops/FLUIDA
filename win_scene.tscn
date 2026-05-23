@@ -37,9 +37,10 @@ expand = true
 loop = true
 
 [node name="BackButton" type="Button" parent="." unique_id=1073080204]
+visible = false
 offset_left = 182.0
 offset_top = 656.0
-offset_right = 356.0
+offset_right = 325.0
 offset_bottom = 722.0
 theme_override_fonts/font = ExtResource("2_sel2p")
 theme_override_font_sizes/font_size = 32
