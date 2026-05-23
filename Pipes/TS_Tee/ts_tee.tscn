@@ -33,13 +33,16 @@ size = Vector2(43.533337, 58.933334)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfpxw"]
 
-[node name="TS_Tee" type="Node2D" unique_id=290491417]
+[node name="TS_Tee" type="Control" unique_id=299060835]
+layout_mode = 3
+anchors_preset = 0
 scale = Vector2(15, 15)
 script = ExtResource("1_hc0wy")
 
 [node name="TS_Knee Shape" type="Node2D" parent="." unique_id=1362508599]
 unique_name_in_owner = true
-visible = false
+position = Vector2(-24.933334, -52.133335)
+scale = Vector2(10, 10)
 
 [node name="Bottom_Left2" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=682878590]
 visible = false
@@ -76,6 +79,8 @@ scale = Vector2(5, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="TS_Tee Collision" type="Node2D" parent="." unique_id=1410117010]
+position = Vector2(-24.933334, -52.133335)
+scale = Vector2(10, 10)
 
 [node name="Sprite2D" type="Sprite2D" parent="TS_Tee Collision" unique_id=310790255]
 position = Vector2(1.3862659, 3.7967107)
@@ -111,21 +116,25 @@ position = Vector2(-12.533337, -10.000009)
 shape = SubResource("RectangleShape2D_837hq")
 
 [node name="TS_Tee Area" type="Node2D" parent="." unique_id=1051887705]
+position = Vector2(-24.933334, -52.133335)
+scale = Vector2(10, 10)
 
 [node name="Pipe_Area" type="Area2D" parent="TS_Tee Area" unique_id=441945799]
 unique_name_in_owner = true
+position = Vector2(2.4733334, 4.9466667)
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Tee Area/Pipe_Area" unique_id=1254589384]
-position = Vector2(2.4333353, 4.9999995)
+position = Vector2(-0.0400002, 0.053333282)
 shape = SubResource("RectangleShape2D_3uoie")
 
 [node name="Drag" type="Button" parent="." unique_id=1391456150]
 unique_name_in_owner = true
-offset_left = -26.0
-offset_top = -26.0
-offset_right = -18.0
-offset_bottom = -18.0
-scale = Vector2(6.358947, 6.413372)
+layout_mode = 0
+offset_left = -220.93333
+offset_top = -302.53333
+offset_right = -176.21333
+offset_bottom = -242.39333
+scale = Vector2(10, 10)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x06lp")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_yui3m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_78y1a")

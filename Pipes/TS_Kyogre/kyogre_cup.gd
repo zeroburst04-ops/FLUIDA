@@ -4,6 +4,7 @@ extends Node2D
 @onready var Start : float = Kyoger.global_position.y
 @onready var Threshold : float = Start - 30
 @onready var Pipe_Area := %Pipe_Area
+@onready var sprite = %Kyogre_Sprite
 
 var Is_Overlapping : bool = true
 var timer : float = 6
@@ -11,6 +12,10 @@ var direction : float = 0.0
 
 func _ready() -> void:
 	%Win_Label.visible = false
+	$Timer.start() # Starts your countdown
+
+func _on_timer_timeout():
+	%Kyogre_Sprite.play("default")
 	
 func _physics_process(delta: float) -> void:
 	# --- Logika Kondisi Menang ---
@@ -35,10 +40,12 @@ func _physics_process(delta: float) -> void:
 		Overlap()
 
 	# --- FORCE PLAY ANIMATION ---
-	var sprite = %Kyogre.get_node("Area2D/AnimatedSprite2D") as AnimatedSprite2D
+	
 	if sprite:
 		sprite.speed_scale = 1.0 # Force speed scale to normal
+		
 		if not sprite.is_playing():
+			print("p")
 			sprite.autoplay = "default"
 			sprite.play("default")
 

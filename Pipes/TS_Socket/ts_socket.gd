@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 enum States {
 	Normal,
@@ -7,6 +7,7 @@ enum States {
 
 @onready var Pipe_Area := %Pipe_Area
 @export var CurrentState = States.Normal
+@onready var Pipe_Node : = %Pipes
 var Is_Overlapping : bool = false
 
 var Is_Dragging : bool = false
@@ -14,6 +15,8 @@ var offset = Vector2(0, 0)
 var Snap = 25
 
 func _ready() -> void:
+	Pipe_Area.monitorable = false
+	Pipe_Area.monitoring = false
 	Snapfunc()
 	match CurrentState:
 		States.Normal:
@@ -31,6 +34,12 @@ func Snapfunc() -> void:
 	global_position = global_position.snapped(Vector2(Snap, Snap))
 	
 func _process(delta: float) -> void:
+	if $".".get_parent() == Pipe_Node:
+		Pipe_Area.monitorable = true
+		Pipe_Area.monitoring = true
+		
+	if Input.is_action_just_released("Grab"):
+		Is_Dragging = false
 	if Is_Dragging:
 		var NewPos = get_global_mouse_position() - offset
 		# Snap the position to the grid WHILE dragging
@@ -59,6 +68,8 @@ func Overlap() -> void:
 		
 func _on_drag_button_down() -> void:
 	if not LevelData.I_Running:
+		if $".".get_parent() == %PipeContainer:
+			$".".reparent(%Pipes)
 		Is_Dragging = true
 		offset = get_global_mouse_position() - global_position
 	

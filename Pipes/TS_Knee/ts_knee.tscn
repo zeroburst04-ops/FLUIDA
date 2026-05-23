@@ -20,24 +20,21 @@ size = Vector2(20, 10)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x06lp"]
 size = Vector2(40.740738, 44.370365)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x06lp"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yui3m"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_78y1a"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_35av4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfpxw"]
 
-[node name="TS_Knee" type="Node2D" unique_id=290491417]
-scale = Vector2(15, 15)
+[node name="TS_Knee" type="Control" unique_id=46857798]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_78y1a")
 
 [node name="TS_Knee Shape" type="Node2D" parent="." unique_id=1362508599]
 unique_name_in_owner = true
 visible = false
 modulate = Color(18.892157, 18.892157, 18.892157, 1)
+scale = Vector2(10, 10)
 
 [node name="Bottom_Left2" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=682878590]
 position = Vector2(-10.000002, -14.999988)
@@ -65,6 +62,7 @@ mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="TS_Knee Collision" type="Node2D" parent="." unique_id=1410117010]
 unique_name_in_owner = true
+scale = Vector2(10, 10)
 
 [node name="Sprite2D" type="Sprite2D" parent="TS_Knee Collision" unique_id=1436810914]
 position = Vector2(0.3666649, 0.46666747)
@@ -107,14 +105,13 @@ shape = SubResource("RectangleShape2D_x06lp")
 
 [node name="Drag" type="Button" parent="." unique_id=1391456150]
 unique_name_in_owner = true
-offset_left = -30.066677
-offset_top = -30.800001
-offset_right = -21.444057
-offset_bottom = -22.31727
-scale = Vector2(6.9352465, 6.994604)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_x06lp")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_yui3m")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_78y1a")
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -242.0
+offset_top = -248.99998
+offset_right = -193.1
+offset_bottom = -198.79999
+scale = Vector2(10, 10)
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_35av4")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_wfpxw")
 
