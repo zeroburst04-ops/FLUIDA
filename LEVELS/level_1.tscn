@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://hp7rlpmv81ci" path="res://Pipes/TS_Knee/ts_knee.tscn" id="3_0pl5t"]
 [ext_resource type="PackedScene" uid="uid://bpm3we8knwue4" path="res://Pipes/TS_Socket/ts_socket.tscn" id="4_s21lk"]
 [ext_resource type="PackedScene" uid="uid://djx710u7gms6d" path="res://Pipes/TS_Tee/ts_tee.tscn" id="5_3b20i"]
-[ext_resource type="PackedScene" path="res://Fluids/fluid_node.tscn" id="6_sinh8"]
+[ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="6_sinh8"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="7_kutt7"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="8_yt63f"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_bada6"]
@@ -68,7 +68,7 @@ position = Vector2(850, -800)
 scale = Vector2(10, 10)
 
 [node name="TS_Socket5" parent="Pipes" unique_id=1483940892 instance=ExtResource("4_s21lk")]
-position = Vector2(-550, 650)
+position = Vector2(-570, 591)
 scale = Vector2(10, 10)
 
 [node name="TS_Socket4" parent="Pipes" unique_id=1911701412 instance=ExtResource("4_s21lk")]
@@ -187,3 +187,6 @@ position = Vector2(-93, 169)
 position = Vector2(4280, 7300)
 scale = Vector2(1.3126838, 2.2333567)
 shape = SubResource("RectangleShape2D_8oyt3")
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="End" to="." method="_on_end_pressed"]

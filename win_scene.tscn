@@ -23,7 +23,7 @@ position = Vector2(725, 429)
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=109537543]
 position = Vector2(734, 428)
 stream = ExtResource("1_sel2p")
-volume_db = 2.716
+volume_db = 24.0
 autoplay = true
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2086403350]
