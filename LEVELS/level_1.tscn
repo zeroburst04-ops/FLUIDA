@@ -28,13 +28,13 @@ size = Vector2(20257.125, 798)
 script = ExtResource("1_qhhij")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1594132460]
-position = Vector2(-950.33527, -86.56012)
-scale = Vector2(18.546848, 18.673355)
+position = Vector2(57.000122, -73.74985)
+scale = Vector2(13.294119, 12.7997265)
 texture = ExtResource("2_0pl5t")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1349201059]
 position = Vector2(39, -83)
-zoom = Vector2(0.2, 0.2)
+zoom = Vector2(0.15, 0.15)
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_0pl5t")]
 z_as_relative = false
@@ -140,10 +140,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Start" type="Button" parent="." unique_id=1677156777]
 custom_minimum_size = Vector2(40, 40)
-offset_left = 2009.0
-offset_top = -1638.0
-offset_right = 2318.0
-offset_bottom = -1455.0
+offset_left = 2528.0
+offset_top = -2034.0
+offset_right = 2837.0
+offset_bottom = -1851.0
 theme_override_font_sizes/font_size = 128
 theme_override_styles/normal = SubResource("StyleBoxFlat_xudoo")
 text = "Start"
@@ -168,10 +168,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="End" type="Button" parent="." unique_id=2140688185]
 custom_minimum_size = Vector2(40, 40)
-offset_left = 2381.0
-offset_top = -1639.0
-offset_right = 2838.0
-offset_bottom = -1456.0
+offset_left = 2944.0
+offset_top = -2040.0
+offset_right = 3401.0
+offset_bottom = -1857.0
 theme_override_font_sizes/font_size = 128
 theme_override_styles/normal = SubResource("StyleBoxFlat_1k37y")
 text = "Restart"
@@ -182,7 +182,7 @@ stream = ExtResource("9_bada6")
 autoplay = true
 
 [node name="KyogreCup" parent="." unique_id=1877442037 instance=ExtResource("10_2qqyp")]
-position = Vector2(2285.0002, 1156.0002)
+position = Vector2(2572.0002, 1764)
 scale = Vector2(5, 5)
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=1939999224]
