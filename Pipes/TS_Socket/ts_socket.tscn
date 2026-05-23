@@ -88,13 +88,13 @@ position = Vector2(0.7467346, 0)
 scale = Vector2(10, 10)
 
 [node name="Sprite2D2" type="Sprite2D" parent="TS_Socket Collision" unique_id=1151699428]
-position = Vector2(-31.293205, 1.0333347)
-scale = Vector2(0.09983819, 0.2001852)
+position = Vector2(20.207993, 1.0333347)
+scale = Vector2(0.09033466, 0.18112971)
 texture = ExtResource("2_ln8ka")
 
 [node name="Sprite2D" type="Sprite2D" parent="TS_Socket Collision" unique_id=1664995965]
-position = Vector2(-72.619316, 1.3333284)
-scale = Vector2(0.109217666, 0.13444443)
+position = Vector2(-19.943336, 1.3333284)
+scale = Vector2(0.1009634, 0.12428362)
 texture = ExtResource("2_ln8ka")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Socket Collision" unique_id=1362007560]
