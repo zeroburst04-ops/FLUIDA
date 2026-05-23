@@ -6,10 +6,10 @@
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2qn6r"]
-size = Vector2(2.2666636, 38.86667)
+size = Vector2(6.4333324, 41.189327)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pv327"]
-size = Vector2(39.66667, 2.5999978)
+size = Vector2(42.112503, 7.799992)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ufbm"]
 size = Vector2(10, 20)
@@ -18,7 +18,7 @@ size = Vector2(10, 20)
 size = Vector2(20, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x06lp"]
-size = Vector2(44.444443, 44.370365)
+size = Vector2(40.740738, 44.370365)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x06lp"]
 
@@ -67,22 +67,26 @@ mesh = SubResource("QuadMesh_o6qpx")
 unique_name_in_owner = true
 
 [node name="Sprite2D" type="Sprite2D" parent="TS_Knee Collision" unique_id=1436810914]
-position = Vector2(1.5999993, -0.12500179)
-scale = Vector2(0.14973122, 0.15530662)
+position = Vector2(0.3666649, 0.46666747)
+scale = Vector2(0.16518815, 0.16100629)
 texture = ExtResource("2_yui3m")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Knee Collision" unique_id=1727964198]
 
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1056869247]
+position = Vector2(18.516674, -4.1773467)
+shape = SubResource("RectangleShape2D_2qn6r")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=1291910943]
-position = Vector2(16.133339, -5.566667)
+position = Vector2(13.63334, -4.2053375)
 shape = SubResource("RectangleShape2D_2qn6r")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=935562406]
-position = Vector2(-6.4, 18.066666)
+position = Vector2(-4.312498, 16.599998)
 shape = SubResource("RectangleShape2D_pv327")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=2063821400]
-position = Vector2(-5.166669, 16.300001)
+position = Vector2(0.5437476, 18.90001)
 shape = SubResource("RectangleShape2D_pv327")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="TS_Knee Collision/StaticBody2D" unique_id=2065290238]
@@ -97,16 +101,16 @@ shape = SubResource("RectangleShape2D_837hq")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Knee Collision/Pipe_Area" unique_id=1943459684]
-position = Vector2(-4.533335, -4.499998)
+position = Vector2(-6.3333325, -5.1333346)
 scale = Vector2(0.90000015, 0.90000015)
 shape = SubResource("RectangleShape2D_x06lp")
 
 [node name="Drag" type="Button" parent="." unique_id=1391456150]
 unique_name_in_owner = true
-offset_left = -27.733337
-offset_top = -27.466671
-offset_right = -19.89896
-offset_bottom = -19.393782
+offset_left = -30.066677
+offset_top = -30.800001
+offset_right = -21.444057
+offset_bottom = -22.31727
 scale = Vector2(6.9352465, 6.994604)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x06lp")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_yui3m")
