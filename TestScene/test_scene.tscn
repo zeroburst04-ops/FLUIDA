@@ -8,10 +8,17 @@
 [ext_resource type="PackedScene" uid="uid://bpm3we8knwue4" path="res://Pipes/TS_Socket/ts_socket.tscn" id="6_nvnny"]
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="7_2i3e7"]
 [ext_resource type="PackedScene" uid="uid://djx710u7gms6d" path="res://Pipes/TS_Tee/ts_tee.tscn" id="7_hxw8s"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="8_k8tjy"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_xd3t6"]
 
 [sub_resource type="FluidEffect2DViscosityArtificial" id="FluidEffect2DViscosityArtificial_hxw8s"]
 fluid_viscosity_coefficient = 150.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oisa6"]
+bg_color = Color(0.19129753, 0.44973886, 0.29999417, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kuwgh"]
+bg_color = Color(0.6019071, 0.10155503, 0.16069147, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hxw8s"]
 size = Vector2(20257.125, 798)
@@ -28,11 +35,11 @@ texture = ExtResource("2_2i3e7")
 unique_name_in_owner = true
 
 [node name="TS_Knee2" parent="Pipes" unique_id=2116690963 instance=ExtResource("5_lrovu")]
-position = Vector2(5175, -2951)
+position = Vector2(5169, -2911)
 scale = Vector2(9.999999, 9.999999)
 
 [node name="TS_Knee3" parent="Pipes" unique_id=611143766 instance=ExtResource("5_lrovu")]
-position = Vector2(3949, -3464.0002)
+position = Vector2(3851, -3466)
 scale = Vector2(10, 10)
 
 [node name="TS_Knee4" parent="Pipes" unique_id=143777972 instance=ExtResource("5_lrovu")]
@@ -41,16 +48,16 @@ rotation = 3.1415925
 scale = Vector2(10, 10)
 
 [node name="TS_Socket" parent="Pipes" unique_id=2136074797 instance=ExtResource("6_nvnny")]
-position = Vector2(4625, -2900.9995)
+position = Vector2(4589.0005, -2917)
 scale = Vector2(10, 10)
 
 [node name="TS_Socket2" parent="Pipes" unique_id=1248794591 instance=ExtResource("6_nvnny")]
-position = Vector2(3891.0002, -2308.0002)
+position = Vector2(3819, -2250.0002)
 rotation = -1.5707964
 scale = Vector2(10, 10)
 
 [node name="TS_Tee" parent="Pipes" unique_id=2043194950 instance=ExtResource("7_hxw8s")]
-position = Vector2(3941.9998, -2860)
+position = Vector2(3899, -2834.9998)
 rotation = 3.1415925
 scale = Vector2(10, 10)
 
@@ -94,11 +101,12 @@ text = "60FPS
 
 [node name="Start" type="Button" parent="." unique_id=1673629997]
 custom_minimum_size = Vector2(40, 40)
-offset_left = 6507.0
-offset_top = -4056.0
-offset_right = 6816.0
-offset_bottom = -3873.0
+offset_left = 6639.0
+offset_top = -4054.0
+offset_right = 6948.0
+offset_bottom = -3871.0
 theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_oisa6")
 text = "Start"
 
 [node name="Overlap_text" type="Label" parent="Start" unique_id=1745979734]
@@ -108,16 +116,18 @@ offset_left = -271.0
 offset_top = 202.0
 offset_right = 657.0
 offset_bottom = 290.0
+theme_override_fonts/font = ExtResource("8_k8tjy")
 theme_override_font_sizes/font_size = 64
-text = "DO NOT OVERLAP PLS PLS PLS"
+text = "DO NOT OVERLAP THE PIPE"
 
 [node name="End" type="Button" parent="." unique_id=672449243]
 custom_minimum_size = Vector2(40, 40)
-offset_left = 7028.0
-offset_top = -4056.0
-offset_right = 7485.0
-offset_bottom = -3873.0
+offset_left = 6998.0
+offset_top = -4054.0
+offset_right = 7455.0
+offset_bottom = -3871.0
 theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_kuwgh")
 text = "Restart"
 
 [node name="KyogreCup" parent="." unique_id=170371696 instance=ExtResource("7_2i3e7")]
