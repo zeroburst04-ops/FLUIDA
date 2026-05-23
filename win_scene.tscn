@@ -37,6 +37,13 @@ autoplay = true
 expand = true
 loop = true
 
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_6gymp")]
+z_as_relative = false
+offset_left = 37.0
+offset_top = -141.0
+offset_right = 1400.0
+offset_bottom = 880.0
+
 [node name="BackButton" type="Button" parent="." unique_id=1073080204]
 visible = false
 offset_left = 182.0
@@ -58,12 +65,5 @@ offset_bottom = 494.0
 theme_override_fonts/font = ExtResource("1_2cral")
 theme_override_font_sizes/font_size = 128
 text = "YOU WIN"
-
-[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_6gymp")]
-z_as_relative = false
-offset_left = 37.0
-offset_top = -141.0
-offset_right = 1400.0
-offset_bottom = 880.0
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -36,6 +36,13 @@ texture = ExtResource("1_uyir5")
 position = Vector2(39, -83)
 zoom = Vector2(0.2, 0.2)
 
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_0pl5t")]
+z_as_relative = false
+offset_left = -4151.0
+offset_top = -3818.0
+offset_right = 4716.5107
+offset_bottom = 3676.1553
+
 [node name="Pipes" type="Node2D" parent="." unique_id=1771757244]
 unique_name_in_owner = true
 position = Vector2(22, -42)
@@ -177,13 +184,6 @@ autoplay = true
 [node name="KyogreCup" parent="." unique_id=1877442037 instance=ExtResource("10_2qqyp")]
 position = Vector2(2285.0002, 1156.0002)
 scale = Vector2(5, 5)
-
-[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_0pl5t")]
-z_as_relative = false
-offset_left = -4151.0
-offset_top = -3818.0
-offset_right = 4716.5107
-offset_bottom = 3676.1553
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=1939999224]
 position = Vector2(118, -138)

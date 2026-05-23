@@ -296,8 +296,7 @@ process_mode = 3
 position = Vector2(-34, -25)
 scale = Vector2(0.15777777, 0.15714286)
 sprite_frames = SubResource("SpriteFrames_qg2px")
-frame = 9
-frame_progress = 0.650804
+frame_progress = 0.19056869
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kyogre" unique_id=1181809938]
