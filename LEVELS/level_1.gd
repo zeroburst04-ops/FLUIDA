@@ -1,20 +1,19 @@
 extends Node2D
 
-@onready var Wintext : = %Win_state
-@onready var Overlap : = %Overlap_text
+@onready var Wintext := %Win_state
+@onready var Overlap := %Overlap_text
+@onready var Pipe_parent := %Pipes
 
-@onready var Pipe_parent : = %Pipes
-
-var overlap_text_timer : float = 0.000000000000
-
-
+var overlap_text_timer : float = 0.0
 var last_ticks: float = 0.0
 
 func _ready() -> void:
-	process_mode = Node.PROCESS_MODE_ALWAYS # <-- ADD THIS LINE
+	# Allows this script to run while Engine.time_scale is 0
+	process_mode = Node.PROCESS_MODE_ALWAYS 
+	
 	LevelData.I_Running = false
 	%Overlap_text.visible = false
-	Engine.time_scale = 0.
+	Engine.time_scale = 0.0
 	Snapfunc()
 	last_ticks = Time.get_ticks_msec() 
 	
@@ -29,27 +28,30 @@ func _process(delta: float) -> void:
 		return
 	if LevelData.I_Lose:
 		Wintext.text = "ぉせ"
-		pass
+		return
 
-	%FPS.text = str(Engine.get_frames_per_second()) + "FPS"
+	if has_node("%FPS"):
+		%FPS.text = str(Engine.get_frames_per_second()) + "FPS"
 	
 	if %Overlap_text.visible:
-		overlap_text_timer += unscaled_delta # Use our unscaled_delta here instead!
-		print(overlap_text_timer)
-		if overlap_text_timer >= 1:
-			overlap_text_timer = 0
+		overlap_text_timer += unscaled_delta
+		if overlap_text_timer >= 1.0:
+			overlap_text_timer = 0.0
 			%Overlap_text.visible = false
 			
 func _on_start_pressed() -> void:
+	# Reset timer whenever start is pressed to prevent state carryover
+	overlap_text_timer = 0.0 
+	
 	for i in range(%Pipes.get_child_count()):
 		var Pipe = %Pipes.get_child(i)
+		# Note: Ensure 'Is_Overlapping' is spelled exactly like this in your Pipe script
 		if Pipe.Is_Overlapping:
 			%Overlap_text.visible = true
-			
 			return
 			
 	LevelData.I_Running = true
-	Engine.time_scale = 1
+	Engine.time_scale = 1.0
 
 func Snapfunc() -> void:
 	global_position.x -= int(global_position.x) % 50
