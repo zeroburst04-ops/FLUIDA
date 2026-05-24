@@ -38,18 +38,26 @@ offset_bottom = 150.0
 script = ExtResource("1_inntj")
 CurrentState = 1
 
-[node name="Model" type="Sprite2D" parent="." unique_id=1151699428]
+[node name="Back" type="Sprite2D" parent="." unique_id=1151699428]
 z_index = -50
 z_as_relative = false
 position = Vector2(198.6625, 6.173451)
 scale = Vector2(0.90334666, 1.811297)
 texture = ExtResource("2_ln8ka")
 
-[node name="Model2" type="Sprite2D" parent="." unique_id=1664995965]
-z_index = -50
+[node name="Front_Reducer" type="Sprite2D" parent="." unique_id=1664995965]
+z_index = -51
 z_as_relative = false
 position = Vector2(-202.8508, 9.1733885)
 scale = Vector2(1.009634, 1.2428362)
+texture = ExtResource("2_ln8ka")
+
+[node name="Front_Normal" type="Sprite2D" parent="." unique_id=99261005]
+unique_name_in_owner = true
+z_index = -50
+z_as_relative = false
+position = Vector2(-202.8508, 8.500011)
+scale = Vector2(1.009634, 1.8083334)
 texture = ExtResource("2_ln8ka")
 
 [node name="TS_Socket Shape" type="Node2D" parent="." unique_id=1015244065]
@@ -98,6 +106,7 @@ scale = Vector2(40, 6)
 mesh = SubResource("PrismMesh_ln8ka")
 
 [node name="TS_Socket Collision" type="Node2D" parent="." unique_id=330850099]
+visible = false
 position = Vector2(0.7467346, 0)
 scale = Vector2(10, 10)
 
@@ -137,6 +146,7 @@ rotation = 0.2932153
 shape = SubResource("RectangleShape2D_yuw7e")
 
 [node name="TS_Socket Area" type="Node2D" parent="." unique_id=1197440404]
+visible = false
 position = Vector2(-0.9599304, 0)
 scale = Vector2(10, 10)
 

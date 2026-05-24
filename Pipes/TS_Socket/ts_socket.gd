@@ -28,7 +28,7 @@ func _ready() -> void:
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D9".disabled = true
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D10".disabled = true
 		States.Reducer:
-			pass
+			%Front_Normal.visible = false
 
 func Snapfunc() -> void:
 	# Godot 4 built-in snapping math (handles negative coordinates perfectly)

@@ -11,6 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="10_2qqyp"]
 [ext_resource type="Script" uid="uid://bjr07yppeeds" path="res://LEVELS/pipe_spawn_manager.gd" id="10_3b20i"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="11_0pl5t"]
+[ext_resource type="Texture2D" uid="uid://di2gboy21nyp7" path="res://スクリーンショット 2026-05-24 185913.png" id="11_s21lk"]
+[ext_resource type="Texture2D" uid="uid://bynw6deesj0ii" path="res://スクリーンショット 2026-05-24 185938.png" id="12_kutt7"]
+[ext_resource type="Texture2D" uid="uid://jnmtfuxlko12" path="res://スクリーンショット 2026-05-24 185925.png" id="13_yt63f"]
+[ext_resource type="Texture2D" uid="uid://bsqfduigbh2hb" path="res://スクリーンショット 2026-05-24 185920.png" id="14_bada6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xudoo"]
 bg_color = Color(0.21814606, 0.47902644, 0.21154901, 1)
@@ -21,9 +25,6 @@ bg_color = Color(0.7251792, 0, 0.20635924, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8oyt3"]
 size = Vector2(20257.125, 798)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ddgns"]
-bg_color = Color(0.22670749, 0.22670752, 0.2267074, 1)
-
 [sub_resource type="FluidEffect2DSurfaceTensionAKINCI" id="FluidEffect2DSurfaceTensionAKINCI_s21lk"]
 fluid_tension_coefficient = 35.0
 
@@ -32,7 +33,7 @@ script = ExtResource("1_qhhij")
 metadata/_edit_vertical_guides_ = [2280.0, 5492.0, 13245.0]
 metadata/_edit_horizontal_guides_ = [5059.0, -6839.0]
 
-[node name="L1_Pipe_Data" type="Node2D" parent="." unique_id=526113766]
+[node name="Pipe_Data" type="Node2D" parent="." unique_id=526113766]
 unique_name_in_owner = true
 script = ExtResource("2_s21lk")
 
@@ -174,13 +175,11 @@ layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = 250
 
-[node name="TS_Knee_Button" type="Button" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=2122054016]
+[node name="TS_Knee_Button" type="TextureButton" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=370567262]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-theme_override_font_sizes/font_size = 128
-theme_override_styles/normal = SubResource("StyleBoxFlat_ddgns")
-text = "TS_KNEE"
+texture_normal = ExtResource("11_s21lk")
 
 [node name="TS_Knee_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Knee_Button" unique_id=968429142]
 unique_name_in_owner = true
@@ -192,13 +191,11 @@ offset_bottom = 732.0
 theme_override_font_sizes/font_size = 96
 text = "Nx"
 
-[node name="TS_Socket_Button" type="Button" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=1662197712]
+[node name="TS_Socket_Button" type="TextureButton" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=2002759758]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-theme_override_font_sizes/font_size = 128
-theme_override_styles/normal = SubResource("StyleBoxFlat_ddgns")
-text = "TS_Socket"
+texture_normal = ExtResource("12_kutt7")
 
 [node name="TS_Socket_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Button" unique_id=404024031]
 unique_name_in_owner = true
@@ -210,14 +207,11 @@ offset_bottom = 732.0
 theme_override_font_sizes/font_size = 96
 text = "Nx"
 
-[node name="TS_Socket_Reducer_Button" type="Button" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=1675592397]
+[node name="TS_Socket_Reducer_Button" type="TextureButton" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=1275350171]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-theme_override_font_sizes/font_size = 128
-theme_override_styles/normal = SubResource("StyleBoxFlat_ddgns")
-text = "TS_Socket
-Reducer"
+texture_normal = ExtResource("13_yt63f")
 
 [node name="TS_Socket_Reducer_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Reducer_Button" unique_id=1286112179]
 unique_name_in_owner = true
@@ -229,14 +223,11 @@ offset_bottom = 732.0
 theme_override_font_sizes/font_size = 96
 text = "Nx"
 
-[node name="TS_Tee" type="Button" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=277060585]
+[node name="TS_Tee" type="TextureButton" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=1328526747]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-theme_override_font_sizes/font_size = 128
-theme_override_styles/normal = SubResource("StyleBoxFlat_ddgns")
-text = "TS_Socket
-Reducer"
+texture_normal = ExtResource("14_bada6")
 
 [node name="TS_Tee_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Tee" unique_id=1787111197]
 unique_name_in_owner = true
