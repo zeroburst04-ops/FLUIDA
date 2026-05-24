@@ -32,6 +32,7 @@ scale = Vector2(10.082517, 9.711171)
 texture = ExtResource("2_oisa6")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_oisa6")]
+visible = false
 z_as_relative = false
 anchors_preset = 0
 anchor_right = 0.0
@@ -127,9 +128,9 @@ shape = SubResource("RectangleShape2D_hxw8s")
 [node name="Pipe_panel" type="Panel" parent="." unique_id=39600048]
 custom_minimum_size = Vector2(5250, 750)
 offset_left = 2493.0
-offset_top = -1706.0
+offset_top = -1782.0
 offset_right = 7743.0
-offset_bottom = -956.0
+offset_bottom = -892.9121
 scale = Vector2(0.7100496, 0.5464171)
 mouse_filter = 2
 
