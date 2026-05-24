@@ -124,7 +124,7 @@ stream = ExtResource("9_bada6")
 autoplay = true
 
 [node name="KyogreCup" parent="." unique_id=1877442037 instance=ExtResource("10_2qqyp")]
-position = Vector2(-2572, 1797)
+position = Vector2(-2439, 1025)
 scale = Vector2(5, 5)
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=1939999224]
@@ -140,10 +140,10 @@ shape = SubResource("RectangleShape2D_8oyt3")
 
 [node name="Pipe_panel" type="Panel" parent="." unique_id=1102433254]
 custom_minimum_size = Vector2(5250, 750)
-offset_left = -1527.0
-offset_top = 1200.0
-offset_right = 3723.0
-offset_bottom = 1950.0
+offset_left = -2452.0
+offset_top = 1238.0
+offset_right = 2798.0
+offset_bottom = 1988.0
 mouse_filter = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Pipe_panel" unique_id=994509394]
