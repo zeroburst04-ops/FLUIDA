@@ -139,12 +139,9 @@ scale = Vector2(1.3126838, 2.2333567)
 shape = SubResource("RectangleShape2D_8oyt3")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1349201059]
+unique_name_in_owner = true
 position = Vector2(9390, -4659)
 zoom = Vector2(0.15, 0.15)
-limit_left = 5492
-limit_top = -6839
-limit_right = 13245
-limit_bottom = 5059
 script = ExtResource("4_3b20i")
 
 [node name="Pipe_panel" type="Panel" parent="Camera2D" unique_id=1102433254]
