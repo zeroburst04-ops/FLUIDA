@@ -3,20 +3,21 @@
 [ext_resource type="Script" uid="uid://2xo3tj1juqqi" path="res://Pipes/TS_Kyogre/kyogre_cup.gd" id="1_tlida"]
 [ext_resource type="Script" uid="uid://unwhnooi7g2c" path="res://addons/godot-rapier2d/custom_nodes/rapier_rigid_body_2d.gd" id="2_n6hbu"]
 [ext_resource type="Texture2D" uid="uid://de8aefhig7eax" path="res://TryCozymealpreprecipesthatturnordinaryplansintobeautifulideaspeoplewanttocopyfastforideasworthsavingrightnow-Pin-857021004135597390-ezgif.com-gif-to-sprite-converter.png" id="3_tlida"]
+[ext_resource type="Texture2D" uid="uid://b4k65bkgs8rgt" path="res://images__3_-removebg-preview.png" id="4_n6hbu"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5qvji"]
-size = Vector2(12, 157)
+size = Vector2(5.137594, 144.3063)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2qn6r"]
-size = Vector2(13, 157)
+size = Vector2(7.731251, 141.20276)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
 size = Vector2(120, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tlida"]
-size = Vector2(115, 154)
+size = Vector2(446, 100)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tlida"]
 
@@ -204,15 +205,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlida"]
-radius = 12.849595
-height = 36.942585
+radius = 21.570145
+height = 64.24798
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n6hbu"]
-radius = 9.955452
-height = 30.517792
+radius = 16.59242
+height = 49.77726
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uy483"]
-size = Vector2(118, 18)
+size = Vector2(228, 14)
 
 [node name="KyogreCup" type="Node2D" unique_id=570814531]
 process_mode = 3
@@ -223,28 +224,33 @@ script = ExtResource("1_tlida")
 unique_name_in_owner = true
 
 [node name="Cup_Bottom" type="Node2D" parent="CupShape" unique_id=3103218]
+visible = false
 
 [node name="Bottom_Left" type="MeshInstance2D" parent="CupShape/Cup_Bottom" unique_id=2068668587]
-scale = Vector2(120.00001, 10)
+visible = false
+position = Vector2(1.9999952, -5.3125)
+scale = Vector2(231.99998, 12.624998)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Cup_Left" type="Node2D" parent="CupShape" unique_id=593270751]
+visible = false
 position = Vector2(15, 0)
 scale = Vector2(1.25, 1)
 
 [node name="BottomLeftWall" type="MeshInstance2D" parent="CupShape/Cup_Left" unique_id=332572722]
-position = Vector2(-54.999996, -78.55678)
-rotation = 1.5707964
+position = Vector2(-151.2, -58.000008)
+rotation = 0.81027466
 scale = Vector2(147.44656, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Cup_Right" type="Node2D" parent="CupShape" unique_id=603188844]
+visible = false
 position = Vector2(122, 0)
 scale = Vector2(1.25, 1)
 
 [node name="BottomRightWall" type="MeshInstance2D" parent="CupShape/Cup_Right" unique_id=911119611]
-position = Vector2(-54.999996, -78.76883)
-rotation = 1.5707964
+position = Vector2(42.399998, -54)
+rotation = 2.3222673
 scale = Vector2(147.87065, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
@@ -255,11 +261,13 @@ mesh = SubResource("QuadMesh_o6qpx")
 [node name="StaticBody2D" type="StaticBody2D" parent="CupHitbox/CupHitbox_Bottom" unique_id=199416293]
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=10214919]
-position = Vector2(-54, -73.5)
+position = Vector2(-167.89432, -49.195683)
+rotation = -0.88273907
 shape = SubResource("RectangleShape2D_5qvji")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1807080460]
-position = Vector2(53.5, -73.5)
+position = Vector2(168.21103, -46.9426)
+rotation = 0.8603625
 shape = SubResource("RectangleShape2D_2qn6r")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1466662568]
@@ -271,7 +279,7 @@ shape = SubResource("RectangleShape2D_cmy3s")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/Pipe_Area/Pipe_Area" unique_id=1240017202]
-position = Vector2(-0.5, -75)
+position = Vector2(0, -47)
 shape = SubResource("RectangleShape2D_tlida")
 
 [node name="Kyogre" type="RigidBody2D" parent="." unique_id=416759536]
@@ -296,8 +304,8 @@ shape = SubResource("CircleShape2D_tlida")
 [node name="Kyogre_Sprite" type="AnimatedSprite2D" parent="Kyogre" unique_id=996020923]
 unique_name_in_owner = true
 process_mode = 3
-position = Vector2(-58, -38.999992)
-scale = Vector2(0.25777778, 0.24857141)
+position = Vector2(-72, -44.000008)
+scale = Vector2(0.33555552, 0.27714285)
 sprite_frames = SubResource("SpriteFrames_qg2px")
 frame_progress = 0.012709642
 centered = false
@@ -316,7 +324,7 @@ collision_layer = 8
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Okbro" unique_id=527284912]
-position = Vector2(0, -4)
+position = Vector2(1, -5)
 shape = SubResource("RectangleShape2D_uy483")
 
 [node name="Win_Label" type="Label" parent="." unique_id=146262662]
@@ -326,6 +334,24 @@ offset_top = 7.0
 offset_right = 43.0
 offset_bottom = 30.0
 text = "You Won !!"
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1934809368]
+position = Vector2(-159.38206, -42.824276)
+rotation = 0.67752504
+scale = Vector2(0.6687056, 0.22733413)
+skew = -1.1538062
+texture = ExtResource("4_n6hbu")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=799977489]
+position = Vector2(164, -43)
+rotation = -0.71877927
+scale = Vector2(0.61888635, 0.12529303)
+texture = ExtResource("4_n6hbu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1615908420]
+position = Vector2(2, -2)
+scale = Vector2(1.1318182, 0.27868855)
+texture = ExtResource("4_n6hbu")
 
 [node name="Timer" type="Timer" parent="." unique_id=2125176143]
 

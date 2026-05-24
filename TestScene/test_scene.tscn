@@ -32,6 +32,7 @@ scale = Vector2(10.082517, 9.711171)
 texture = ExtResource("2_oisa6")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_oisa6")]
+visible = false
 z_as_relative = false
 anchors_preset = 0
 anchor_right = 0.0
@@ -108,8 +109,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_kuwgh")
 text = "Restart"
 
 [node name="KyogreCup" parent="." unique_id=170371696 instance=ExtResource("7_2i3e7")]
-position = Vector2(7452, -1742)
-scale = Vector2(5, 5)
+position = Vector2(7202.0005, -1605.9999)
+scale = Vector2(3.6800027, 3.2799983)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874395895]
 stream = ExtResource("9_xd3t6")
@@ -126,10 +127,11 @@ shape = SubResource("RectangleShape2D_hxw8s")
 
 [node name="Pipe_panel" type="Panel" parent="." unique_id=39600048]
 custom_minimum_size = Vector2(5250, 750)
-offset_left = 2614.0
-offset_top = -2108.0
-offset_right = 7864.0
-offset_bottom = -1358.0
+offset_left = 2493.0
+offset_top = -1706.0
+offset_right = 7743.0
+offset_bottom = -956.0
+scale = Vector2(0.7100496, 0.5464171)
 mouse_filter = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Pipe_panel" unique_id=673997455]
