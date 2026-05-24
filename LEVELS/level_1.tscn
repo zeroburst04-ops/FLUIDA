@@ -37,6 +37,7 @@ position = Vector2(39, -83)
 zoom = Vector2(0.15, 0.15)
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_0pl5t")]
+visible = false
 z_as_relative = false
 offset_left = -4151.0
 offset_top = -3818.0
@@ -123,7 +124,7 @@ stream = ExtResource("9_bada6")
 autoplay = true
 
 [node name="KyogreCup" parent="." unique_id=1877442037 instance=ExtResource("10_2qqyp")]
-position = Vector2(-3100, 1640)
+position = Vector2(-2477, 1282.0002)
 scale = Vector2(5, 5)
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=1939999224]
