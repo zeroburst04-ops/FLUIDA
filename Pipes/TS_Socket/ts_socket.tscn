@@ -160,10 +160,10 @@ shape = SubResource("RectangleShape2D_inntj")
 
 [node name="Drag" type="Button" parent="." unique_id=228389192]
 layout_mode = 0
-offset_left = -402.81332
-offset_top = -197.49332
-offset_right = -322.6213
-offset_bottom = -157.74931
+offset_left = -456.99994
+offset_top = -247.99997
+offset_right = -364.39996
+offset_bottom = -198.09998
 scale = Vector2(10, 10)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_inntj")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_ln8ka")

@@ -4,17 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://bboo5tbt2nggd" path="res://27076.jpg" id="2_0pl5t"]
 [ext_resource type="Script" uid="uid://bhy8gcd3shn7k" path="res://LEVELS/level_1_pipe_data.gd" id="2_s21lk"]
 [ext_resource type="Script" uid="uid://14mwy7hlpnpx" path="res://LEVELS/camera_2d.gd" id="4_3b20i"]
-[ext_resource type="PackedScene" path="res://Fluids/fluid_node.tscn" id="6_sinh8"]
+[ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="6_sinh8"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="7_kutt7"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="8_yt63f"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_bada6"]
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="10_2qqyp"]
 [ext_resource type="Script" uid="uid://bjr07yppeeds" path="res://LEVELS/pipe_spawn_manager.gd" id="10_3b20i"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="11_0pl5t"]
-[ext_resource type="Texture2D" uid="uid://di2gboy21nyp7" path="res://スクリーンショット 2026-05-24 185913.png" id="11_s21lk"]
-[ext_resource type="Texture2D" uid="uid://bynw6deesj0ii" path="res://スクリーンショット 2026-05-24 185938.png" id="12_kutt7"]
-[ext_resource type="Texture2D" uid="uid://jnmtfuxlko12" path="res://スクリーンショット 2026-05-24 185925.png" id="13_yt63f"]
-[ext_resource type="Texture2D" uid="uid://bsqfduigbh2hb" path="res://スクリーンショット 2026-05-24 185920.png" id="14_bada6"]
+[ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://2way-removebg-preview.png" id="11_kutt7"]
+[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="12_yt63f"]
+[ext_resource type="Texture2D" uid="uid://cy2bw5a8ure77" path="res://image-removebg-preview.png" id="13_kutt7"]
+[ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://3Way-removebg-preview.png" id="14_bada6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xudoo"]
 bg_color = Color(0.21814606, 0.47902644, 0.21154901, 1)
@@ -147,10 +147,10 @@ script = ExtResource("4_3b20i")
 
 [node name="Pipe_panel" type="Panel" parent="Camera2D" unique_id=1102433254]
 unique_name_in_owner = true
-offset_left = -2738.0
-offset_top = 1282.0
-offset_right = 2573.0
-offset_bottom = 2260.0
+offset_left = -1900.0
+offset_top = 1444.0
+offset_right = 2004.0
+offset_bottom = 2075.0
 mouse_filter = 2
 
 [node name="Pipe_Spawn_Manager" type="Control" parent="Camera2D/Pipe_panel" unique_id=146150543]
@@ -179,15 +179,15 @@ theme_override_constants/separation = 250
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-texture_normal = ExtResource("11_s21lk")
+texture_normal = ExtResource("11_kutt7")
 
 [node name="TS_Knee_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Knee_Button" unique_id=968429142]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 556.0
-offset_top = 600.0
-offset_right = 684.0
-offset_bottom = 732.0
+offset_left = 442.0
+offset_top = 288.0
+offset_right = 570.0
+offset_bottom = 420.0
 theme_override_font_sizes/font_size = 96
 text = "Nx"
 
@@ -195,15 +195,15 @@ text = "Nx"
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-texture_normal = ExtResource("12_kutt7")
+texture_normal = ExtResource("12_yt63f")
 
 [node name="TS_Socket_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Button" unique_id=404024031]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 556.0
-offset_top = 600.0
-offset_right = 684.0
-offset_bottom = 732.0
+offset_left = 523.0
+offset_top = 306.0
+offset_right = 651.0
+offset_bottom = 438.0
 theme_override_font_sizes/font_size = 96
 text = "Nx"
 
@@ -211,31 +211,35 @@ text = "Nx"
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-texture_normal = ExtResource("13_yt63f")
+texture_normal = ExtResource("13_kutt7")
 
 [node name="TS_Socket_Reducer_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Reducer_Button" unique_id=1286112179]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 556.0
-offset_top = 600.0
-offset_right = 684.0
-offset_bottom = 732.0
+offset_left = 696.0
+offset_top = 299.0
+offset_right = 824.0
+offset_bottom = 431.0
 theme_override_font_sizes/font_size = 96
 text = "Nx"
 
-[node name="TS_Tee" type="TextureButton" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer" unique_id=1328526747]
+[node name="TS_Tee" type="TextureButton" parent="Camera2D/Pipe_panel" unique_id=1328526747]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
-layout_mode = 2
+layout_mode = 0
+offset_left = 2986.0
+offset_top = 60.0
+offset_right = 3686.0
+offset_bottom = 810.0
 texture_normal = ExtResource("14_bada6")
 
-[node name="TS_Tee_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Tee" unique_id=1787111197]
+[node name="TS_Tee_Count" type="Label" parent="Camera2D/Pipe_panel/TS_Tee" unique_id=1787111197]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 556.0
-offset_top = 600.0
-offset_right = 684.0
-offset_bottom = 732.0
+offset_left = 545.0
+offset_top = 339.0
+offset_right = 673.0
+offset_bottom = 471.0
 theme_override_font_sizes/font_size = 96
 text = "Nx"
 
@@ -252,4 +256,4 @@ width = 40
 [connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Knee_Button" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_knee_button_button_down"]
 [connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Button" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_socket_button_button_down"]
 [connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Reducer_Button" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_socket_reducer_button_button_down"]
-[connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Tee" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_tee_button_down"]
+[connection signal="button_down" from="Camera2D/Pipe_panel/TS_Tee" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_tee_button_down"]
