@@ -10,13 +10,14 @@ enum States {
 @onready var Pipe_Node : = %Pipes
 var Is_Overlapping : bool = false
 
-var Is_Dragging : bool = false
+var Is_Dragging : bool = true
 var offset = Vector2(0, 0)
 var Snap = 25
 
 func _ready() -> void:
 	Pipe_Area.monitorable = false
 	Pipe_Area.monitoring = false
+	
 	Snapfunc()
 	match CurrentState:
 		States.Normal:

@@ -35,7 +35,6 @@ Openedside = 1
 
 [node name="CupShape" type="Node2D" parent="." unique_id=712156449]
 unique_name_in_owner = true
-visible = false
 
 [node name="Cup_Bottom" type="Node2D" parent="CupShape" unique_id=3103218]
 visible = false
@@ -181,7 +180,6 @@ scale = Vector2(0.88333327, 0.5714286)
 texture = ExtResource("2_n4o05")
 
 [node name="CupHitbox_Bottom" type="Node2D" parent="CupHitbox" unique_id=785765985]
-visible = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="CupHitbox/CupHitbox_Bottom" unique_id=199416293]
 
@@ -206,7 +204,6 @@ position = Vector2(35, 0)
 shape = SubResource("RectangleShape2D_cmy3s")
 
 [node name="CupHitbox_Area" type="Node2D" parent="CupHitbox" unique_id=451328181]
-visible = false
 
 [node name="Pipe_Area" type="Area2D" parent="CupHitbox/CupHitbox_Area" unique_id=1241855784 groups=["Pipe"]]
 unique_name_in_owner = true
@@ -216,7 +213,6 @@ position = Vector2(-0.5, -75)
 shape = SubResource("RectangleShape2D_837hq")
 
 [node name="CupHitbox_Left" type="Node2D" parent="CupHitbox" unique_id=656048958]
-visible = false
 position = Vector2(15, 0)
 scale = Vector2(1.25, 1)
 
@@ -235,7 +231,6 @@ position = Vector2(-55, -135)
 shape = SubResource("RectangleShape2D_4tr5l")
 
 [node name="CupHitbox_Right" type="Node2D" parent="CupHitbox" unique_id=1074179339]
-visible = false
 position = Vector2(122, 0)
 scale = Vector2(1.25, 1)
 

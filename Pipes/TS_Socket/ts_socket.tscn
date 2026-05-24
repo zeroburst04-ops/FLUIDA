@@ -30,14 +30,27 @@ size = Vector2(77.93335, 38)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_emfqa"]
 
 [node name="TS_Socket" type="Control" unique_id=535934993]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(1, 150)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 150.0
+offset_right = 1.0
 offset_bottom = 150.0
-scale = Vector2(150, 150)
 script = ExtResource("1_inntj")
 CurrentState = 1
+
+[node name="Model" type="Sprite2D" parent="." unique_id=1151699428]
+z_index = -50
+z_as_relative = false
+position = Vector2(198.6625, 6.173451)
+scale = Vector2(0.90334666, 1.811297)
+texture = ExtResource("2_ln8ka")
+
+[node name="Model2" type="Sprite2D" parent="." unique_id=1664995965]
+z_index = -50
+z_as_relative = false
+position = Vector2(-202.8508, 9.1733885)
+scale = Vector2(1.009634, 1.2428362)
+texture = ExtResource("2_ln8ka")
 
 [node name="TS_Socket Shape" type="Node2D" parent="." unique_id=1015244065]
 unique_name_in_owner = true
@@ -87,16 +100,6 @@ mesh = SubResource("PrismMesh_ln8ka")
 [node name="TS_Socket Collision" type="Node2D" parent="." unique_id=330850099]
 position = Vector2(0.7467346, 0)
 scale = Vector2(10, 10)
-
-[node name="Sprite2D2" type="Sprite2D" parent="TS_Socket Collision" unique_id=1151699428]
-position = Vector2(20.207993, 1.0333347)
-scale = Vector2(0.09033466, 0.18112971)
-texture = ExtResource("2_ln8ka")
-
-[node name="Sprite2D" type="Sprite2D" parent="TS_Socket Collision" unique_id=1664995965]
-position = Vector2(-19.943336, 1.3333284)
-scale = Vector2(0.1009634, 0.12428362)
-texture = ExtResource("2_ln8ka")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Socket Collision" unique_id=1362007560]
 position = Vector2(-0.17067337, 0)

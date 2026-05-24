@@ -4,8 +4,10 @@ extends Camera2D
 @export var smooth_speed: float = 10.0
 
 var target_y: float
+var Pipe_panel 
 
 func _ready() -> void:
+	Pipe_panel = %Pipe_panel.global_position.y
 	target_y = global_position.y
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -19,4 +21,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		target_y = clamp(target_y, limit_top, limit_bottom)
 
 func _process(delta: float) -> void:
+	
 	global_position.y = lerp(global_position.y, target_y, smooth_speed * delta)
+	if %Pipe_panel.global_position.y < Pipe_panel:
+		%Pipe_panel.global_position.y = Pipe_panel

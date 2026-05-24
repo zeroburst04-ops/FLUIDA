@@ -201,10 +201,10 @@ height = 49.77726
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5qvji"]
-size = Vector2(5.137594, 144.3063)
+size = Vector2(14.245719, 144.3063)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2qn6r"]
-size = Vector2(7.731251, 141.20276)
+size = Vector2(14.994276, 141.20276)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
 size = Vector2(120, 10)
@@ -229,7 +229,6 @@ script = ExtResource("2_n6hbu")
 metadata/_custom_type_script = "uid://unwhnooi7g2c"
 
 [node name="Area2D" type="Area2D" parent="Kyogre" unique_id=926021890]
-visible = false
 z_index = 4
 z_as_relative = false
 position = Vector2(0, 48)
@@ -250,13 +249,11 @@ frame_progress = 0.012709642
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kyogre" unique_id=1181809938]
-visible = false
 rotation = 1.5707964
 scale = Vector2(1.2053697, 1.2451755)
 shape = SubResource("CapsuleShape2D_tlida")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Kyogre" unique_id=1668510384]
-visible = false
 scale = Vector2(1.2053697, 1.2451755)
 shape = SubResource("CapsuleShape2D_n6hbu")
 
@@ -295,12 +292,10 @@ scale = Vector2(147.87065, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="CupHitbox" type="Node2D" parent="." unique_id=868602689]
-visible = false
 
 [node name="CupHitbox_Bottom" type="Node2D" parent="CupHitbox" unique_id=785765985]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="CupHitbox/CupHitbox_Bottom" unique_id=199416293]
-visible = false
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=559143577]
 position = Vector2(220, -166.99998)
@@ -313,12 +308,12 @@ rotation = 0.01258849
 shape = SubResource("RectangleShape2D_5qvji")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=10214919]
-position = Vector2(-167.89432, -49.195683)
+position = Vector2(-165.00232, -52.71361)
 rotation = -0.88273907
 shape = SubResource("RectangleShape2D_5qvji")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1807080460]
-position = Vector2(168.21103, -46.9426)
+position = Vector2(165.8427, -49.69557)
 rotation = 0.8603625
 shape = SubResource("RectangleShape2D_2qn6r")
 
@@ -329,14 +324,13 @@ shape = SubResource("RectangleShape2D_cmy3s")
 
 [node name="Pipe_Area" type="Area2D" parent="CupHitbox/Pipe_Area" unique_id=971251517]
 unique_name_in_owner = true
-visible = false
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/Pipe_Area/Pipe_Area" unique_id=1240017202]
+visible = false
 position = Vector2(0, -47)
 shape = SubResource("RectangleShape2D_tlida")
 
 [node name="Okbro" type="StaticBody2D" parent="." unique_id=415515661]
-visible = false
 collision_layer = 8
 collision_mask = 8
 

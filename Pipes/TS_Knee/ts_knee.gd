@@ -1,6 +1,6 @@
 extends Control
 
-var Is_Dragging : bool = false
+var Is_Dragging : bool = true
 var offset = Vector2(0, 0)
 
 var Snap = 50
@@ -45,13 +45,13 @@ func Overlap() -> void:
 	# 2. Check if the array contains any overlapping areas
 	if Pipe_Area.get_overlapping_areas().size() > 0:
 		# Areas are overlapping: Remove green and blue (turns the shape Red)
-		%"TS_Knee Shape".modulate.g = 0.0
-		%"TS_Knee Shape".modulate.b = 0.0
+		#%Model.modulate.g = 0.0
+		#%Model.modulate.b = 0.0
 		Is_Overlapping = true
 	else:
 		# No overlaps: Reset green and blue to normal (turns the shape back to White/Normal)
-		%"TS_Knee Shape".modulate.g = 255
-		%"TS_Knee Shape".modulate.b = 255
+		#%Model.modulate.g = 255
+		#%Model.modulate.b = 255
 		Is_Overlapping = false
 		
 func _on_drag_button_down() -> void:
@@ -64,7 +64,6 @@ func _on_drag_button_down() -> void:
 		Is_Dragging = false
 		
 func _on_drag_button_up() -> void:
-	print("p")
 	if not LevelData.I_Running:
 		
 		Is_Dragging = false

@@ -11,10 +11,10 @@ var pointer: bool = true
 func _ready() -> void:
 	cir_shape.radius = 8
 	cir_shape.custom_solver_bias = 0.1
-	#await get_tree().create_timer(3).timeout
-	#while Engine.get_frames_per_second() > 90:
-		#create_object(global_position + Vector2.from_angle(randf()*TAU)*spawnRad*randf())
-		#await get_tree().create_timer(0.001).timeout
+	await get_tree().create_timer(3).timeout
+	while Engine.get_frames_per_second() > 90:
+		create_object(global_position + Vector2.from_angle(randf()*TAU)*spawnRad*randf())
+		await get_tree().create_timer(0.001).timeout
 
 func create_object(pos: Vector2):
 	var ps := PhysicsServer2D

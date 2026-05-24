@@ -36,8 +36,14 @@ size = Vector2(43.533337, 58.933334)
 [node name="TS_Tee" type="Control" unique_id=299060835]
 layout_mode = 3
 anchors_preset = 0
-scale = Vector2(15, 15)
 script = ExtResource("1_hc0wy")
+
+[node name="Model" type="Sprite2D" parent="." unique_id=310790255]
+z_index = -50
+position = Vector2(3.333334, -15.999999)
+rotation = -1.5728091
+scale = Vector2(1.4464098, 1.3647124)
+texture = ExtResource("2_3uoie")
 
 [node name="TS_Knee Shape" type="Node2D" parent="." unique_id=1362508599]
 unique_name_in_owner = true
@@ -46,14 +52,12 @@ position = Vector2(-24.933334, -52.133335)
 scale = Vector2(10, 10)
 
 [node name="Bottom_Left2" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=682878590]
-visible = false
 position = Vector2(-10.000002, -14.999988)
 rotation = 1.5707964
 scale = Vector2(20, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Bottom_Left6" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=449288531]
-visible = false
 position = Vector2(-10, 25)
 rotation = 1.5707964
 scale = Vector2(20, 10)
@@ -66,28 +70,21 @@ scale = Vector2(60, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Bottom_Left5" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=1301948608]
-visible = false
 position = Vector2(-17.5, -10)
 rotation = -3.1415925
 scale = Vector2(5, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="Bottom_Left7" type="MeshInstance2D" parent="TS_Knee Shape" unique_id=2097391138]
-visible = false
 position = Vector2(-17.5, 20)
 rotation = -3.1415925
 scale = Vector2(5, 10)
 mesh = SubResource("QuadMesh_o6qpx")
 
 [node name="TS_Tee Collision" type="Node2D" parent="." unique_id=1410117010]
+visible = false
 position = Vector2(-24.933334, -52.133335)
 scale = Vector2(10, 10)
-
-[node name="Sprite2D" type="Sprite2D" parent="TS_Tee Collision" unique_id=310790255]
-position = Vector2(1.3862659, 3.7967107)
-rotation = -1.5728091
-scale = Vector2(0.14824133, 0.14943236)
-texture = ExtResource("2_3uoie")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Tee Collision" unique_id=1727964198]
 visible = false
@@ -118,6 +115,7 @@ position = Vector2(-12.533337, -10.000009)
 shape = SubResource("RectangleShape2D_837hq")
 
 [node name="TS_Tee Area" type="Node2D" parent="." unique_id=1051887705]
+visible = false
 position = Vector2(-24.933334, -52.133335)
 scale = Vector2(10, 10)
 
