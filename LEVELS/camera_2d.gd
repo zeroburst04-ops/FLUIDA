@@ -1,6 +1,6 @@
 extends Camera2D
 
-@export var scroll_speed: float = 200
+@export var scroll_speed: float = 400
 @export var smooth_speed: float = 10.0
 
 var target_y: float
