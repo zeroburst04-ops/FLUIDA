@@ -2,12 +2,9 @@ extends Node2D
 
 @onready var Wintext : = %Win_state
 @onready var Overlap : = %Overlap_text
-
 @onready var Pipe_parent : = %Pipes
 
 var overlap_text_timer : float = 0.000000000000
-
-
 var last_ticks: float = 0.0
 
 func _ready() -> void:

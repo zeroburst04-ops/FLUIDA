@@ -5,6 +5,7 @@ enum States {
 	Reducer
 }
 
+
 @onready var Pipe_Area := %Pipe_Area
 @export var CurrentState = States.Normal
 @onready var Pipe_Node : = %Pipes
@@ -29,6 +30,7 @@ func _ready() -> void:
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D10".disabled = true
 		States.Reducer:
 			%Front_Normal.visible = false
+
 
 func Snapfunc() -> void:
 	# Godot 4 built-in snapping math (handles negative coordinates perfectly)
