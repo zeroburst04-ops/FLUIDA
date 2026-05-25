@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_augb3"]
 [ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="3_fyl7c"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="4_6ym5a"]
-[ext_resource type="PackedScene" path="res://brightness_overlay.tscn" id="7_5f8d8"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="7_5f8d8"]
 [ext_resource type="AudioStream" uid="uid://bedplnkc704fj" path="res://Pokémon Center [Pokémon_ HeartGold & SoulSilver] (1).wav" id="7_6ym5a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
@@ -171,6 +171,7 @@ theme_override_font_sizes/font_size = 32
 text = "FREE SIMULATION"
 
 [connection signal="pressed" from="VScrollBar/Level_1" to="." method="_on_level_1_pressed"]
+[connection signal="button_down" from="VScrollBar/Level_2" to="." method="_on_level_2_button_down"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
