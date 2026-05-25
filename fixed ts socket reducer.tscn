@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://cb8yogv01hhac"]
+[gd_scene format=3 uid="uid://crwgphq1kfult"]
 
-[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="1_7u067"]
-[ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_fkm6c"]
+[ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_w6t18"]
+[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="2_k343j"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_fkm6c"]
 
@@ -9,6 +9,12 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2f7dg"]
 size = Vector2(80, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3atmk"]
+size = Vector2(40, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ax5n"]
+size = Vector2(17.248169, 9.939847)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64byl"]
 size = Vector2(77.93335, 38)
@@ -23,25 +29,24 @@ size = Vector2(77.93335, 38)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ax5n"]
 
-[node name="fixed ts_socket" type="Control" unique_id=305464754]
+[node name="fixed ts_socket_reducer" type="Control" unique_id=305464754]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_fkm6c")
+script = ExtResource("1_w6t18")
 
 [node name="Back" type="Sprite2D" parent="." unique_id=2024122441]
 z_index = -50
 z_as_relative = false
 position = Vector2(198.6625, 6.173451)
 scale = Vector2(0.90334666, 1.811297)
-texture = ExtResource("1_7u067")
+texture = ExtResource("2_k343j")
 
-[node name="Front_Normal" type="Sprite2D" parent="." unique_id=1631520399]
-unique_name_in_owner = true
-z_index = -50
+[node name="Front_Reducer" type="Sprite2D" parent="." unique_id=527805018]
+z_index = -51
 z_as_relative = false
-position = Vector2(-202.8508, 8.500011)
-scale = Vector2(1.009634, 1.8083334)
-texture = ExtResource("1_7u067")
+position = Vector2(-202.8508, 9.1733885)
+scale = Vector2(1.009634, 1.2428362)
+texture = ExtResource("2_k343j")
 
 [node name="TS_Socket Shape" type="Node2D" parent="." unique_id=1844349361]
 unique_name_in_owner = true
@@ -89,6 +94,7 @@ scale = Vector2(40, 6)
 mesh = SubResource("PrismMesh_5j2qg")
 
 [node name="TS_Socket Collision" type="Node2D" parent="." unique_id=1427464456]
+visible = false
 position = Vector2(0.7467346, 0)
 scale = Vector2(10, 10)
 
@@ -102,6 +108,30 @@ shape = SubResource("RectangleShape2D_2f7dg")
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=161980419]
 position = Vector2(-0.098667145, -15)
 shape = SubResource("RectangleShape2D_2f7dg")
+
+[node name="TS_Socket_Reducer Collision" type="Node2D" parent="TS_Socket Collision" unique_id=1925836106]
+position = Vector2(-0.2293396, 0)
+
+[node name="TS_Socket_Reducer Collision" type="StaticBody2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision" unique_id=1249813466]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=148956117]
+position = Vector2(-20.04, 12.5)
+shape = SubResource("RectangleShape2D_3atmk")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1177564592]
+position = Vector2(-20.04, -12.5)
+shape = SubResource("RectangleShape2D_3atmk")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1322103345]
+position = Vector2(6.782215, -12.247911)
+rotation = -0.2928449
+shape = SubResource("RectangleShape2D_8ax5n")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=73876754]
+position = Vector2(6.959999, 12.319999)
+rotation = 0.2932153
+shape = SubResource("RectangleShape2D_8ax5n")
 
 [node name="TS_Socket Area" type="Node2D" parent="." unique_id=581902813]
 visible = false

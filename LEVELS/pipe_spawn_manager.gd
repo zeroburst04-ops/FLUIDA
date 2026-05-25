@@ -14,32 +14,36 @@ func _process(delta: float) -> void:
 	%TS_Tee_Count.text = str(Level_Data.pipe_inventory["TS_Tee"]) + "x"
 
 func _on_ts_knee_button_button_down() -> void:
-	if Level_Data.pipe_inventory["TS_Knee"] > 0:
-		Level_Data.pipe_inventory["TS_Knee"] -= 1
-		var i = TS_Knee.instantiate()
-		i.global_position = get_global_mouse_position()
-		Pipes.add_child(i)
+	if not LevelData.I_Running:
+		if Level_Data.pipe_inventory["TS_Knee"] > 0:
+			Level_Data.pipe_inventory["TS_Knee"] -= 1
+			var i = TS_Knee.instantiate()
+			i.global_position = get_global_mouse_position()
+			Pipes.add_child(i)
 
 func _on_ts_socket_button_button_down() -> void:
-	if Level_Data.pipe_inventory["TS_Socket"] > 0:
-		Level_Data.pipe_inventory["TS_Socket"] -= 1
-		var i = TS_Socket.instantiate()
-		i.CurrentState = i.States.Normal
-		i.global_position = get_global_mouse_position()
-		Pipes.add_child(i)
+	if not LevelData.I_Running:
+		if Level_Data.pipe_inventory["TS_Socket"] > 0:
+			Level_Data.pipe_inventory["TS_Socket"] -= 1
+			var i = TS_Socket.instantiate()
+			i.CurrentState = i.States.Normal
+			i.global_position = get_global_mouse_position()
+			Pipes.add_child(i)
 
 func _on_ts_socket_reducer_button_button_down() -> void:
-	if Level_Data.pipe_inventory["TS_Socket_Reducer"] > 0:
-		Level_Data.pipe_inventory["TS_Socket_Reducer"] -= 1
-		print("Print")
-		var i = TS_Socket.instantiate()
-		i.CurrentState = i.States.Reducer
-		i.global_position = get_global_mouse_position()
-		Pipes.add_child(i)
+	if not LevelData.I_Running:
+		if Level_Data.pipe_inventory["TS_Socket_Reducer"] > 0:
+			Level_Data.pipe_inventory["TS_Socket_Reducer"] -= 1
+			print("Print")
+			var i = TS_Socket.instantiate()
+			i.CurrentState = i.States.Reducer
+			i.global_position = get_global_mouse_position()
+			Pipes.add_child(i)
 
 func _on_ts_tee_button_down() -> void:
-	if Level_Data.pipe_inventory["TS_Tee"] > 0:
-		Level_Data.pipe_inventory["TS_Tee"] -= 1
-		var i = TS_Tee.instantiate()
-		i.global_position = get_global_mouse_position()
-		Pipes.add_child(i)
+	if not LevelData.I_Running:
+		if Level_Data.pipe_inventory["TS_Tee"] > 0:
+			Level_Data.pipe_inventory["TS_Tee"] -= 1
+			var i = TS_Tee.instantiate()
+			i.global_position = get_global_mouse_position()
+			Pipes.add_child(i)
