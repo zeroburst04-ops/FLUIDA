@@ -25,6 +25,10 @@ size = Vector2(40.740738, 44.370365)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oxhad"]
 size = Vector2(517.96277, 499.14804)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r3axw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j2jdq"]
+
 [node name="fixed ts_knee" type="Control" unique_id=307902911]
 layout_mode = 3
 anchors_preset = 15
@@ -121,3 +125,15 @@ visible = false
 position = Vector2(-16.083359, -27.616669)
 scale = Vector2(0.90000015, 0.90000015)
 shape = SubResource("RectangleShape2D_oxhad")
+
+[node name="Drag" type="Button" parent="." unique_id=1600776845]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -242.0
+offset_top = -248.99998
+offset_right = -193.1
+offset_bottom = -198.79999
+scale = Vector2(10, 10)
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_r3axw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j2jdq")
