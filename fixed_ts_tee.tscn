@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dvqovyhq2u0sn"]
 
 [ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://3Way-removebg-preview.png" id="1_qxhh4"]
+[ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_y6wc5"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_y6wc5"]
 
@@ -22,17 +23,24 @@ size = Vector2(15.06666, 10)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aha21"]
 size = Vector2(43.533337, 58.933334)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_srxss"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t2kyw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mj4or"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n5j2x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mnygl"]
+
 [node name="fixed ts_tee" type="Control" unique_id=405732462]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+script = ExtResource("1_y6wc5")
 
 [node name="Model" type="Sprite2D" parent="." unique_id=504199230]
 z_index = -50
-position = Vector2(3.333334, -15.999999)
+position = Vector2(-0.60715675, 0.27429295)
 rotation = -1.5728091
 scale = Vector2(1.4464098, 1.3647124)
 texture = ExtResource("1_qxhh4")
@@ -118,3 +126,18 @@ position = Vector2(2.4733334, 4.9466667)
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="TS_Tee Area/Pipe_Area" unique_id=886268869]
 position = Vector2(-0.0400002, 0.053333282)
 shape = SubResource("RectangleShape2D_aha21")
+
+[node name="Rotate" type="Button" parent="." unique_id=1509837163]
+layout_mode = 0
+offset_left = -230.94049
+offset_top = -278.7257
+offset_right = 223.05951
+offset_bottom = 317.2743
+theme_override_styles/normal = SubResource("StyleBoxEmpty_srxss")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_t2kyw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mj4or")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_n5j2x")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mnygl")
+button_mask = 2
+
+[connection signal="button_down" from="Rotate" to="." method="_on_rotate_button_down"]

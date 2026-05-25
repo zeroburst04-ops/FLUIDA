@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cb8yogv01hhac"]
 
 [ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="1_7u067"]
+[ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_fkm6c"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_fkm6c"]
 
@@ -18,16 +19,19 @@ size = Vector2(17.248169, 9.939847)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64byl"]
 size = Vector2(77.93335, 38)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fkm6c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5j2qg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2f7dg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3atmk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ax5n"]
+
 [node name="fixed ts_socket" type="Control" unique_id=305464754]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -5.0
-offset_right = -5.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(-1656, -264)
+script = ExtResource("1_fkm6c")
 
 [node name="Back" type="Sprite2D" parent="." unique_id=2024122441]
 z_index = -50
@@ -148,3 +152,18 @@ position = Vector2(0.17066193, 0)
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Socket Area/Pipe_Area" unique_id=1735384381]
 position = Vector2(-0.13200378, -0.06666573)
 shape = SubResource("RectangleShape2D_64byl")
+
+[node name="Rotate" type="Button" parent="." unique_id=1307313503]
+layout_mode = 0
+offset_left = -406.0
+offset_top = -207.0
+offset_right = 393.0
+offset_bottom = 213.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fkm6c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5j2qg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2f7dg")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3atmk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8ax5n")
+button_mask = 2
+
+[connection signal="button_down" from="Rotate" to="." method="_on_rotate_button_down"]
