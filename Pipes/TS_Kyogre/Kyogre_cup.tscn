@@ -300,16 +300,6 @@ mesh = SubResource("QuadMesh_o6qpx")
 collision_layer = 9
 collision_mask = 9
 
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=559143577]
-position = Vector2(220, -166.99998)
-rotation = 0.02517698
-shape = SubResource("RectangleShape2D_5qvji")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=372318631]
-position = Vector2(-220.00003, -170.00002)
-rotation = 0.01258849
-shape = SubResource("RectangleShape2D_5qvji")
-
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=10214919]
 position = Vector2(-165.00232, -52.71361)
 rotation = -0.88273907
