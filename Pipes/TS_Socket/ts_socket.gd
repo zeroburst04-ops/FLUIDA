@@ -5,7 +5,6 @@ enum States {
 	Reducer
 }
 
-
 @onready var Pipe_Area := %Pipe_Area
 @export var CurrentState = States.Normal
 @onready var Pipe_Node : = %Pipes
@@ -61,13 +60,13 @@ func Overlap() -> void:
 		
 	if Pipe_Area.get_overlapping_areas().size() > 0:
 		# Turns the shape Red (No Green, No Blue)
-		%"TS_Socket Shape".modulate.g = 0.0
-		%"TS_Socket Shape".modulate.b = 0.0
+		%Back.modulate.g = 0.0
+		%Back.modulate.b = 0.0
 		Is_Overlapping = true
 	else:
 		# Resets back to standard White (1.0 is max)
-		%"TS_Socket Shape".modulate.g = 1.0
-		%"TS_Socket Shape".modulate.b = 1.0
+		%Back.modulate.g = 1.0
+		%Back.modulate.b = 1.0
 		Is_Overlapping = false
 		
 func _on_drag_button_down() -> void:

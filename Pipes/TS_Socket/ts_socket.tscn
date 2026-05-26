@@ -39,6 +39,7 @@ script = ExtResource("1_inntj")
 CurrentState = 1
 
 [node name="Back" type="Sprite2D" parent="." unique_id=1151699428]
+unique_name_in_owner = true
 z_index = -50
 z_as_relative = false
 position = Vector2(198.6625, 6.173451)
@@ -146,7 +147,6 @@ rotation = 0.2932153
 shape = SubResource("RectangleShape2D_yuw7e")
 
 [node name="TS_Socket Area" type="Node2D" parent="." unique_id=1197440404]
-visible = false
 position = Vector2(-0.9599304, 0)
 scale = Vector2(10, 10)
 
