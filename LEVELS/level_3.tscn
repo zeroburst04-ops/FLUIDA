@@ -231,17 +231,17 @@ height = 60
 width = 40
 
 [node name="fixed ts_knee12" parent="." unique_id=307902911 instance=ExtResource("15_a63b5")]
-offset_left = 8055.0
-offset_top = 938.0
-offset_right = 8055.0
-offset_bottom = 938.0
-rotation = -2.9093564
+offset_left = 8055.0005
+offset_top = 960.00006
+offset_right = 8055.0005
+offset_bottom = 960.00006
+rotation = -3.029344
 
 [node name="fixed ts_knee14" parent="." unique_id=679184080 instance=ExtResource("15_a63b5")]
 offset_left = 8600.001
-offset_top = 875.0
+offset_top = 862.0001
 offset_right = 8600.001
-offset_bottom = 875.0
+offset_bottom = 862.0001
 rotation = 0.09457743
 
 [node name="fixed ts_knee10" parent="." unique_id=1263874982 instance=ExtResource("15_a63b5")]
@@ -259,24 +259,31 @@ offset_bottom = -5017.0005
 rotation = -0.0007882118
 
 [node name="fixed ts_socket54" parent="." unique_id=1146574726 instance=ExtResource("16_ibijo")]
-offset_left = 7806.0
-offset_top = 1500.9999
-offset_right = 7806.0
-offset_bottom = 1500.9999
-rotation = -1.2846062
+offset_left = 7920.0005
+offset_top = 1568.0001
+offset_right = 7920.0005
+offset_bottom = 1568.0001
+rotation = -1.4425906
+
+[node name="fixed ts_socket57" parent="." unique_id=1419624302 instance=ExtResource("16_ibijo")]
+offset_left = 9997.0
+offset_top = -2885.0005
+offset_right = 9997.0
+offset_bottom = -2885.0005
+rotation = -0.6900905
 
 [node name="fixed ts_socket52" parent="." unique_id=1029865745 instance=ExtResource("16_ibijo")]
-offset_left = 9461.0
-offset_top = 542.99976
-offset_right = 9461.0
-offset_bottom = 542.99976
+offset_left = 9505.0
+offset_top = 650.99976
+offset_right = 9505.0
+offset_bottom = 650.99976
 rotation = -0.64366984
 
 [node name="fixed ts_socket51" parent="." unique_id=29969156 instance=ExtResource("16_ibijo")]
-offset_left = 7823.9995
-offset_top = -5750.9995
-offset_right = 7823.9995
-offset_bottom = -5750.9995
+offset_left = 7867.9995
+offset_top = -5790.9995
+offset_right = 7867.9995
+offset_bottom = -5790.9995
 rotation = -0.0019173026
 
 [node name="fixed ts_socket53" parent="." unique_id=623831682 instance=ExtResource("16_ibijo")]
@@ -293,22 +300,28 @@ offset_right = 8866.628
 offset_bottom = 404.0
 rotation = -3.0270922
 
-[node name="Branches" parent="." unique_id=1312025165 instance=ExtResource("17_nrsrv")]
-position = Vector2(7497.0005, 526.99976)
+[node name="Branches7" parent="." unique_id=1312025165 instance=ExtResource("17_nrsrv")]
+position = Vector2(6035, 385.99963)
+rotation = -3.829618
+scale = Vector2(-12.0660305, 9.905353)
+skew = -1.0929083
+
+[node name="Branches" parent="." unique_id=1630922892 instance=ExtResource("17_nrsrv")]
+position = Vector2(7920.0005, 237.99976)
 rotation = -0.632644
 scale = Vector2(7.109, 1.66)
 
 [node name="Branches2" parent="." unique_id=332273077 instance=ExtResource("17_nrsrv")]
-position = Vector2(12526, -123.00098)
+position = Vector2(12690.999, -33.99965)
 rotation = 3.95851
 scale = Vector2(6.109, 1.426)
 
 [node name="Branches3" parent="." unique_id=940813725 instance=ExtResource("17_nrsrv")]
-position = Vector2(4430, 2158)
-rotation = 0.7552545
+position = Vector2(4834, 2468.9998)
+rotation = 0.65267515
 
 [node name="Branches4" parent="." unique_id=200018315 instance=ExtResource("17_nrsrv")]
-position = Vector2(9176, 4631.9995)
+position = Vector2(9063.999, 4464)
 rotation = 0.8029271
 scale = Vector2(5.109, 1.193)
 
@@ -317,35 +330,35 @@ position = Vector2(9598.001, 3683.9998)
 rotation = -1.1383156
 
 [node name="Branches6" parent="." unique_id=106170914 instance=ExtResource("17_nrsrv")]
-position = Vector2(9612.001, -4330.0015)
+position = Vector2(9801, -4304)
 rotation = 6.4522586
 scale = Vector2(6.109, 1.426)
 
 [node name="fixed ts_socket43" parent="." unique_id=1787144078 instance=ExtResource("16_ibijo")]
-offset_left = 6933.0
-offset_top = -4135.0
-offset_right = 6933.0
-offset_bottom = -4135.0
+offset_left = 6873.0
+offset_top = -2574.0
+offset_right = 6873.0
+offset_bottom = -2574.0
 
 [node name="fixed ts_socket45" parent="." unique_id=188203736 instance=ExtResource("16_ibijo")]
-offset_left = 12387.0
-offset_top = -3128.0
-offset_right = 12387.0
-offset_bottom = -3128.0
+offset_left = 12618.0
+offset_top = -2950.0
+offset_right = 12618.0
+offset_bottom = -2950.0
 rotation = 0.77436686
 
 [node name="fixed ts_socket46" parent="." unique_id=1784024493 instance=ExtResource("16_ibijo")]
-offset_left = 9386.0
-offset_top = -2366.0002
-offset_right = 9386.0
-offset_bottom = -2366.0002
+offset_left = 9605.0
+offset_top = -3344.9995
+offset_right = 9605.0
+offset_bottom = -3344.9995
 rotation = -0.7164161
 
 [node name="fixed ts_tee6" parent="." unique_id=405732462 instance=ExtResource("18_0m8sj")]
-offset_left = 7587.0
-offset_top = -4061.0
-offset_right = 7587.0
-offset_bottom = -4061.0
+offset_left = 7617.0005
+offset_top = -4091.0
+offset_right = 7617.0005
+offset_bottom = -4091.0
 rotation = 0.0019319057
 
 [node name="fixed ts_tee8" parent="." unique_id=769901746 instance=ExtResource("18_0m8sj")]
@@ -356,38 +369,25 @@ offset_bottom = -4408.0
 rotation = 0.0019319057
 
 [node name="fixed ts_knee4" parent="." unique_id=593694108 instance=ExtResource("15_a63b5")]
-offset_left = 6319.0
-offset_top = -5557.0
-offset_right = 6319.0
-offset_bottom = -5557.0
+offset_left = 6392.0
+offset_top = -5715.0
+offset_right = 6392.0
+offset_bottom = -5715.0
 rotation = -3.1323528
 
-[node name="fixed ts_knee5" parent="." unique_id=1970729213 instance=ExtResource("15_a63b5")]
-offset_left = 6292.0
-offset_top = -4233.0
-offset_right = 6292.0
-offset_bottom = -4233.0
-rotation = 1.59555
-
 [node name="fixed ts_knee16" parent="." unique_id=71733076 instance=ExtResource("15_a63b5")]
-offset_left = 6265.9995
-offset_top = -1384.7568
-offset_right = 6265.9995
-offset_bottom = -1384.7568
+offset_left = 6323.9995
+offset_top = -1269.0
+offset_right = 6323.9995
+offset_bottom = -1269.0
 rotation = 0.0040345676
 
 [node name="fixed ts_tee12" parent="." unique_id=585741480 instance=ExtResource("18_0m8sj")]
-offset_left = 8852.0
-offset_top = -1549.0
-offset_right = 8852.0
-offset_bottom = -1549.0
+offset_left = 7754.0
+offset_top = -2444.0
+offset_right = 7754.0
+offset_bottom = -2444.0
 rotation = 0.0019319057
-
-[node name="fixed ts_socket31" parent="." unique_id=1249310981 instance=ExtResource("16_ibijo")]
-offset_left = 7669.0
-offset_top = -835.0
-offset_right = 7669.0
-offset_bottom = -835.0
 
 [node name="fixed ts_socket32" parent="." unique_id=1952805929 instance=ExtResource("16_ibijo")]
 offset_left = 11382.0
@@ -396,41 +396,36 @@ offset_right = 11382.0
 offset_bottom = -182.0
 
 [node name="fixed ts_socket33" parent="." unique_id=85765541 instance=ExtResource("16_ibijo")]
-offset_left = 12638.0
-offset_top = -1437.0
-offset_right = 12638.0
-offset_bottom = -1437.0
+offset_left = 11200.0
+offset_top = -1728.0
+offset_right = 11200.0
+offset_bottom = -1728.0
 
 [node name="fixed ts_socket34" parent="." unique_id=1027466924 instance=ExtResource("16_ibijo")]
-offset_left = 11477.0
-offset_top = -2218.0
-offset_right = 11477.0
-offset_bottom = -2218.0
+offset_left = 12062.0
+offset_top = -3523.0005
+offset_right = 12062.0
+offset_bottom = -3523.0005
 rotation = 0.8199838
 
 [node name="fixed ts_socket28" parent="." unique_id=531025463 instance=ExtResource("16_ibijo")]
-offset_left = 7650.0
-offset_top = -3198.0
-offset_right = 7650.0
-offset_bottom = -3198.0
+offset_left = 7692.0
+offset_top = -3334.0
+offset_right = 7692.0
+offset_bottom = -3334.0
+rotation = 0.6875496
 
-[node name="fixed ts_socket25" parent="." unique_id=671433186 instance=ExtResource("16_ibijo")]
-offset_left = 7666.0
-offset_top = -1650.0
-offset_right = 7666.0
-offset_bottom = -1650.0
+[node name="fixed ts_socket27" parent="." unique_id=288515539 instance=ExtResource("16_ibijo")]
+offset_left = 12157.0
+offset_top = -2551.0
+offset_right = 12157.0
+offset_bottom = -2551.0
 
 [node name="fixed ts_socket26" parent="." unique_id=1312236075 instance=ExtResource("16_ibijo")]
-offset_left = 12657.0
-offset_top = -2144.0
-offset_right = 12657.0
-offset_bottom = -2144.0
-
-[node name="fixed ts_socket27" parent="." unique_id=1624975878 instance=ExtResource("16_ibijo")]
-offset_left = 7655.0
-offset_top = -2435.0
-offset_right = 7655.0
-offset_bottom = -2435.0
+offset_left = 11671.0
+offset_top = -2121.0
+offset_right = 11671.0
+offset_bottom = -2121.0
 
 [node name="fixed ts_tee16" parent="." unique_id=492977398 instance=ExtResource("18_0m8sj")]
 offset_left = 10964.001
@@ -466,6 +461,13 @@ offset_top = 1441.0
 offset_right = 11847.001
 offset_bottom = 1441.0
 rotation = 3.1212144
+
+[node name="fixed ts_tee13" parent="." unique_id=972730083 instance=ExtResource("18_0m8sj")]
+offset_left = 6884.0
+offset_top = -4209.0
+offset_right = 6884.0
+offset_bottom = -4209.0
+rotation = 0.0019319057
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]
