@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yyfcmnrujxkc"
-path="res://.godot/imported/Untitled_design-removebg-preview.png-6e06b328813e37d1d35ad2d0d9adaabe.ctex"
+uid="uid://ybxmurw4lsyy"
+path="res://.godot/imported/KNEE.png-91ed9c98c7041b466e36e687748e419a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Untitled_design-removebg-preview.png"
-dest_files=["res://.godot/imported/Untitled_design-removebg-preview.png-6e06b328813e37d1d35ad2d0d9adaabe.ctex"]
+source_file="res://ASSETS/KNEE.png"
+dest_files=["res://.godot/imported/KNEE.png-91ed9c98c7041b466e36e687748e419a.ctex"]
 
 [params]
 

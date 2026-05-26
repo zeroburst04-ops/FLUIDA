@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b66t53823e88x"]
 
 [ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_j2jdq"]
-[ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://2way-removebg-preview.png" id="1_r3axw"]
+[ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://ASSETS/KNEE.png" id="1_r3axw"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_j2jdq"]
 

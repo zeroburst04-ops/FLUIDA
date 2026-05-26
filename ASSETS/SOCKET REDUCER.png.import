@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o3rwlmkd82g1"
-path="res://.godot/imported/1way-removebg-preview.png-3437fcb73c5ba93f50ffcf122a726a2e.ctex"
+uid="uid://cy2bw5a8ure77"
+path="res://.godot/imported/SOCKET REDUCER.png-f937deffcc69d0b54cde4ab5b64facf3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://1way-removebg-preview.png"
-dest_files=["res://.godot/imported/1way-removebg-preview.png-3437fcb73c5ba93f50ffcf122a726a2e.ctex"]
+source_file="res://ASSETS/SOCKET REDUCER.png"
+dest_files=["res://.godot/imported/SOCKET REDUCER.png-f937deffcc69d0b54cde4ab5b64facf3.ctex"]
 
 [params]
 

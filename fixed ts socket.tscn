@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cb8yogv01hhac"]
 
-[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="1_7u067"]
+[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://ASSETS/SOCKET.png" id="1_7u067"]
 [ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_fkm6c"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_fkm6c"]

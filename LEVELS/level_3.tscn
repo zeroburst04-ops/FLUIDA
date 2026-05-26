@@ -9,10 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="7_4xdxs"]
 [ext_resource type="Script" uid="uid://14mwy7hlpnpx" path="res://LEVELS/camera_2d.gd" id="8_ympem"]
 [ext_resource type="Script" uid="uid://bjr07yppeeds" path="res://LEVELS/pipe_spawn_manager.gd" id="9_sxi5k"]
-[ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://2way-removebg-preview.png" id="10_3oe1h"]
-[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="11_nqrxa"]
-[ext_resource type="Texture2D" uid="uid://cy2bw5a8ure77" path="res://image-removebg-preview.png" id="12_tffgt"]
-[ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://3Way-removebg-preview.png" id="13_cewnc"]
+[ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://ASSETS/KNEE.png" id="10_3oe1h"]
+[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://ASSETS/SOCKET.png" id="11_4nx7w"]
+[ext_resource type="Texture2D" uid="uid://cy2bw5a8ure77" path="res://ASSETS/SOCKET REDUCER.png" id="12_tffgt"]
+[ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://ASSETS/TEE.png" id="13_cewnc"]
 [ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="14_gfw2a"]
 [ext_resource type="PackedScene" uid="uid://b66t53823e88x" path="res://fixed_ts_knee.tscn" id="15_a63b5"]
 [ext_resource type="PackedScene" uid="uid://cb8yogv01hhac" path="res://fixed ts socket.tscn" id="16_ibijo"]
@@ -179,7 +179,7 @@ text = "Nx"
 unique_name_in_owner = true
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
-texture_normal = ExtResource("11_nqrxa")
+texture_normal = ExtResource("11_4nx7w")
 
 [node name="TS_Socket_Count" type="Label" parent="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Button" unique_id=1783296499]
 unique_name_in_owner = true
