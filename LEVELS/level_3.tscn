@@ -278,7 +278,7 @@ offset_left = 9505.0
 offset_top = 650.99976
 offset_right = 9505.0
 offset_bottom = 650.99976
-rotation = -0.64366984
+rotation = -1.5900308
 
 [node name="fixed ts_socket51" parent="." unique_id=29969156 instance=ExtResource("16_ibijo")]
 offset_left = 7867.9995
