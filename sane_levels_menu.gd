@@ -28,7 +28,7 @@ func _ready():
 
 
 func _on_level_1_pressed() -> void:
-	get_tree().change_scene_to_file("res://LEVELS/level_1.tscn")
+	get_tree().change_scene_to_file("res://SANE_LEVELS/SANE_LEVEL_1/level_1_SL.tscn")
 
 
 func _on_button_pressed() -> void:
@@ -36,8 +36,9 @@ func _on_button_pressed() -> void:
 
 
 func _on_level_2_button_down() -> void:
-	get_tree().change_scene_to_file("res://LEVELS/level_2.tscn")
+	get_tree().change_scene_to_file("res://SANE_LEVELS/SANE_LEVEL_2/level_2_SL.tscn")
 
 
 func _on_button_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://SANE_levels_menu.tscn")
+	get_tree().change_scene_to_file("res://levels_menu.tscn")
+	
