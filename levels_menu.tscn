@@ -137,9 +137,9 @@ text = "LEVEL 5"
 [node name="BackButton" type="Button" parent="." unique_id=1735406266]
 layout_mode = 0
 offset_left = 994.0
-offset_top = 565.0
+offset_top = 30.0
 offset_right = 1118.0
-offset_bottom = 627.0
+offset_bottom = 92.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_fyl7c")
@@ -153,7 +153,6 @@ volume_db = 18.955
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_5f8d8")]
-visible = false
 layout_mode = 1
 offset_left = -359.0
 offset_top = -250.0
@@ -163,27 +162,16 @@ mouse_filter = 2
 
 [node name="Button" type="Button" parent="." unique_id=1553499670]
 layout_mode = 0
-offset_left = 822.0
+offset_left = 676.0
 offset_top = 32.0
-offset_right = 1123.0
+offset_right = 977.0
 offset_bottom = 90.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "FREE SIMULATION"
-
-[node name="Button2" type="Button" parent="." unique_id=1193529160]
-layout_mode = 0
-offset_left = 603.0
-offset_top = 32.0
-offset_right = 803.0
-offset_bottom = 90.0
-theme_override_fonts/font = ExtResource("4_6ym5a")
-theme_override_font_sizes/font_size = 32
-text = "Easy Mode"
 
 [connection signal="pressed" from="VScrollBar/Level_1" to="." method="_on_level_1_pressed"]
 [connection signal="button_down" from="VScrollBar/Level_2" to="." method="_on_level_2_button_down"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
