@@ -29,6 +29,12 @@ size = Vector2(117, 156)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4tr5l"]
 size = Vector2(10, 36)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_toxmh"]
+size = Vector2(10, 229)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4cwae"]
+size = Vector2(10, 229)
+
 [node name="WaterCup" type="Node2D" unique_id=570814531]
 script = ExtResource("1_2qn6r")
 Openedside = 1
@@ -227,8 +233,8 @@ position = Vector2(-55, -79)
 shape = SubResource("RectangleShape2D_4tr5l")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Left/StaticBody2D" unique_id=1257015563]
-position = Vector2(-55, -135)
-shape = SubResource("RectangleShape2D_4tr5l")
+position = Vector2(-55, -231.5)
+shape = SubResource("RectangleShape2D_toxmh")
 
 [node name="CupHitbox_Right" type="Node2D" parent="CupHitbox" unique_id=1074179339]
 position = Vector2(122, 0)
@@ -245,5 +251,5 @@ position = Vector2(-55, -79)
 shape = SubResource("RectangleShape2D_4tr5l")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Right/StaticBody2D" unique_id=1902169831]
-position = Vector2(-55, -135)
-shape = SubResource("RectangleShape2D_4tr5l")
+position = Vector2(-54.999992, -231.5)
+shape = SubResource("RectangleShape2D_4cwae")
