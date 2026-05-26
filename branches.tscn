@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://d1sdovsuyidme"]
+
+[ext_resource type="Texture2D" uid="uid://16s8pxynvysl" path="res://ef7708200832d08-removebg-preview.png" id="1_quxa6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmtpm"]
+size = Vector2(3.4660096, 26.250378)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_datd1"]
+size = Vector2(2.4722557, 8.888723)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybgxx"]
+size = Vector2(20.765354, 3.8766391)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2evo"]
+size = Vector2(4.5515842, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nipis"]
+size = Vector2(15.100002, 3.8136413)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1kkl"]
+size = Vector2(91.07405, 35.444435)
+
+[node name="Branches" type="Node2D" unique_id=1312025165]
+scale = Vector2(9.109165, 2.1272495)
+
+[node name="Model" type="Sprite2D" parent="." unique_id=970833333]
+unique_name_in_owner = true
+z_index = -50
+z_as_relative = false
+position = Vector2(17, -12)
+scale = Vector2(1.5268612, 1.4882076)
+texture = ExtResource("1_quxa6")
+
+[node name="Branche Collision" type="Node2D" parent="." unique_id=328852953]
+unique_name_in_owner = true
+scale = Vector2(10, 10)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Branche Collision" unique_id=801757489]
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=342142108]
+position = Vector2(-3.0829818, -6.5548277)
+rotation = 1.4388162
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_hmtpm")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1657122201]
+position = Vector2(-14.200001, -13.900001)
+rotation = 3.8002543
+scale = Vector2(0.99999833, 0.99999833)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1585456219]
+position = Vector2(-11.350126, -12.498452)
+rotation = 1.2196202
+scale = Vector2(0.9999988, 0.9999988)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=955841345]
+position = Vector2(6.3000016, -10.500004)
+rotation = -2.3769698
+scale = Vector2(0.9999975, 0.9999975)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1250341002]
+position = Vector2(-39.999996, -6.7)
+rotation = 2.7844987
+scale = Vector2(0.99999887, 0.99999887)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=2126995116]
+position = Vector2(17.4, -6.4000006)
+rotation = -4.4553537
+scale = Vector2(0.9999924, 0.9999924)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1628795904]
+position = Vector2(21.399998, -8.899999)
+rotation = -1.5236042
+scale = Vector2(0.9999962, 0.9999962)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1704003281]
+position = Vector2(-30.099998, -3.7000022)
+rotation = 2.6126962
+scale = Vector2(0.99999815, 0.99999815)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=907552807]
+position = Vector2(2.7316093, 6.0949163)
+rotation = 2.9820864
+scale = Vector2(0.9999758, 0.9999758)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=857354224]
+position = Vector2(1.8000007, -5.9000015)
+rotation = 1.4910432
+scale = Vector2(0.99998796, 0.99998796)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1041871028]
+position = Vector2(-8.9, 1.5999984)
+rotation = 1.8735713
+scale = Vector2(0.9999908, 0.9999908)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1522131366]
+position = Vector2(5.7, 1.4999999)
+rotation = -1.5629808
+scale = Vector2(0.9999939, 0.9999939)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=259339151]
+position = Vector2(-12.699999, -0.9000002)
+rotation = -1.0841997
+scale = Vector2(0.999997, 0.999997)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=1668567798]
+position = Vector2(-17.915413, -9.313312)
+rotation = 0.8708987
+scale = Vector2(0.99999946, 0.99999946)
+shape = SubResource("RectangleShape2D_datd1")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=809347992]
+position = Vector2(19.566015, -10.963664)
+rotation = -0.27941284
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_ybgxx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=62828600]
+position = Vector2(1.1000001, 1.8)
+rotation = 0.799281
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_ybgxx")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=259794450]
+position = Vector2(-25.769625, -7.1743155)
+rotation = -1.2966725
+shape = SubResource("RectangleShape2D_s2evo")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Branche Collision/StaticBody2D" unique_id=592180995]
+position = Vector2(-42.16087, -12.7290745)
+rotation = 0.29431853
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_nipis")
+
+[node name="Branch_Area" type="Area2D" parent="Branche Collision" unique_id=1314300245 groups=["Pipe"]]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Branche Collision/Branch_Area" unique_id=856370993]
+position = Vector2(-9.816665, -4.149999)
+scale = Vector2(0.90000015, 0.90000015)
+shape = SubResource("RectangleShape2D_u1kkl")

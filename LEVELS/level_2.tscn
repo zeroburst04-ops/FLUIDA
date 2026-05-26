@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="14_24ry0"]
 [ext_resource type="PackedScene" uid="uid://b66t53823e88x" path="res://fixed_ts_knee.tscn" id="16_rn357"]
 [ext_resource type="PackedScene" uid="uid://cb8yogv01hhac" path="res://fixed ts socket.tscn" id="17_ybpg2"]
+[ext_resource type="PackedScene" uid="uid://d1sdovsuyidme" path="res://branches.tscn" id="18_ybpg2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6smf"]
 bg_color = Color(0.21814606, 0.47902644, 0.21154901, 1)
@@ -30,18 +31,6 @@ size = Vector2(20257.125, 798)
 [sub_resource type="FluidEffect2DSurfaceTensionAKINCI" id="FluidEffect2DSurfaceTensionAKINCI_s21lk"]
 fluid_tension_coefficient = 35.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eyslt"]
-size = Vector2(4477.3965, 370.1324)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hnb08"]
-size = Vector2(384.22406, 6789.699)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbejn"]
-size = Vector2(13, 927)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhqx4"]
-size = Vector2(446, 100)
-
 [node name="Level 2" type="Node2D" unique_id=1704169145]
 script = ExtResource("1_rut0m")
 
@@ -51,7 +40,7 @@ script = ExtResource("2_i1huk")
 
 [node name="BackGround" type="Sprite2D" parent="." unique_id=1088175658]
 z_index = -100
-position = Vector2(9462, -865)
+position = Vector2(9461, -865)
 scale = Vector2(13.294119, 10.852412)
 texture = ExtResource("2_rut0m")
 
@@ -259,66 +248,6 @@ position = Vector2(8961, -7363)
 height = 60
 width = 40
 
-[node name="CupHitbox" type="Node2D" parent="." unique_id=525758718]
-position = Vector2(9497, -700)
-
-[node name="CupHitbox_Bottom" type="Node2D" parent="CupHitbox" unique_id=616159364]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="CupHitbox/CupHitbox_Bottom" unique_id=197909129]
-collision_layer = 9
-collision_mask = 9
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1104534534]
-position = Vector2(-2559.8818, 706.57886)
-rotation = 0.38342947
-shape = SubResource("RectangleShape2D_eyslt")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=2124143812]
-position = Vector2(-3034.108, 3912.5537)
-rotation = -0.49908412
-shape = SubResource("RectangleShape2D_eyslt")
-
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1160012551]
-position = Vector2(3507, -5903.9995)
-rotation = -0.83413917
-scale = Vector2(0.99999994, 0.99999994)
-shape = SubResource("RectangleShape2D_eyslt")
-
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=340666237]
-position = Vector2(-29, -2038)
-rotation = 2.320739
-scale = Vector2(0.9999999, 0.9999999)
-shape = SubResource("RectangleShape2D_eyslt")
-
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=246950307]
-position = Vector2(1375, 4424.001)
-rotation = 2.248669
-shape = SubResource("RectangleShape2D_eyslt")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=215821235]
-position = Vector2(3312.455, 1225.6455)
-rotation = -2.0172582
-shape = SubResource("RectangleShape2D_eyslt")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=578842193]
-position = Vector2(-3299.5776, -2493.9521)
-rotation = 1.1271042
-shape = SubResource("RectangleShape2D_hnb08")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1842681582]
-position = Vector2(53.5, -468.5)
-shape = SubResource("RectangleShape2D_bbejn")
-
-[node name="Pipe_Area" type="Node2D" parent="CupHitbox" unique_id=504957294]
-
-[node name="Pipe_Area" type="Area2D" parent="CupHitbox/Pipe_Area" unique_id=2141828691]
-unique_name_in_owner = true
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/Pipe_Area/Pipe_Area" unique_id=1025164514]
-visible = false
-position = Vector2(0, -47)
-shape = SubResource("RectangleShape2D_rhqx4")
-
 [node name="fixed ts_knee12" parent="." unique_id=307902911 instance=ExtResource("16_rn357")]
 offset_left = 9240.0
 offset_top = 960.00024
@@ -388,6 +317,43 @@ offset_top = -4456.0
 offset_right = 11484.0
 offset_bottom = -4456.0
 rotation = -0.96772647
+
+[node name="Branches4" parent="." unique_id=1312025165 instance=ExtResource("18_ybpg2")]
+position = Vector2(4989, -499.00006)
+rotation = 0.39227805
+scale = Vector2(-4.49507, 13.404913)
+skew = 1.3904892
+
+[node name="Branches3" parent="." unique_id=1390937112 instance=ExtResource("18_ybpg2")]
+position = Vector2(9455, -2800.9998)
+rotation = -0.80592513
+scale = Vector2(5.3837466, -1.7709947)
+skew = -0.80242753
+
+[node name="Branches2" parent="." unique_id=664048017 instance=ExtResource("18_ybpg2")]
+position = Vector2(12341.001, -5756.9995)
+rotation = 2.776383
+scale = Vector2(5.3241687, 1.5677671)
+
+[node name="Branches" parent="." unique_id=1116444483 instance=ExtResource("18_ybpg2")]
+position = Vector2(7205, -3975)
+rotation = -0.47683534
+scale = Vector2(5.10413, 2.1272495)
+
+[node name="Branches" parent="Branches" unique_id=700037215 instance=ExtResource("18_ybpg2")]
+position = Vector2(658.82684, 3337.319)
+rotation = -1.7988685
+scale = Vector2(3.6935809, 0.52024716)
+
+[node name="Branches" parent="Branches/Branches" unique_id=1524979709 instance=ExtResource("18_ybpg2")]
+position = Vector2(133.55127, -2656.1563)
+rotation = -4.7058744
+scale = Vector2(1.8977604, 0.26261032)
+
+[node name="Branches" parent="Branches/Branches/Branches" unique_id=305608499 instance=ExtResource("18_ybpg2")]
+position = Vector2(592.21375, 554.4911)
+rotation = -1.0691028
+scale = Vector2(2.3048797, 0.83726335)
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]
