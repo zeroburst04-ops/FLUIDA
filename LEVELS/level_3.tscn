@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cb8yogv01hhac" path="res://fixed ts socket.tscn" id="16_ibijo"]
 [ext_resource type="PackedScene" uid="uid://d1sdovsuyidme" path="res://branches.tscn" id="17_nrsrv"]
 [ext_resource type="PackedScene" uid="uid://dvqovyhq2u0sn" path="res://fixed_ts_tee.tscn" id="18_0m8sj"]
+[ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="19_4nx7w"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kenis"]
 bg_color = Color(0.21814606, 0.47902644, 0.21154901, 1)
@@ -468,6 +469,10 @@ offset_top = -4209.0
 offset_right = 6884.0
 offset_bottom = -4209.0
 rotation = 0.0019319057
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1560402727]
+stream = ExtResource("19_4nx7w")
+autoplay = true
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]
