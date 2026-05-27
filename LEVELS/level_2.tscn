@@ -260,6 +260,7 @@ offset_top = 842.00006
 offset_right = 9476.0
 offset_bottom = 842.00006
 rotation = -0.109383404
+mouse_filter = 2
 
 [node name="fixed ts_knee14" parent="." unique_id=1469328897 instance=ExtResource("16_rn357")]
 offset_left = 8841.999
@@ -267,6 +268,7 @@ offset_top = -5218.0
 offset_right = 8841.999
 offset_bottom = -5218.0
 rotation = 1.5191826
+mouse_filter = 2
 
 [node name="fixed ts_knee10" parent="." unique_id=490926521 instance=ExtResource("16_rn357")]
 offset_left = 9339.0
@@ -274,6 +276,7 @@ offset_top = -5850.0
 offset_right = 9339.0
 offset_bottom = -5850.0
 rotation = 0.0040345676
+mouse_filter = 2
 
 [node name="fixed ts_socket50" parent="." unique_id=305464754 instance=ExtResource("17_ybpg2")]
 offset_left = 8912.0
@@ -281,6 +284,7 @@ offset_top = -3597.0
 offset_right = 8912.0
 offset_bottom = -3597.0
 rotation = -0.6949292
+mouse_filter = 2
 
 [node name="fixed ts_socket54" parent="." unique_id=1356665158 instance=ExtResource("17_ybpg2")]
 offset_left = 8323.0
@@ -288,6 +292,7 @@ offset_top = 3632.9998
 offset_right = 8323.0
 offset_bottom = 3632.9998
 rotation = -2.2208633
+mouse_filter = 2
 
 [node name="fixed ts_socket52" parent="." unique_id=490852934 instance=ExtResource("17_ybpg2")]
 offset_left = 7687.0
@@ -295,6 +300,7 @@ offset_top = -2548.0002
 offset_right = 7687.0
 offset_bottom = -2548.0002
 rotation = -0.64366984
+mouse_filter = 2
 
 [node name="fixed ts_socket51" parent="." unique_id=287762907 instance=ExtResource("17_ybpg2")]
 offset_left = 8309.0
@@ -302,6 +308,7 @@ offset_top = -3074.0005
 offset_right = 8309.0
 offset_bottom = -3074.0005
 rotation = -0.64366984
+mouse_filter = 2
 
 [node name="fixed ts_socket53" parent="." unique_id=1365508792 instance=ExtResource("17_ybpg2")]
 offset_left = 9463.0
@@ -309,6 +316,7 @@ offset_top = -5169.0
 offset_right = 9463.0
 offset_bottom = -5169.0
 rotation = 3.1581795
+mouse_filter = 2
 
 [node name="fixed ts_socket49" parent="." unique_id=1123248582 instance=ExtResource("17_ybpg2")]
 offset_left = 9558.0
@@ -316,6 +324,7 @@ offset_top = -4086.0
 offset_right = 9558.0
 offset_bottom = -4086.0
 rotation = -0.64366984
+mouse_filter = 2
 
 [node name="fixed ts_knee11" parent="." unique_id=1911740324 instance=ExtResource("16_rn357")]
 offset_left = 11418.986
@@ -323,6 +332,7 @@ offset_top = -4361.593
 offset_right = 11533.614
 offset_bottom = -4361.593
 rotation = -0.96772647
+mouse_filter = 2
 
 [node name="Branches" parent="." unique_id=1312025165 instance=ExtResource("18_ybpg2")]
 position = Vector2(7200.9995, -3314.9998)
