@@ -74,6 +74,19 @@ theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 1"
 
+[node name="L1_Score" type="Label" parent="VScrollBar/Level_1" unique_id=655871945]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 415.0
+offset_top = 4.0
+offset_right = 455.0
+offset_bottom = 38.0
+rotation = -0.4454284
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_augb3")
+theme_override_font_sizes/font_size = 32
+text = "0"
+
 [node name="background2" type="Sprite2D" parent="VScrollBar" unique_id=1507310412]
 position = Vector2(220.99998, 132)
 scale = Vector2(0.86328125, 0.13183598)
@@ -88,6 +101,19 @@ offset_bottom = 167.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 2"
+
+[node name="L2_Score" type="Label" parent="VScrollBar/Level_2" unique_id=60341625]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 415.0
+offset_top = 9.0
+offset_right = 455.0
+offset_bottom = 43.0
+rotation = -0.4454284
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_augb3")
+theme_override_font_sizes/font_size = 32
+text = "0"
 
 [node name="background5" type="Sprite2D" parent="VScrollBar" unique_id=1976137396]
 position = Vector2(222.5, 227)
@@ -106,6 +132,19 @@ theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 3"
 
+[node name="L3_Score" type="Label" parent="VScrollBar/Level_3" unique_id=1622401808]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 414.0
+offset_top = 9.0
+offset_right = 454.0
+offset_bottom = 43.0
+rotation = -0.4454284
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_augb3")
+theme_override_font_sizes/font_size = 32
+text = "0"
+
 [node name="background4" type="Sprite2D" parent="VScrollBar" unique_id=1520756947]
 position = Vector2(221.99998, 325.6275)
 scale = Vector2(0.85937494, 0.13426754)
@@ -120,6 +159,19 @@ theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 4"
 
+[node name="L4_Score" type="Label" parent="VScrollBar/Level_4" unique_id=1094913788]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 414.0
+offset_top = 6.0
+offset_right = 454.0
+offset_bottom = 40.0
+rotation = -0.4454284
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_augb3")
+theme_override_font_sizes/font_size = 32
+text = "0"
+
 [node name="background3" type="Sprite2D" parent="VScrollBar" unique_id=1310491215]
 position = Vector2(220.99998, 418.57794)
 scale = Vector2(0.86328125, 0.13836734)
@@ -133,6 +185,19 @@ offset_bottom = 454.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "LEVEL 5"
+
+[node name="L5_Score" type="Label" parent="VScrollBar/Level_5" unique_id=2087514642]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 414.0
+offset_top = 7.0
+offset_right = 454.0
+offset_bottom = 41.0
+rotation = -0.4454284
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_augb3")
+theme_override_font_sizes/font_size = 32
+text = "0"
 
 [node name="BackButton" type="Button" parent="." unique_id=1735406266]
 layout_mode = 0
