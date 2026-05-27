@@ -9,12 +9,12 @@
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="7_i8irj"]
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="8_eeyo7"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_waxd2"]
-[ext_resource type="Script" uid="uid://14mwy7hlpnpx" path="res://LEVELS/camera_2d.gd" id="10_jsnxj"]
 [ext_resource type="Script" uid="uid://bjr07yppeeds" path="res://LEVELS/pipe_spawn_manager.gd" id="10_nqkuc"]
 [ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://ASSETS/KNEE.png" id="11_6ykuw"]
 [ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://ASSETS/SOCKET.png" id="12_o0fgx"]
 [ext_resource type="Texture2D" uid="uid://cy2bw5a8ure77" path="res://ASSETS/SOCKET REDUCER.png" id="13_ucmko"]
 [ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://ASSETS/TEE.png" id="14_soc71"]
+[ext_resource type="PackedScene" uid="uid://dvqovyhq2u0sn" path="res://fixed_ts_tee.tscn" id="16_jsnxj"]
 
 [sub_resource type="FluidEffect2DSurfaceTensionAKINCI" id="FluidEffect2DSurfaceTensionAKINCI_s21lk"]
 fluid_tension_coefficient = 35.0
@@ -134,7 +134,7 @@ text = "Restart"
 metadata/_edit_use_anchors_ = true
 
 [node name="KyogreCup" parent="." unique_id=1877442037 instance=ExtResource("8_eeyo7")]
-position = Vector2(6755, -1817.0001)
+position = Vector2(7852, -3855)
 scale = Vector2(5, 5)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=558019054]
@@ -157,7 +157,6 @@ shape = SubResource("RectangleShape2D_8oyt3")
 unique_name_in_owner = true
 position = Vector2(9390, -4659)
 zoom = Vector2(0.15, 0.15)
-script = ExtResource("10_jsnxj")
 
 [node name="Pipe_panel" type="Panel" parent="Camera2D" unique_id=1102433254]
 unique_name_in_owner = true
@@ -262,6 +261,18 @@ theme_override_fonts/font = ExtResource("7_i8irj")
 theme_override_font_sizes/font_size = 108
 theme_override_styles/normal = SubResource("StyleBoxFlat_2qqyp")
 text = "BACK"
+
+[node name="Fixed" type="Control" parent="." unique_id=224522309]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="fixed ts_tee" parent="." unique_id=405732462 instance=ExtResource("16_jsnxj")]
+offset_left = 10460.0
+offset_top = -4626.0
+offset_right = 10460.0
+offset_bottom = -4626.0
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]

@@ -26,7 +26,8 @@ func _process(delta: float) -> void:
 		return
 	if LevelData.I_Lose:
 		Wintext.text = "ぉせ"
-		pass
+		await get_tree().create_timer(1).timeout
+		get_tree().reload_current_scene()
 
 	%FPS.text = str(Engine.get_frames_per_second()) + "FPS"
 	

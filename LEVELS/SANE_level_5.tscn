@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://ASSETS/SOCKET.png" id="12_5y4bd"]
 [ext_resource type="Texture2D" uid="uid://cy2bw5a8ure77" path="res://ASSETS/SOCKET REDUCER.png" id="13_sct03"]
 [ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://ASSETS/TEE.png" id="14_hjl3o"]
-[ext_resource type="PackedScene" path="res://fixed ts socket reducer.tscn" id="15_uwvxn"]
 
 [sub_resource type="FluidEffect2DSurfaceTensionAKINCI" id="FluidEffect2DSurfaceTensionAKINCI_s21lk"]
 fluid_tension_coefficient = 35.0
@@ -26,7 +25,7 @@ bg_color = Color(0.21814606, 0.47902644, 0.21154901, 1)
 bg_color = Color(0.7251792, 0, 0.20635924, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8oyt3"]
-size = Vector2(20257.125, 798)
+size = Vector2(25877.977, 2852.7056)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qqyp"]
 bg_color = Color(0.5038092, 0, 0.0635143, 1)
@@ -60,7 +59,7 @@ offset_bottom = 5838.0
 unique_name_in_owner = true
 
 [node name="WaterCup" parent="." unique_id=570814531 instance=ExtResource("5_jhdai")]
-position = Vector2(10523, -5000)
+position = Vector2(7398, -5000)
 scale = Vector2(10, 15)
 
 [node name="Fluid_Node" parent="WaterCup" unique_id=2007082683 instance=ExtResource("6_7sjqi")]
@@ -134,7 +133,7 @@ text = "Restart"
 metadata/_edit_use_anchors_ = true
 
 [node name="KyogreCup" parent="." unique_id=1877442037 instance=ExtResource("8_5ggnq")]
-position = Vector2(6755, -3285)
+position = Vector2(8745, -4203)
 scale = Vector2(5, 5)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=558019054]
@@ -149,7 +148,7 @@ position = Vector2(-421, 3077)
 position = Vector2(468, -3004)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfBounds/StaticBody2D" unique_id=687030231]
-position = Vector2(4280, 7300)
+position = Vector2(7969.2, 5005.5547)
 scale = Vector2(1.3126838, 2.2333567)
 shape = SubResource("RectangleShape2D_8oyt3")
 
@@ -267,20 +266,6 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="fixed ts_socket_reducer" parent="." unique_id=305464754 instance=ExtResource("15_uwvxn")]
-offset_left = 8143.0005
-offset_top = -4661.0005
-offset_right = 8143.0005
-offset_bottom = -4661.0005
-rotation = 0.7853982
-
-[node name="fixed ts_socket_reducer2" parent="." unique_id=268019217 instance=ExtResource("15_uwvxn")]
-offset_left = 8700.0
-offset_top = -4100.0
-offset_right = 8700.0
-offset_bottom = -4100.0
-rotation = -2.3561945
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]
