@@ -45,7 +45,7 @@ func _ready() -> void:
 
 func mulai_audio_dan_timer() -> void:
 	$kyogre_cry.volume_db = -3.0
-	await get_tree().create_timer(5.0).timeout
+	await get_tree().create_timer(3.0).timeout
 	await get_tree().process_frame
 	loading_selesai_bisa_pindah = true
 	

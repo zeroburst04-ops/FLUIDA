@@ -15,8 +15,8 @@ func _ready():
 	Engine.time_scale = 1
 
 func _on_level_1_pressed() -> void:
-	scenemanager.load_scene("res://LEVELS/level_1.tscn")
-
+	get_tree().change_scene_to_file("res://LEVELS/SANE_level_1.tscn")
+	
 func _on_button_pressed() -> void:
 	scenemanager.load_scene("res://TestScene/test_scene.tscn")
 

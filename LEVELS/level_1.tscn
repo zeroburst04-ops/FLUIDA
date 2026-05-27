@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bboo5tbt2nggd" path="res://27076.jpg" id="2_0pl5t"]
 [ext_resource type="Script" uid="uid://bhy8gcd3shn7k" path="res://LEVELS/level_1_pipe_data.gd" id="2_s21lk"]
 [ext_resource type="Script" uid="uid://14mwy7hlpnpx" path="res://LEVELS/camera_2d.gd" id="4_3b20i"]
+[ext_resource type="Script" uid="uid://c8hnbma0yq86n" path="res://Pipes.gd" id="5_xudoo"]
 [ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="6_sinh8"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="7_kutt7"]
 [ext_resource type="PackedScene" uid="uid://dvqovyhq2u0sn" path="res://fixed_ts_tee.tscn" id="8_bada6"]
@@ -60,6 +61,7 @@ offset_bottom = 5838.0
 
 [node name="Pipes" type="Node2D" parent="." unique_id=650837154]
 unique_name_in_owner = true
+script = ExtResource("5_xudoo")
 
 [node name="WaterCup" parent="." unique_id=570814531 instance=ExtResource("7_kutt7")]
 position = Vector2(9378, -6102)
