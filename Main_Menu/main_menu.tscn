@@ -7,9 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="6_2ytag"]
 [ext_resource type="Texture2D" uid="uid://bdp6s631vuxp1" path="res://ASSETS/KyogreTutorialBackground.png" id="7_ali5n"]
-[ext_resource type="Texture2D" uid="uid://di2gboy21nyp7" path="res://スクリーンショット 2026-05-24 185913.png" id="8_ptshw"]
+[ext_resource type="Texture2D" uid="uid://g4qnl4a2o6f4" path="res://ASSETS/FEEDKYOGREWATER.png" id="8_ali5n"]
 [ext_resource type="Texture2D" uid="uid://bsqfduigbh2hb" path="res://スクリーンショット 2026-05-24 185920.png" id="9_g0iwy"]
-[ext_resource type="Texture2D" uid="uid://jnmtfuxlko12" path="res://スクリーンショット 2026-05-24 185925.png" id="10_ipfh2"]
+[ext_resource type="Texture2D" uid="uid://bchj24i06kjub" path="res://ASSETS/DONT KNOCK THE KYOGRE.png" id="10_ptshw"]
 
 [sub_resource type="Theme" id="Theme_ra02u"]
 
@@ -78,6 +78,7 @@ grow_vertical = 2
 script = ExtResource("1_e582s")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
+visible = false
 z_as_relative = false
 layout_mode = 1
 offset_left = -622.0
@@ -188,7 +189,6 @@ autoplay = true
 
 [node name="Tutorial" type="Control" parent="." unique_id=997017041]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -266,8 +266,9 @@ offset_left = 22.0
 offset_top = 859.0
 offset_right = 772.0
 offset_bottom = 1609.0
+scale = Vector2(0.69752574, 0.69752574)
 mouse_filter = 2
-texture = ExtResource("8_ptshw")
+texture = ExtResource("8_ali5n")
 
 [node name="LMB and RMB" type="Panel" parent="Tutorial/Tutorial_Segments/HBoxContainer" unique_id=2081463479]
 custom_minimum_size = Vector2(800, 1681)
@@ -323,8 +324,9 @@ offset_left = 35.0
 offset_top = 859.0
 offset_right = 785.0
 offset_bottom = 1609.0
+scale = Vector2(0.6880345, 0.6880345)
 mouse_filter = 2
-texture = ExtResource("10_ipfh2")
+texture = ExtResource("10_ptshw")
 
 [node name="Back" type="Button" parent="Tutorial" unique_id=1695957289]
 custom_minimum_size = Vector2(200, 200)

@@ -54,6 +54,7 @@ texture = ExtResource("2_ln8ka")
 
 [node name="Front_Normal" type="Sprite2D" parent="." unique_id=99261005]
 unique_name_in_owner = true
+visible = false
 z_index = -50
 z_as_relative = false
 position = Vector2(-202.8508, 8.500011)
@@ -129,13 +130,13 @@ position = Vector2(-0.2293396, 0)
 unique_name_in_owner = true
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1075442928]
-position = Vector2(-19.495329, 10.900001)
+position = Vector2(-19.720333, 10.900001)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_acasf")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=327339087]
-position = Vector2(-19.620329, -9.362498)
-scale = Vector2(0.9999998, 0.9999998)
+position = Vector2(-19.845333, -9.362498)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_acasf")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1319611868]
