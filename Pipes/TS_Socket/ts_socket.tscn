@@ -1,20 +1,20 @@
 [gd_scene format=3 uid="uid://bpm3we8knwue4"]
 
 [ext_resource type="Script" uid="uid://bhlqdccu1t6wa" path="res://Pipes/TS_Socket/ts_socket.gd" id="1_inntj"]
-[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://ASSETS/SOCKET.png" id="2_ln8ka"]
+[ext_resource type="Texture2D" uid="uid://xc25do8wrxgt" path="res://1way_final_shi-removebg-preview.png" id="2_ln8ka"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_ln8ka"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rj66r"]
-size = Vector2(80, 10)
+size = Vector2(80, 5.7499967)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_acasf"]
-size = Vector2(40, 15)
+size = Vector2(42.35, 4.674998)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yuw7e"]
-size = Vector2(17.248169, 9.939847)
+size = Vector2(12.589951, 4.8630342)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_inntj"]
 size = Vector2(77.93335, 38)
@@ -106,7 +106,6 @@ scale = Vector2(40, 6)
 mesh = SubResource("PrismMesh_ln8ka")
 
 [node name="TS_Socket Collision" type="Node2D" parent="." unique_id=330850099]
-visible = false
 position = Vector2(0.7467346, 0)
 scale = Vector2(10, 10)
 
@@ -114,11 +113,13 @@ scale = Vector2(10, 10)
 position = Vector2(-0.17067337, 0)
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=385632814]
-position = Vector2(-0.098667145, 15)
+position = Vector2(-0.60400003, 14.925)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_rj66r")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=1715470166]
-position = Vector2(-0.098667145, -15)
+position = Vector2(-0.60400003, -14.449998)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_rj66r")
 
 [node name="TS_Socket_Reducer Collision" type="Node2D" parent="TS_Socket Collision" unique_id=1579723521]
@@ -128,21 +129,25 @@ position = Vector2(-0.2293396, 0)
 unique_name_in_owner = true
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1075442928]
-position = Vector2(-20.04, 12.5)
+position = Vector2(-19.495329, 10.900001)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_acasf")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=327339087]
-position = Vector2(-20.04, -12.5)
+position = Vector2(-19.620329, -9.362498)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_acasf")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1319611868]
-position = Vector2(6.782215, -12.247911)
-rotation = -0.2928449
+position = Vector2(4.9546657, -11.699999)
+rotation = -0.43139598
+scale = Vector2(0.99999964, 0.99999964)
 shape = SubResource("RectangleShape2D_yuw7e")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=834884939]
-position = Vector2(6.959999, 12.319999)
-rotation = 0.2932153
+position = Vector2(6.802875, 12.719519)
+rotation = 0.27586702
+scale = Vector2(0.99999934, 0.99999934)
 shape = SubResource("RectangleShape2D_yuw7e")
 
 [node name="TS_Socket Area" type="Node2D" parent="." unique_id=1197440404]
@@ -160,10 +165,10 @@ shape = SubResource("RectangleShape2D_inntj")
 
 [node name="Drag" type="Button" parent="." unique_id=228389192]
 layout_mode = 0
-offset_left = -456.99994
-offset_top = -247.99997
-offset_right = -364.39996
-offset_bottom = -198.09998
+offset_left = -459.99994
+offset_top = -256.00003
+offset_right = -367.39996
+offset_bottom = -206.10007
 scale = Vector2(10, 10)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_inntj")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_ln8ka")

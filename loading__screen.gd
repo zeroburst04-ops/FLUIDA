@@ -35,7 +35,7 @@ func _ready() -> void:
 	if VideoPlayer:
 		VideoPlayer.play()
 	
-	sceneName = scenemanager.target_scene_path
+	sceneName = SceneManager.target_scene_path
 	
 	if sceneName == "":
 		sceneName = "res://LEVELS/level_1.tscn"
