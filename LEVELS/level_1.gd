@@ -24,6 +24,7 @@ func _process(delta: float) -> void:
 	if LevelData.I_Win:
 		Wintext.text = "ウィン！！！"
 		return
+		
 	if LevelData.I_Lose:
 		Wintext.text = "ぉせ"
 		await get_tree().create_timer(1).timeout
