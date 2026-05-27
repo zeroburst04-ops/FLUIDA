@@ -18,7 +18,7 @@ func _on_level_1_pressed() -> void:
 	scenemanager.load_scene("res://LEVELS/level_1.tscn")
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://TestScene/test_scene.tscn")
+	scenemanager.load_scene("res://TestScene/test_scene.tscn")
 
 func _on_level_2_pressed() -> void:
 	scenemanager.load_scene("res://LEVELS/level_2.tscn")
