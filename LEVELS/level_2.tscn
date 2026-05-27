@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://c4k1lpolkiy3n"]
+[gd_scene format=3 uid="uid://blliqxvd1veqh"]
 
 [ext_resource type="Script" uid="uid://subkxn1f2yc" path="res://LEVELS/level_2.gd" id="1_rut0m"]
-[ext_resource type="Script" uid="uid://brxa6gclq41xn" path="res://LEVELS/level_2_pipe_data.gd" id="2_i1huk"]
+[ext_resource type="Script" path="res://LEVELS/level_2_pipe_data.gd" id="2_i1huk"]
 [ext_resource type="Texture2D" uid="uid://bboo5tbt2nggd" path="res://27076.jpg" id="2_rut0m"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="3_i1huk"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="4_rn357"]
@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="14_24ry0"]
 [ext_resource type="PackedScene" uid="uid://b66t53823e88x" path="res://fixed_ts_knee.tscn" id="16_rn357"]
 [ext_resource type="PackedScene" uid="uid://cb8yogv01hhac" path="res://fixed ts socket.tscn" id="17_ybpg2"]
-[ext_resource type="PackedScene" uid="uid://d1sdovsuyidme" path="res://branches.tscn" id="18_ybpg2"]
+[ext_resource type="PackedScene" path="res://branches.tscn" id="18_ybpg2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6smf"]
 bg_color = Color(0.21814606, 0.47902644, 0.21154901, 1)
