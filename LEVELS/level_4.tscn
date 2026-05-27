@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dqorb3apefuj4"]
 
-[ext_resource type="Script" uid="uid://bmvjeec65hcqi" path="res://level_4.gd" id="1_0yqnl"]
-[ext_resource type="Script" uid="uid://bwvexmiv0a6j4" path="res://level_4_pipe_data.gd" id="2_45t7y"]
+[ext_resource type="Script" uid="uid://bmvjeec65hcqi" path="res://LEVELS/level_4.gd" id="1_0yqnl"]
+[ext_resource type="Script" uid="uid://bwvexmiv0a6j4" path="res://LEVELS/level_4_pipe_data.gd" id="2_45t7y"]
 [ext_resource type="Texture2D" uid="uid://bboo5tbt2nggd" path="res://27076.jpg" id="3_lv3ay"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_2vyst"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="5_i4yqx"]
