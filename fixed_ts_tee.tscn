@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dvqovyhq2u0sn"]
 
-[ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_y6wc5"]
+[ext_resource type="Script" path="res://Fixed_Pipe.gd" id="1_y6wc5"]
 [ext_resource type="Texture2D" uid="uid://c6f76sbusei3i" path="res://3way_final_shi-removebg-preview.png" id="2_y6wc5"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_y6wc5"]
@@ -153,6 +153,7 @@ offset_left = -230.94049
 offset_top = -278.7257
 offset_right = 223.05951
 offset_bottom = 317.2743
+mouse_filter = 1
 theme_override_styles/normal = SubResource("StyleBoxEmpty_srxss")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_t2kyw")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_mj4or")
