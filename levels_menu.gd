@@ -12,6 +12,7 @@ func _on_back_button_pressed() -> void:
 
 func _ready():
 	$Music.volume_db = -5.0
+	Settings.BackGround_Music_Slider = 0
 	Engine.time_scale = 1
 
 func _on_level_1_pressed() -> void:
@@ -21,16 +22,17 @@ func _on_button_pressed() -> void:
 	scenemanager.load_scene("res://TestScene/test_scene.tscn")
 
 func _on_level_2_pressed() -> void:
-	scenemanager.load_scene("res://LEVELS/level_2.tscn")
-	
+	get_tree().change_scene_to_file("res://LEVELS/SANE_level_2.tscn")
+
 func _on_level_3_pressed() -> void:
-	scenemanager.load_scene("res://LEVELS/level_3.tscn")
+	pass
+	
 
 func _on_button_2_pressed() -> void:
 	get_tree().change_scene_to_file("res://Harder_levels_menu.tscn")
 
 func _on_level_4_pressed() -> void:
-	scenemanager.load_scene("res://LEVELS/level_4.tscn")
+	pass
 
 func _on_level_5_pressed() -> void:
-	scenemanager.load_scene("res://LEVELS/level_5.tscn")
+	pass
