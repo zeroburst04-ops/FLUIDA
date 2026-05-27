@@ -1,8 +1,9 @@
 extends Control
 
+@onready var video_player: VideoStreamPlayer = $Background_Animation
 @onready var BGM = %BackGround_Music
 func _process(delta: float) -> void:
-	BGM.volume_db = Settings.BackGround_Music
+	BGM.volume_db = Settings.BackGround_Music3
 	
 @onready var Brightness = $Brightness_Overlay
 func _physics_process(delta:float) -> void:

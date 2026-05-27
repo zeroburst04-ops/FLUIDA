@@ -35,6 +35,7 @@ func _process(delta: float) -> void:
 		if overlap_text_timer >= 1:
 			overlap_text_timer = 0
 			%Overlap_text.visible = false
+	%AudioStreamPlayer.volume_db = Settings.BackGround_Music2
 			
 func _on_start_pressed() -> void:
 	for i in range(%Pipes.get_child_count()):
@@ -53,3 +54,6 @@ func Snapfunc() -> void:
 
 func _on_end_pressed() -> void:
 	get_tree().reload_current_scene()
+	
+func _on_back_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://levels_menu.tscn")

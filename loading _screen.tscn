@@ -5,6 +5,10 @@
 [ext_resource type="VideoStream" uid="uid://hektmik61yxb" path="res://untitled-design-2-cgthub.ogv" id="2_fp7nw"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_fp7nw"]
 [ext_resource type="AudioStream" uid="uid://0bthdurucdxv" path="res://382 Primal Kyogre Cry [qCCM--kUFbo].wav" id="5_hpxh0"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="6_xt1qx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xt1qx"]
+bg_color = Color(0.26147652, 0.26147655, 0.2614764, 1)
 
 [node name="loading_screen" type="Node2D" unique_id=35056486]
 script = ExtResource("1_4kwrw")
@@ -13,7 +17,7 @@ script = ExtResource("1_4kwrw")
 position = Vector2(3948, 2589)
 zoom = Vector2(0.2, 0.2)
 
-[node name="Background" type="VideoStreamPlayer" parent="." unique_id=1504430600]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1504430600]
 offset_left = 992.0
 offset_top = 858.0
 offset_right = 6933.0
@@ -25,6 +29,7 @@ loop = true
 script = ExtResource("2_308ny")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_fp7nw")]
+visible = false
 offset_left = 783.0
 offset_top = 676.0
 offset_right = 7559.0
@@ -35,3 +40,14 @@ mouse_filter = 2
 position = Vector2(3903, 2520)
 stream = ExtResource("5_hpxh0")
 volume_db = 12.181
+
+[node name="progress" type="Label" parent="." unique_id=457583619]
+offset_left = 1277.0
+offset_top = 3749.0
+offset_right = 1829.0
+offset_bottom = 4091.0
+theme_override_fonts/font = ExtResource("6_xt1qx")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt1qx")
+horizontal_alignment = 1
+vertical_alignment = 1

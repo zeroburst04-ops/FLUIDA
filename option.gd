@@ -13,6 +13,8 @@ func _process(delta: float) -> void:
 	Settings.Brightness_Slider = %Brightness_SO.value
 	
 	Settings.BackGround_Music = ((%BackGround_Music_SO.value * 24) - 15)
+	Settings.BackGround_Music2 = ((%BackGround_Music_SO.value * 24) - 15)
+	Settings.BackGround_Music3 = ((%BackGround_Music_SO.value * 24) - 15)
 	Settings.Brightness = 1 - %Brightness_SO.value 
 	
 	%Music_Player.volume_db = Settings.BackGround_Music
