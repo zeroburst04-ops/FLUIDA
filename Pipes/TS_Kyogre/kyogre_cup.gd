@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var Kyoger := %Kyogre
 @onready var Start : float = Kyoger.global_position.y
-@onready var Threshold : float = Start - 30
+@onready var Threshold : float = Start - 90
 @onready var Pipe_Area := %Pipe_Area
 @onready var sprite = %Kyogre_Sprite
 
