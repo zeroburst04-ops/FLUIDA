@@ -15,6 +15,9 @@ size = Vector2(120, 12)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4tr5l"]
 size = Vector2(10, 307)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4o05"]
+size = Vector2(115.5, 10)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_837hq"]
 size = Vector2(117, 156)
 
@@ -51,6 +54,11 @@ shape = SubResource("RectangleShape2D_4tr5l")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1466662568]
 position = Vector2(38, 0)
 shape = SubResource("RectangleShape2D_cmy3s")
+
+[node name="Litteral_Butt_plug" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1961375122]
+unique_name_in_owner = true
+position = Vector2(2.25, 0)
+shape = SubResource("RectangleShape2D_n4o05")
 
 [node name="CupHitbox_Area" type="Node2D" parent="CupHitbox" unique_id=451328181]
 

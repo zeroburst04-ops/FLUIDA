@@ -17,17 +17,22 @@ func _ready() -> void:
 	pipe_panel_start_y = %Pipe_panel.global_position.y
 	Camera_start_y = %Camera2D.global_position.y
 	Camera_end_y = %Camera2D.global_position.y + 7500
+	
+	
+	await get_tree().create_timer(1).timeout
 	var tween = create_tween()
 
 # Apply smooth easing to make the movement feel natural
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_IN_OUT)
-
+	
 # 1. Move DOWN by 50 pixels over 0.5 seconds (In 2D, positive Y is down)
-	tween.tween_property(%Camera2D, "position:y", 4500, 2).as_relative()
+	tween.tween_property(%Camera2D, "position:y", 7500, 2).as_relative()
 
 # 2. Move UP by 50 pixels over 0.5 seconds
-	tween.tween_property(%Camera2D, "position:y", -5659.0, 2).as_relative()
+	tween.tween_property(%Camera2D, "position:y", -7559.0, 2).as_relative()
+	I_CUTSCENE_Play = true
+
 func _process(delta: float) -> void:
 	if I_CUTSCENE_Play:
 		if %Camera2D.global_position.y < Camera_start_y:
