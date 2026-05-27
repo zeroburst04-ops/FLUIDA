@@ -171,7 +171,7 @@ theme_override_font_sizes/font_size = 32
 text = "FREE SIMULATION"
 
 [connection signal="pressed" from="VScrollBar/Level_1" to="." method="_on_level_1_pressed"]
-[connection signal="button_down" from="VScrollBar/Level_2" to="." method="_on_level_2_button_down"]
+[connection signal="pressed" from="VScrollBar/Level_2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="VScrollBar/Level_3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="VScrollBar/Level_4" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="VScrollBar/Level_5" to="." method="_on_level_5_pressed"]

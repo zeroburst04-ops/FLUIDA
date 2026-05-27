@@ -19,6 +19,7 @@ config/icon="res://icon.png"
 
 LevelData="*uid://ccquig12rjt1d"
 Settings="*uid://bl70did4ww25u"
+scenemanager="*uid://dqc2k4p81djgh"
 
 [display]
 
