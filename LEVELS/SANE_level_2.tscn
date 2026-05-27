@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d3knwku5fw7ua"]
 
-[ext_resource type="Script" uid="uid://cpeb8idgjnstk" path="res://LEVELS/level_1.gd" id="1_babtx"]
+[ext_resource type="Script" uid="uid://b881isjnft78t" path="res://LEVELS/sane_level_2.gd" id="1_s4ejh"]
 [ext_resource type="Script" uid="uid://dkjjlopsvj4il" path="res://LEVELS/SANEpipe_data2.gd" id="2_babtx"]
 [ext_resource type="Texture2D" uid="uid://bboo5tbt2nggd" path="res://27076.jpg" id="3_2jry1"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="4_olr0m"]
@@ -34,7 +34,7 @@ corner_radius_top_left = 32
 corner_radius_bottom_right = 32
 
 [node name="SANE_Level_2" type="Node2D" unique_id=22120492]
-script = ExtResource("1_babtx")
+script = ExtResource("1_s4ejh")
 metadata/_edit_vertical_guides_ = [2280.0, 5492.0, 13245.0]
 metadata/_edit_horizontal_guides_ = [5059.0, -6839.0]
 
