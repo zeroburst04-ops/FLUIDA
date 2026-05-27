@@ -117,7 +117,7 @@ text = "Restart"
 metadata/_edit_use_anchors_ = true
 
 [node name="KyogreCup" parent="." unique_id=2068185669 instance=ExtResource("7_yg0dv")]
-position = Vector2(10892, 4664.0005)
+position = Vector2(11320.001, 4829)
 scale = Vector2(5, 5)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1430620150]
