@@ -90,6 +90,7 @@ position = Vector2(-24.933334, -52.133335)
 scale = Vector2(10, 10)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TS_Tee Collision" unique_id=1727964198]
+unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TS_Tee Collision/StaticBody2D" unique_id=1291910943]
 position = Vector2(19.894537, 5.000002)

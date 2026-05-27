@@ -29,3 +29,7 @@ func _on_music_player_finished() -> void:
 func _on_key_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://KEYBINDS2.tscn")
 	
+
+
+func _on_reset_だた_pressed() -> void:
+	SAVE_DATA.clear_save_file()

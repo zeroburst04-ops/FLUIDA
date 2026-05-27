@@ -23,10 +23,21 @@ func _process(delta: float) -> void:
 	if $".".get_parent() == Pipe_Node:
 		Pipe_Area.monitorable = true
 		Pipe_Area.monitoring = true
-		
+	
+	if not LevelData.I_Running:
+		for i in range(%StaticBody2D.get_child_count()):
+			%StaticBody2D.get_child(i).disabled = true
+	else:
+		for i in range(%StaticBody2D.get_child_count()):
+			%StaticBody2D.get_child(i).disabled = false
+			
 	if Input.is_action_just_released("Grab"):
 		Is_Dragging = false
-		
+	
+	if not LevelData.I_Running:
+		%StaticBody2D.disable_mode = true
+	else:
+		%StaticBody2D.disable_mode = false
 	if Is_Dragging:
 		var NewPos = get_global_mouse_position() - offset
 		position = Vector2(snapped(NewPos.x, Snap), snapped(NewPos.y, Snap))

@@ -34,6 +34,12 @@ bg_color = Color(0.326184, 0.326184, 0.32618386, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_piv12"]
 bg_color = Color(0.218061, 0.21806106, 0.21806088, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4nvuw"]
+bg_color = Color(0.69919544, 2.0816549e-06, 6.738305e-07, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_td4eo"]
+bg_color = Color(0.39006683, 0, 0.02396986, 1)
+
 [node name="Options" type="Control" unique_id=1137774719]
 layout_mode = 3
 anchor_right = 0.5
@@ -48,6 +54,7 @@ script = ExtResource("1_slay5")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_uhspr")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.04761905
@@ -156,23 +163,44 @@ value = 1.0
 [node name="hiasan" type="Label" parent="." unique_id=102168394]
 layout_mode = 0
 offset_left = 679.0
-offset_top = 1264.0
+offset_top = 2420.0
 offset_right = 8089.0
-offset_bottom = 1651.0
+offset_bottom = 2807.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_v4yl2")
 
-[node name="key_button" type="Button" parent="." unique_id=371938637]
+[node name="key_button" type="Button" parent="hiasan" unique_id=371938637]
 layout_mode = 0
-offset_left = 730.0
-offset_top = 1262.0
-offset_right = 8090.0
-offset_bottom = 1589.0
+offset_left = 51.0
+offset_top = -2.0
+offset_right = 7411.0
+offset_bottom = 325.0
 theme_override_fonts/font = ExtResource("2_slay5")
 theme_override_font_sizes/font_size = 256
 theme_override_styles/normal = SubResource("StyleBoxFlat_piv12")
 text = "KEYBINDS"
 icon_alignment = 1
 
+[node name="hiasan2" type="Label" parent="." unique_id=105945246]
+layout_mode = 0
+offset_left = 679.0
+offset_top = 2944.0
+offset_right = 8089.0
+offset_bottom = 3331.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4nvuw")
+
+[node name="Reset_だた" type="Button" parent="hiasan2" unique_id=330294042]
+layout_mode = 0
+offset_left = 51.0
+offset_top = -2.0
+offset_right = 7411.0
+offset_bottom = 325.0
+theme_override_fonts/font = ExtResource("2_slay5")
+theme_override_font_sizes/font_size = 256
+theme_override_styles/normal = SubResource("StyleBoxFlat_td4eo")
+text = "Reset Data"
+icon_alignment = 1
+
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="finished" from="Music_Player" to="." method="_on_music_player_finished"]
-[connection signal="pressed" from="key_button" to="." method="_on_key_button_pressed"]
+[connection signal="pressed" from="hiasan/key_button" to="." method="_on_key_button_pressed"]
+[connection signal="pressed" from="hiasan2/Reset_だた" to="." method="_on_reset_だた_pressed"]

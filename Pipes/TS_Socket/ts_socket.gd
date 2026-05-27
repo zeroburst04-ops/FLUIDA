@@ -42,6 +42,17 @@ func _process(delta: float) -> void:
 		Pipe_Area.monitorable = true
 		Pipe_Area.monitoring = true
 		
+	if not LevelData.I_Running:
+		for i in range(%StaticBody2D.get_child_count()):
+			%StaticBody2D.get_child(i).disabled = true
+		for i in range(%"TS_Socket_Reducer Collision".get_child_count()):
+			%"TS_Socket_Reducer Collision".get_child(i).disabled = true
+	else:
+		for i in range(%StaticBody2D.get_child_count()):
+			%StaticBody2D.get_child(i).disabled = false
+		for i in range(%"TS_Socket_Reducer Collision".get_child_count()):
+			%"TS_Socket_Reducer Collision".get_child(i).disabled = false
+		
 	if Input.is_action_just_released("Grab"):
 		Is_Dragging = false
 	if Is_Dragging:
