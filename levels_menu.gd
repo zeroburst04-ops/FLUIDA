@@ -12,7 +12,7 @@ func _on_back_button_pressed() -> void:
 
 func _ready():
 	$Music.volume_db = -5.0
-
+	Engine.time_scale = 1
 
 func _on_level_1_pressed() -> void:
 	scenemanager.load_scene("res://LEVELS/level_1.tscn")
