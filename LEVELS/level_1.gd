@@ -13,6 +13,7 @@ func _ready() -> void:
 	Snapfunc()
 	last_ticks = Time.get_ticks_msec() # Initialize the time tracker
 	#Shit
+	
 func _process(delta: float) -> void:
 	# Calculate real-world time passed since last frame (unscaled delta)
 	var current_ticks = Time.get_ticks_msec()
