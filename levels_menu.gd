@@ -16,19 +16,23 @@ func _ready():
 	Engine.time_scale = 1
 
 func _on_level_1_pressed() -> void:
-	SceneManager.load_scene("res://LEVELS/level_1.tscn")
+	SceneManager.load_scene("res://LEVELS/SANE_level_1.tscn")
 
 func _on_button_pressed() -> void:
 	SceneManager.load_scene("res://TestScene/test_scene.tscn")
 
 func _on_level_2_pressed() -> void:
-	SceneManager.load_scene("res://LEVELS/level_2.tscn")
+	SceneManager.load_scene("res://LEVELS/SANE_level_2.tscn")
 	
 func _on_level_3_pressed() -> void:
-	SceneManager.load_scene("res://LEVELS/level_3.tscn")
+	SceneManager.load_scene("res://LEVELS/SANE_level_3.tscn")
 
 func _on_level_4_pressed() -> void:
-	SceneManager.load_scene("res://LEVELS/level_4.tscn")
+	SceneManager.load_scene("res://LEVELS/SANE_level_4.tscn")
 
 func _on_level_5_pressed() -> void:
-	SceneManager.load_scene("res://LEVELS/level_5.tscn")
+	SceneManager.load_scene("res://LEVELS/SANE_level_5.tscn")
+
+
+func _on_button_2_pressed() -> void:
+	get_tree().change_scene_to_file("res://Harder_levels_menu.tscn")
