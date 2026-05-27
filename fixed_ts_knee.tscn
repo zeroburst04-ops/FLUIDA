@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b66t53823e88x"]
 
-[ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://2way-removebg-preview.png" id="1_r3axw"]
+[ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_j2jdq"]
+[ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://ASSETS/KNEE.png" id="1_r3axw"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_j2jdq"]
 
@@ -25,19 +26,32 @@ size = Vector2(40.740738, 44.370365)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oxhad"]
 size = Vector2(517.96277, 499.14804)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d1n1n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xw0b5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mew6u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ykvx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4mutw"]
+
 [node name="fixed ts_knee" type="Control" unique_id=307902911]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_j2jdq")
 
 [node name="Model" type="Sprite2D" parent="." unique_id=779595370]
 unique_name_in_owner = true
 z_index = -50
 z_as_relative = false
-position = Vector2(17, -12)
+position = Vector2(0.66156006, -1.5)
 scale = Vector2(1.5268612, 1.4882076)
 texture = ExtResource("1_r3axw")
 
@@ -121,3 +135,18 @@ visible = false
 position = Vector2(-16.083359, -27.616669)
 scale = Vector2(0.90000015, 0.90000015)
 shape = SubResource("RectangleShape2D_oxhad")
+
+[node name="Rotate" type="Button" parent="." unique_id=1058362692]
+layout_mode = 0
+offset_left = -264.33844
+offset_top = -196.5
+offset_right = 227.66156
+offset_bottom = 223.5
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d1n1n")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xw0b5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mew6u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2ykvx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4mutw")
+button_mask = 2
+
+[connection signal="button_down" from="Rotate" to="." method="_on_rotate_button_down"]

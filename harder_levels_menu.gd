@@ -30,4 +30,4 @@ func _on_level_3_pressed() -> void:
 
 
 func _on_button_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://Harder_levels_menu.tscn")
+	get_tree().change_scene_to_file("res://levels_menu.tscn")

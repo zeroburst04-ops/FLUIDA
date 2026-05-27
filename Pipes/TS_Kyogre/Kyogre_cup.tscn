@@ -223,7 +223,8 @@ script = ExtResource("1_tlida")
 [node name="Kyogre" type="RigidBody2D" parent="." unique_id=416759536]
 unique_name_in_owner = true
 position = Vector2(0, -48)
-collision_mask = 9
+collision_layer = 0
+collision_mask = 8
 mass = 20.0
 script = ExtResource("2_n6hbu")
 metadata/_custom_type_script = "uid://unwhnooi7g2c"
@@ -296,6 +297,8 @@ mesh = SubResource("QuadMesh_o6qpx")
 [node name="CupHitbox_Bottom" type="Node2D" parent="CupHitbox" unique_id=785765985]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="CupHitbox/CupHitbox_Bottom" unique_id=199416293]
+collision_layer = 9
+collision_mask = 9
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=559143577]
 position = Vector2(220, -166.99998)

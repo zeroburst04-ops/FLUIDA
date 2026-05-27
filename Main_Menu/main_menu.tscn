@@ -6,6 +6,10 @@
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="3_2jvup"]
 [ext_resource type="AudioStream" uid="uid://dt3gwnxhvf5h4" path="res://Pokemon B2W2 - Aspertia City Music Extended (1).wav" id="5_ra02u"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="6_2ytag"]
+[ext_resource type="Texture2D" uid="uid://bdp6s631vuxp1" path="res://ASSETS/KyogreTutorialBackground.png" id="7_ali5n"]
+[ext_resource type="Texture2D" uid="uid://di2gboy21nyp7" path="res://スクリーンショット 2026-05-24 185913.png" id="8_ptshw"]
+[ext_resource type="Texture2D" uid="uid://bsqfduigbh2hb" path="res://スクリーンショット 2026-05-24 185920.png" id="9_g0iwy"]
+[ext_resource type="Texture2D" uid="uid://jnmtfuxlko12" path="res://スクリーンショット 2026-05-24 185925.png" id="10_ipfh2"]
 
 [sub_resource type="Theme" id="Theme_ra02u"]
 
@@ -29,6 +33,35 @@ corner_radius_bottom_right = 75
 bg_color = Color(0.6627451, 0, 0, 1)
 corner_radius_top_left = 75
 corner_radius_bottom_right = 75
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_stgtu"]
+bg_color = Color(0, 0, 0, 0.5764706)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4b4y"]
+bg_color = Color(0.15487596, 0.154876, 0.15487587, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ali5n"]
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 128
+corner_radius_top_right = 128
+corner_radius_bottom_right = 128
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ptshw"]
+bg_color = Color(0.42318475, 5.655363e-07, 9.62615e-08, 1)
+corner_radius_top_left = 128
+corner_radius_top_right = 128
+corner_radius_bottom_right = 128
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0iwy"]
+bg_color = Color(0.7397895, 1.9372628e-06, 9.62615e-07, 1)
+corner_radius_top_left = 128
+corner_radius_top_right = 128
+corner_radius_bottom_right = 128
 
 [node name="Main_Menu" type="Control" unique_id=465433766]
 layout_mode = 3
@@ -153,7 +186,161 @@ stream = ExtResource("5_ra02u")
 volume_db = 24.0
 autoplay = true
 
+[node name="Tutorial" type="Control" parent="." unique_id=997017041]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Overlay" type="Panel" parent="Tutorial" unique_id=1982573410]
+layout_mode = 0
+offset_left = -1983.5
+offset_top = -1191.5
+offset_right = 2030.5
+offset_bottom = 1290.5
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_stgtu")
+
+[node name="Background" type="TextureRect" parent="Tutorial" unique_id=312350125]
+modulate = Color(0.851769, 0.8517689, 0.85176885, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1680.5
+offset_top = -863.5
+offset_right = 1720.5
+offset_bottom = 941.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_ali5n")
+
+[node name="Tutorial_Segments" type="Control" parent="Tutorial" unique_id=1507800961]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Tutorial/Tutorial_Segments" unique_id=1475662434]
+custom_minimum_size = Vector2(2000, 1000)
+layout_mode = 0
+offset_left = -1381.5
+offset_top = -775.5
+offset_right = 1418.5
+offset_bottom = 906.0
+theme_override_constants/separation = 200
+
+[node name="FeedKyogreWater" type="Panel" parent="Tutorial/Tutorial_Segments/HBoxContainer" unique_id=957174578]
+custom_minimum_size = Vector2(800, 1681)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4b4y")
+
+[node name="Label" type="Label" parent="Tutorial/Tutorial_Segments/HBoxContainer/FeedKyogreWater" unique_id=1248573744]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 29.0
+offset_right = 753.0
+offset_bottom = 793.0
+theme_override_font_sizes/font_size = 98
+text = "Give Kyogre his water by redirecting pipes to his cup"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Tutorial/Tutorial_Segments/HBoxContainer/FeedKyogreWater" unique_id=749490605]
+custom_minimum_size = Vector2(700, 700)
+layout_mode = 0
+offset_left = 22.0
+offset_top = 859.0
+offset_right = 772.0
+offset_bottom = 1609.0
+mouse_filter = 2
+texture = ExtResource("8_ptshw")
+
+[node name="LMB and RMB" type="Panel" parent="Tutorial/Tutorial_Segments/HBoxContainer" unique_id=2081463479]
+custom_minimum_size = Vector2(800, 1681)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4b4y")
+
+[node name="Label2" type="Label" parent="Tutorial/Tutorial_Segments/HBoxContainer/LMB and RMB" unique_id=198468038]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 29.0
+offset_right = 759.0
+offset_bottom = 793.0
+theme_override_font_sizes/font_size = 98
+text = "LMB to drag pipes
+
+RMB to rotate pipes"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="Tutorial/Tutorial_Segments/HBoxContainer/LMB and RMB" unique_id=1858255325]
+custom_minimum_size = Vector2(700, 700)
+layout_mode = 0
+offset_left = 25.0
+offset_top = 859.0
+offset_right = 775.0
+offset_bottom = 1609.0
+mouse_filter = 2
+texture = ExtResource("9_g0iwy")
+
+[node name="Panel" type="Panel" parent="Tutorial/Tutorial_Segments/HBoxContainer" unique_id=737876794]
+custom_minimum_size = Vector2(800, 1681)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4b4y")
+
+[node name="Label3" type="Label" parent="Tutorial/Tutorial_Segments/HBoxContainer/Panel" unique_id=2143944197]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 29.0
+offset_right = 765.0
+offset_bottom = 793.0
+theme_override_font_sizes/font_size = 98
+text = "Dont knock over 
+
+the kyogre"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="Tutorial/Tutorial_Segments/HBoxContainer/Panel" unique_id=843444317]
+custom_minimum_size = Vector2(700, 700)
+layout_mode = 0
+offset_left = 35.0
+offset_top = 859.0
+offset_right = 785.0
+offset_bottom = 1609.0
+mouse_filter = 2
+texture = ExtResource("10_ipfh2")
+
+[node name="Back" type="Button" parent="Tutorial" unique_id=1695957289]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 1488.5
+offset_top = 716.5
+offset_right = 1688.5
+offset_bottom = 916.5
+theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_ali5n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ptshw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g0iwy")
+text = "X"
+
 [connection signal="pressed" from="VBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Tutorial_Button" to="." method="_on_tutorial_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings_Button" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="Quit_Button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Tutorial/Back" to="." method="_on_back_pressed"]

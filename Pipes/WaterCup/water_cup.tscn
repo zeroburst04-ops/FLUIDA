@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c2awvcje2atdu"]
 
 [ext_resource type="Script" uid="uid://cb66g6yfl8dy2" path="res://Pipes/WaterCup/water_cup.gd" id="1_2qn6r"]
-[ext_resource type="Texture2D" uid="uid://yyfcmnrujxkc" path="res://Untitled_design-removebg-preview.png" id="2_n4o05"]
+[ext_resource type="Texture2D" uid="uid://yyfcmnrujxkc" path="res://ASSETS/Untitled_design-removebg-preview.png" id="2_n4o05"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 

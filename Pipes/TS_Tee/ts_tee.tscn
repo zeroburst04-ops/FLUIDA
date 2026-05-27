@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://djx710u7gms6d"]
 
 [ext_resource type="Script" uid="uid://o4hdomj4e8sa" path="res://Pipes/TS_Knee/ts_knee.gd" id="1_hc0wy"]
-[ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://3Way-removebg-preview.png" id="2_3uoie"]
+[ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://ASSETS/TEE.png" id="2_3uoie"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 

@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="2_augb3"]
 [ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="3_fyl7c"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="4_6ym5a"]
-[ext_resource type="PackedScene" path="res://brightness_overlay.tscn" id="7_5f8d8"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="7_5f8d8"]
 [ext_resource type="AudioStream" uid="uid://bedplnkc704fj" path="res://Pokémon Center [Pokémon_ HeartGold & SoulSilver] (1).wav" id="7_6ym5a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
@@ -137,9 +137,9 @@ text = "LEVEL 5"
 [node name="BackButton" type="Button" parent="." unique_id=1735406266]
 layout_mode = 0
 offset_left = 994.0
-offset_top = 30.0
+offset_top = 560.0
 offset_right = 1118.0
-offset_bottom = 92.0
+offset_bottom = 622.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_fyl7c")
@@ -153,6 +153,7 @@ volume_db = 18.955
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_5f8d8")]
+visible = false
 layout_mode = 1
 offset_left = -359.0
 offset_top = -250.0
@@ -162,15 +163,28 @@ mouse_filter = 2
 
 [node name="Button" type="Button" parent="." unique_id=1553499670]
 layout_mode = 0
-offset_left = 676.0
+offset_left = 832.0
 offset_top = 32.0
-offset_right = 977.0
+offset_right = 1133.0
 offset_bottom = 90.0
 theme_override_fonts/font = ExtResource("4_6ym5a")
 theme_override_font_sizes/font_size = 32
 text = "FREE SIMULATION"
 
+[node name="Button2" type="Button" parent="." unique_id=1630413747]
+layout_mode = 0
+offset_left = 618.0
+offset_top = 32.0
+offset_right = 818.0
+offset_bottom = 90.0
+theme_override_fonts/font = ExtResource("4_6ym5a")
+theme_override_font_sizes/font_size = 32
+text = "Hard Mode"
+
 [connection signal="pressed" from="VScrollBar/Level_1" to="." method="_on_level_1_pressed"]
+[connection signal="button_down" from="VScrollBar/Level_2" to="." method="_on_level_2_button_down"]
+[connection signal="pressed" from="VScrollBar/Level_3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0q7lp2oshiyo"
-path="res://.godot/imported/3Way-removebg-preview.png-81427732054b8d5f8c06690ab5515c2a.ctex"
+uid="uid://bo3jhoogoi68i"
+path="res://.godot/imported/KyogreTutorialBackground.webp-3587139db29b2d49ea35a03146727bfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3Way-removebg-preview.png"
-dest_files=["res://.godot/imported/3Way-removebg-preview.png-81427732054b8d5f8c06690ab5515c2a.ctex"]
+source_file="res://KyogreTutorialBackground.webp"
+dest_files=["res://.godot/imported/KyogreTutorialBackground.webp-3587139db29b2d49ea35a03146727bfb.ctex"]
 
 [params]
 

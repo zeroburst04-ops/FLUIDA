@@ -29,7 +29,8 @@ func _ready() -> void:
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D9".disabled = true
 			$"TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision/CollisionShape2D10".disabled = true
 		States.Reducer:
-			%Front_Normal.visible = false
+			print("p")
+			%Front_Normal.queue_free()
 
 
 func Snapfunc() -> void:
