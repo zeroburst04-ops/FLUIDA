@@ -10,7 +10,6 @@ var last_ticks: float = 0.0
 func _ready() -> void:
 	LevelData.I_Running = false
 	%Overlap_text.visible = false
-	Engine.time_scale = 0.
 	Snapfunc()
 	last_ticks = Time.get_ticks_msec() # Initialize the time tracker
 	
