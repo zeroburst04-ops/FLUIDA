@@ -45,12 +45,11 @@ scale = Vector2(13.294119, 10.852412)
 texture = ExtResource("3_t16yo")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_bvnc5")]
-visible = false
 z_as_relative = false
-offset_left = -4151.0
-offset_top = -3818.0
-offset_right = 4716.5107
-offset_bottom = 3676.1553
+offset_left = 4524.0
+offset_top = -8769.0
+offset_right = 15451.0
+offset_bottom = 6786.0
 
 [node name="Pipes" type="Node2D" parent="." unique_id=393171452]
 unique_name_in_owner = true

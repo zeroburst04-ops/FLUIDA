@@ -48,7 +48,6 @@ scale = Vector2(10.082517, 9.711171)
 texture = ExtResource("2_oisa6")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("11_oisa6")]
-visible = false
 z_as_relative = false
 anchors_preset = 0
 anchor_right = 0.0
@@ -56,7 +55,7 @@ anchor_bottom = 0.0
 offset_left = 664.0
 offset_top = -5990.0
 offset_right = 10267.0
-offset_bottom = -716.0
+offset_bottom = -586.0
 grow_horizontal = 1
 grow_vertical = 1
 mouse_filter = 2
