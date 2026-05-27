@@ -51,7 +51,6 @@ scale = Vector2(13.294119, 10.852412)
 texture = ExtResource("2_rut0m")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("3_i1huk")]
-visible = false
 z_as_relative = false
 offset_left = 4649.0
 offset_top = -8324.0
