@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c2awvcje2atdu"]
 
 [ext_resource type="Script" uid="uid://cb66g6yfl8dy2" path="res://Pipes/WaterCup/water_cup.gd" id="1_2qn6r"]
-[ext_resource type="Texture2D" uid="uid://yyfcmnrujxkc" path="res://Untitled_design-removebg-preview.png" id="2_n4o05"]
+[ext_resource type="Texture2D" uid="uid://cr571ssrtu163" path="res://4-removebg-preview.png" id="2_n4o05"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_o6qpx"]
 
@@ -15,7 +15,7 @@ size = Vector2(10, 92.000046)
 size = Vector2(10, 102.000046)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmy3s"]
-size = Vector2(50, 10)
+size = Vector2(39, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2qn6r"]
 size = Vector2(10, 28)
@@ -175,8 +175,8 @@ mesh = SubResource("QuadMesh_o6qpx")
 [node name="CupHitbox" type="Node2D" parent="." unique_id=868602689]
 
 [node name="Sprite2D" type="Sprite2D" parent="CupHitbox" unique_id=1450229260]
-position = Vector2(3.4999952, -79)
-scale = Vector2(0.88333327, 0.5714286)
+position = Vector2(5, -80.75)
+scale = Vector2(1.4778227, 0.9930555)
 texture = ExtResource("2_n4o05")
 
 [node name="CupHitbox_Bottom" type="Node2D" parent="CupHitbox" unique_id=785765985]
@@ -184,7 +184,7 @@ texture = ExtResource("2_n4o05")
 [node name="StaticBody2D" type="StaticBody2D" parent="CupHitbox/CupHitbox_Bottom" unique_id=199416293]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1361579710]
-position = Vector2(-35, 0)
+position = Vector2(-36, 0)
 shape = SubResource("RectangleShape2D_cmy3s")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=10214919]
@@ -200,7 +200,7 @@ position = Vector2(55, -9)
 shape = SubResource("RectangleShape2D_2qn6r")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Bottom/StaticBody2D" unique_id=1466662568]
-position = Vector2(35, 0)
+position = Vector2(38, 0)
 shape = SubResource("RectangleShape2D_cmy3s")
 
 [node name="CupHitbox_Area" type="Node2D" parent="CupHitbox" unique_id=451328181]
@@ -209,7 +209,7 @@ shape = SubResource("RectangleShape2D_cmy3s")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CupHitbox/CupHitbox_Area/Pipe_Area" unique_id=1847306520]
-position = Vector2(-0.5, -75)
+position = Vector2(1, -72)
 shape = SubResource("RectangleShape2D_837hq")
 
 [node name="CupHitbox_Left" type="Node2D" parent="CupHitbox" unique_id=656048958]
