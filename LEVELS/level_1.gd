@@ -19,6 +19,7 @@ func _process(delta: float) -> void:
 	var current_ticks = Time.get_ticks_msec()
 	var unscaled_delta = (current_ticks - last_ticks) / 1000.0
 	last_ticks = current_ticks
+	%AudioStreamPlayer.volume_db = Settings.BackGround_Music
 
 	if LevelData.I_Win:
 		Wintext.text = "ウィン！！！"

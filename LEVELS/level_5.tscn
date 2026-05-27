@@ -233,7 +233,9 @@ height = 60
 width = 40
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1498569345]
+unique_name_in_owner = true
 stream = ExtResource("15_ykdrh")
+volume_db = -7.324
 autoplay = true
 
 [node name="Branches" parent="." unique_id=1312025165 instance=ExtResource("16_le7tv")]

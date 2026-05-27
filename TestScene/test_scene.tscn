@@ -64,6 +64,12 @@ mouse_filter = 2
 unique_name_in_owner = true
 position = Vector2(-19, 19)
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874395895]
+unique_name_in_owner = true
+stream = ExtResource("9_xd3t6")
+volume_db = 1.831
+autoplay = true
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=147878158]
 unique_name_in_owner = true
 position = Vector2(5252, -2839)
@@ -227,10 +233,6 @@ text = "Restart"
 [node name="KyogreCup" parent="." unique_id=170371696 instance=ExtResource("7_2i3e7")]
 position = Vector2(7173.0005, -1389)
 scale = Vector2(3.6800027, 3.2799983)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874395895]
-stream = ExtResource("9_xd3t6")
-autoplay = true
 
 [node name="Fluid_Node" parent="." unique_id=1909492113 instance=ExtResource("2_jtt75")]
 density = 35.0

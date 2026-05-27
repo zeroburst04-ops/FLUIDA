@@ -132,7 +132,9 @@ position = Vector2(6975, 4808.999)
 scale = Vector2(5, 5)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=558019054]
+unique_name_in_owner = true
 stream = ExtResource("9_bada6")
+volume_db = 1.831
 autoplay = true
 
 [node name="OutOfBounds" type="Node2D" parent="." unique_id=1939999224]

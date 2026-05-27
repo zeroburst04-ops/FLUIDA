@@ -7,7 +7,6 @@ extends Node2D
 
 var overlap_text_timer : float = 0.000000000000
 
-
 var last_ticks: float = 0.0
 
 func _ready() -> void:
@@ -38,6 +37,7 @@ func _process(delta: float) -> void:
 		if overlap_text_timer >= 1:
 			overlap_text_timer = 0
 			%Overlap_text.visible = false
+	%AudioStreamPlayer.volume_db = Settings.BackGround_Music
 			
 func _on_start_pressed() -> void:
 	for i in range(%Pipes.get_child_count()):
