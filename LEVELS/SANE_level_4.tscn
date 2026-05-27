@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cy2bw5a8ure77" path="res://ASSETS/SOCKET REDUCER.png" id="13_ucmko"]
 [ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://ASSETS/TEE.png" id="14_soc71"]
 [ext_resource type="PackedScene" uid="uid://dvqovyhq2u0sn" path="res://fixed_ts_tee.tscn" id="16_jsnxj"]
+[ext_resource type="PackedScene" uid="uid://cso48v1hnqhl4" path="res://Fluids/fluid_2d_renderer.tscn" id="16_t3dtl"]
 
 [sub_resource type="FluidEffect2DSurfaceTensionAKINCI" id="FluidEffect2DSurfaceTensionAKINCI_s21lk"]
 fluid_tension_coefficient = 35.0
@@ -49,7 +50,6 @@ scale = Vector2(13.294119, 10.852412)
 texture = ExtResource("3_t3dtl")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_di13x")]
-visible = false
 z_as_relative = false
 offset_left = 5016.0
 offset_top = -7926.0
@@ -273,6 +273,11 @@ offset_left = 10460.0
 offset_top = -4626.0
 offset_right = 10460.0
 offset_bottom = -4626.0
+
+[node name="Fluid2DRenderer" parent="." unique_id=1294908648 node_paths=PackedStringArray("fluid") instance=ExtResource("16_t3dtl")]
+position = Vector2(10114, -9094.999)
+scale = Vector2(0.99999994, 0.99999994)
+fluid = NodePath("../WaterCup/Fluid_Node")
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="5_wh0fd"]
 [ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="6_7we3j"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="7_17i0l"]
+[ext_resource type="PackedScene" uid="uid://cso48v1hnqhl4" path="res://Fluids/fluid_2d_renderer.tscn" id="7_queiv"]
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="8_hp8kn"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="9_572wm"]
 [ext_resource type="Script" uid="uid://bjr07yppeeds" path="res://LEVELS/pipe_spawn_manager.gd" id="10_0w2xe"]
@@ -14,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://ASSETS/SOCKET.png" id="12_sd52c"]
 [ext_resource type="Texture2D" uid="uid://cy2bw5a8ure77" path="res://ASSETS/SOCKET REDUCER.png" id="13_yh3gy"]
 [ext_resource type="Texture2D" uid="uid://c0q7lp2oshiyo" path="res://ASSETS/TEE.png" id="14_gmrg4"]
-[ext_resource type="PackedScene" path="res://fixed ts socket reducer.tscn" id="15_shnpg"]
+[ext_resource type="PackedScene" uid="uid://crwgphq1kfult" path="res://fixed ts socket reducer.tscn" id="15_shnpg"]
 
 [sub_resource type="FluidEffect2DSurfaceTensionAKINCI" id="FluidEffect2DSurfaceTensionAKINCI_s21lk"]
 fluid_tension_coefficient = 35.0
@@ -49,7 +50,6 @@ scale = Vector2(13.294119, 10.852412)
 texture = ExtResource("3_queiv")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_c4wh5")]
-visible = false
 z_as_relative = false
 offset_left = 5016.0
 offset_top = -7926.0
@@ -71,6 +71,11 @@ position = Vector2(-40.899986, -272.99994)
 scale = Vector2(0.099999994, 0.06666666)
 height = 99
 width = 20
+
+[node name="Fluid2DRenderer" parent="WaterCup" unique_id=1294908648 node_paths=PackedStringArray("fluid") instance=ExtResource("7_queiv")]
+position = Vector2(-40.900024, -272.99994)
+scale = Vector2(0.099999994, 0.06666666)
+fluid = NodePath("../Fluid_Node")
 
 [node name="FPS" type="Label" parent="." unique_id=1995958311]
 unique_name_in_owner = true

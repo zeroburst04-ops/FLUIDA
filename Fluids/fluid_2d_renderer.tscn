@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://btg2ynyll1j02"]
+[gd_scene format=3 uid="uid://cso48v1hnqhl4"]
 
-[ext_resource type="Texture2D" uid="uid://xxpkhh3iv1r5" path="res://icon.svg" id="1_160in"]
+[ext_resource type="Texture2D" uid="uid://qpn2mx72u863" path="res://ASSETS/WaterDroplet.svg" id="1_160in"]
 [ext_resource type="Script" path="res://addons/godot-rapier2d/fluid_2d_renderer.gd" id="2_0tyfj"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_oxllv"]
@@ -27,4 +27,4 @@ buffer = PackedFloat32Array(5, 0, 0, 0, 0, 5, 0, 0, 0, 0.9098039, 0.92941177, 0.
 multimesh = SubResource("MultiMesh_u4j1m")
 texture = ExtResource("1_160in")
 script = ExtResource("2_0tyfj")
-color = Color(4.3317677e-06, 0.63590425, 0.651694, 1)
+color = Color(0.8, 0.8, 0.8, 1)

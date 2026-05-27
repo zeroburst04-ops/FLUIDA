@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="5_t62l3"]
 [ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="6_ymc6e"]
 [ext_resource type="PackedScene" uid="uid://8vo18oqoopgy" path="res://Pipes/TS_Kyogre/Kyogre_cup.tscn" id="7_dxwi3"]
+[ext_resource type="PackedScene" uid="uid://cso48v1hnqhl4" path="res://Fluids/fluid_2d_renderer.tscn" id="7_obxq3"]
 [ext_resource type="AudioStream" uid="uid://dxs23c86y67hf" path="res://Pokémon Omega Ruby & Alpha Sapphire - Zinnia Battle Music (HQ).wav" id="8_uxro4"]
 [ext_resource type="Script" uid="uid://bjr07yppeeds" path="res://LEVELS/pipe_spawn_manager.gd" id="10_8ixr7"]
 [ext_resource type="Texture2D" uid="uid://ybxmurw4lsyy" path="res://ASSETS/KNEE.png" id="11_660xd"]
@@ -48,7 +49,6 @@ scale = Vector2(13.294119, 10.852412)
 texture = ExtResource("3_07y8y")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("4_qrg73")]
-visible = false
 z_as_relative = false
 offset_left = 5016.0
 offset_top = -7926.0
@@ -61,7 +61,6 @@ unique_name_in_owner = true
 [node name="WaterCup" parent="." unique_id=570814531 instance=ExtResource("5_t62l3")]
 position = Vector2(7350, -6100)
 scale = Vector2(10, 10)
-Openedside = 0
 
 [node name="Fluid_Node" parent="WaterCup" unique_id=2007082683 instance=ExtResource("15_furlq")]
 density = 35.0
@@ -71,6 +70,11 @@ position = Vector2(-44.799988, -288.2)
 scale = Vector2(0.099999994, 0.099999994)
 height = 71
 width = 23
+
+[node name="Fluid2DRenderer" parent="WaterCup" unique_id=1294908648 node_paths=PackedStringArray("fluid") instance=ExtResource("7_obxq3")]
+position = Vector2(-44.799988, -288.2)
+scale = Vector2(0.09999999, 0.09999999)
+fluid = NodePath("../Fluid_Node")
 
 [node name="FPS" type="Label" parent="." unique_id=1995958311]
 unique_name_in_owner = true
