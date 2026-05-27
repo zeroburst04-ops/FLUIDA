@@ -13,13 +13,16 @@ config_version=5
 config/name="SaveTheKyogre"
 run/main_scene="uid://cg3ay761aruim"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.png"
+boot_splash/image="uid://c56l84v7rjw77"
+config/icon="uid://j5oh608jjleg"
+config/windows_native_icon="res://ASSETS/WINDOWS_ICON.ico"
 
 [autoload]
 
 LevelData="*uid://ccquig12rjt1d"
 Settings="*uid://bl70did4ww25u"
 SceneManager="*uid://buho40aw1h05l"
+SAVE_DATA="*uid://d4bct60m6ublt"
 
 [display]
 
