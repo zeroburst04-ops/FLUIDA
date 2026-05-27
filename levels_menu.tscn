@@ -174,6 +174,7 @@ text = "FREE SIMULATION"
 [connection signal="button_down" from="VScrollBar/Level_2" to="." method="_on_level_2_button_down"]
 [connection signal="pressed" from="VScrollBar/Level_3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="VScrollBar/Level_4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="VScrollBar/Level_5" to="." method="_on_level_5_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
