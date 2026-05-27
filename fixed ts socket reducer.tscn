@@ -152,10 +152,10 @@ shape = SubResource("RectangleShape2D_64byl")
 
 [node name="Rotate" type="Button" parent="." unique_id=1307313503]
 layout_mode = 0
-offset_left = -35.0
-offset_top = 371.0
-offset_right = 764.0
-offset_bottom = 791.0
+offset_left = -408.0
+offset_top = -209.0
+offset_right = 391.0
+offset_bottom = 211.0
 mouse_filter = 1
 theme_override_styles/normal = SubResource("StyleBoxEmpty_fkm6c")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_5j2qg")

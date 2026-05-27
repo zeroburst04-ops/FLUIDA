@@ -39,8 +39,8 @@ func _on_button_2_pressed() -> void:
 	get_tree().change_scene_to_file("res://Harder_levels_menu.tscn")
 
 func _GET_SCORE():
-	%L1_Score.text = str(SAVE_DATA.get_score("Score_Normal_1"))
-	%L2_Score.text = str(SAVE_DATA.get_score("Score_Normal_2"))
-	%L3_Score.text = str(SAVE_DATA.get_score("Score_Normal_3"))
-	%L4_Score.text = str(SAVE_DATA.get_score("Score_Normal_4"))
-	%L5_Score.text = str(SAVE_DATA.get_score("Score_Normal_5"))
+	%L1_Score.text = str(int(SAVE_DATA.get_score("Score_Normal_1")))
+	%L2_Score.text = str(int(SAVE_DATA.get_score("Score_Normal_2")))
+	%L3_Score.text = str(int(SAVE_DATA.get_score("Score_Normal_3")))
+	%L4_Score.text = str(int(SAVE_DATA.get_score("Score_Normal_4")))
+	%L5_Score.text = str(int(SAVE_DATA.get_score("Score_Normal_5")))

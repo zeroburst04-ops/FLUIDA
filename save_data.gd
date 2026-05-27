@@ -72,7 +72,7 @@ func get_score(score_key: String) -> float:
 		return scores[score_key]
 	
 	push_error("Tried to get an invalid score key: ", score_key)
-	return 0.0
+	return 0
 
 # ---------------------------------------------------------
 # SAVE CLEARING (Important Stuff)
@@ -82,7 +82,7 @@ func reset_scores_in_memory() -> void:
 	# Resets the current active memory to 0.0, but doesn't delete the actual file
 	# (Helpful if the player hits "restart" but hasn't confirmed yet)
 	for key in scores.keys():
-		scores[key] = 0.0
+		scores[key] = 0
 	print("Scores reset in active memory.")
 
 func clear_save_file() -> void:

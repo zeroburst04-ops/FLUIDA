@@ -42,8 +42,8 @@ func _on_level_5_pressed() -> void:
 	SceneManager.load_scene("res://LEVELS/level_5.tscn")
 
 func _GET_SCORE():
-	%H1_Score.text = str(SAVE_DATA.get_score("Score_Hard_1"))
-	%H2_Score.text = str(SAVE_DATA.get_score("Score_Hard_2"))
-	%H3_Score.text = str(SAVE_DATA.get_score("Score_Hard_3"))
-	%H4_Score.text = str(SAVE_DATA.get_score("Score_Hard_4"))
-	%H5_Score.text = str(SAVE_DATA.get_score("Score_Hard_5"))
+	%H1_Score.text = str(int(SAVE_DATA.get_score("Score_Hard_1")))
+	%H2_Score.text = str(int(SAVE_DATA.get_score("Score_Hard_2")))
+	%H3_Score.text = str(int(SAVE_DATA.get_score("Score_Hard_3")))
+	%H4_Score.text = str(int(SAVE_DATA.get_score("Score_Hard_4")))
+	%H5_Score.text = str(int(SAVE_DATA.get_score("Score_Hard_5")))
