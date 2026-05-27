@@ -29,7 +29,9 @@ func _physics_process(delta: float) -> void:
 			%Win_Label.text = "YOU WIN !!"
 			LevelData.I_Win = true
 			get_tree().change_scene_to_file("res://win_scene.tscn")
-			
+			LevelData.Overall_Score = randi_range(67, 670) + (67676767 / (%Pipes.get_child_count()))
+			LevelData.Pipe_Score = %Pipes.get_child_count()
+			LevelData.Level = $"..".Origin
 	else:
 		timer = 6
 		%Win_Label.text = "3"

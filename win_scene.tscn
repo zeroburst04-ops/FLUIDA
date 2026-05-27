@@ -277,6 +277,7 @@ offset_bottom = 1213.0002
 theme_override_styles/panel = SubResource("StyleBoxFlat_6gymp")
 
 [node name="Score" type="Label" parent="Infopnael" unique_id=1351633647]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 16.0
 offset_top = 44.0
@@ -286,6 +287,7 @@ theme_override_font_sizes/font_size = 48
 text = "Pipes Used : 0"
 
 [node name="Used-Pipes" type="Label" parent="Infopnael" unique_id=690822435]
+unique_name_in_owner = true
 visible = false
 layout_mode = 0
 offset_left = 16.0

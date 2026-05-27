@@ -64,7 +64,6 @@ func update_score(score_key: String, new_score: float) -> void:
 		if new_score > scores[score_key]:
 			scores[score_key] = new_score
 			save_game() # Auto-save immediately upon setting a new high score
-			print("New High Score for ", score_key, ": ", new_score)
 	else:
 		push_error("Tried to save to an invalid score key: ", score_key)
 

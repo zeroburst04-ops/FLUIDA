@@ -6,6 +6,7 @@ extends Node2D
 
 var overlap_text_timer : float = 0.000000000000
 var last_ticks: float = 0.0
+var Origin : int = 11
 
 func _ready() -> void:
 	LevelData.I_Running = false
