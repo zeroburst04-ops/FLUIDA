@@ -8,12 +8,226 @@
 [ext_resource type="Script" uid="uid://bw7oyvrskim6m" path="res://back_button.gd" id="5_6gymp"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="7_6gymp"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6gymp"]
+bg_color = Color(0.12773594, 0.12773594, 0.12773594, 0.7921569)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.20392157)
+shadow_size = 15
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_226jj"]
 bg_color = Color(0.6706203, 0.027917664, 4.813075e-07, 1)
 corner_radius_top_left = 32
 corner_radius_bottom_right = 32
-shadow_color = Color(0.08379587, 0.16032109, 0.25999233, 0.6)
+shadow_color = Color(0, 0, 0, 0.20392157)
 shadow_size = 100
+
+[sub_resource type="Animation" id="Animation_f6wuv"]
+resource_name = "FAHK"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Youwin:position:y")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1.8660666, 0.25000003),
+"update": 0,
+"values": [362.0, 150.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Infopnael:position:y")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.33333334, 1.0333333),
+"transitions": PackedFloat32Array(0.4352752, 1.5157167),
+"update": 0,
+"values": [813.0, 300.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Infopnael/Score:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Infopnael/Score:position:y")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.93333334, 1.2),
+"transitions": PackedFloat32Array(0.23325834, 0.06698589),
+"update": 0,
+"values": [100.085, 4.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Infopnael/BackButton:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.033333335, 1.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Infopnael/Used-Pipes:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.06666666, 1.4333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Infopnael/Used-Pipes:position:y")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.4333333, 1.6666666),
+"transitions": PackedFloat32Array(0.43527523, 1),
+"update": 0,
+"values": [150.0, 92.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Infopnael/BackButton:position:y")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.6666666, 2),
+"transitions": PackedFloat32Array(0.21763767, 1),
+"update": 0,
+"values": [350.0, 307.0]
+}
+
+[sub_resource type="Animation" id="Animation_3q7h5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Youwin:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [362.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Infopnael:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [813.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Infopnael/Score:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Infopnael/Score:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [44.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Infopnael/BackButton:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Infopnael/Used-Pipes:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [92.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Infopnael/Used-Pipes:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Infopnael/BackButton:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [307.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yt5nw"]
+_data = {
+&"FAHK": SubResource("Animation_f6wuv"),
+&"RESET": SubResource("Animation_3q7h5")
+}
 
 [node name="WIN_scene" type="Node2D" unique_id=568679066]
 script = ExtResource("1_226jj")
@@ -38,18 +252,55 @@ expand = true
 loop = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_6gymp")]
+visible = false
 z_as_relative = false
 offset_left = 37.0
 offset_top = -141.0
 offset_right = 1400.0
 offset_bottom = 880.0
 
-[node name="BackButton" type="Button" parent="." unique_id=1073080204]
+[node name="Youwin" type="Label" parent="." unique_id=1263116506]
+offset_left = 453.0
+offset_top = 362.0
+offset_right = 991.0
+offset_bottom = 494.00015
+theme_override_fonts/font = ExtResource("1_2cral")
+theme_override_font_sizes/font_size = 128
+text = "YOU WIN"
+
+[node name="Infopnael" type="Panel" parent="." unique_id=386882668]
+custom_minimum_size = Vector2(450, 400)
+offset_left = 511.0
+offset_top = 813.0
+offset_right = 961.0
+offset_bottom = 1213.0002
+theme_override_styles/panel = SubResource("StyleBoxFlat_6gymp")
+
+[node name="Score" type="Label" parent="Infopnael" unique_id=1351633647]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 44.0
+offset_right = 430.0
+offset_bottom = 111.000015
+theme_override_font_sizes/font_size = 48
+text = "Pipes Used : 0"
+
+[node name="Used-Pipes" type="Label" parent="Infopnael" unique_id=690822435]
 visible = false
-offset_left = 182.0
-offset_top = 656.0
-offset_right = 325.0
-offset_bottom = 722.0
+layout_mode = 0
+offset_left = 16.0
+offset_top = 92.0
+offset_right = 430.0
+offset_bottom = 159.0
+theme_override_font_sizes/font_size = 48
+text = "Score : 000000000"
+
+[node name="BackButton" type="Button" parent="Infopnael" unique_id=1073080204]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 307.0
+offset_right = 297.0
+offset_bottom = 373.0
 theme_override_fonts/font = ExtResource("2_sel2p")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_226jj")
@@ -57,13 +308,8 @@ text = "BACK"
 icon_alignment = 1
 script = ExtResource("5_6gymp")
 
-[node name="Label" type="Label" parent="." unique_id=1263116506]
-offset_left = 453.0
-offset_top = 362.0
-offset_right = 991.0
-offset_bottom = 494.0
-theme_override_fonts/font = ExtResource("1_2cral")
-theme_override_font_sizes/font_size = 128
-text = "YOU WIN"
+[node name="CoolAnimation" type="AnimationPlayer" parent="." unique_id=1855161472]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_yt5nw")
 
-[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Infopnael/BackButton" to="." method="_on_back_button_pressed"]
