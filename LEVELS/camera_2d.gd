@@ -28,11 +28,18 @@ func _ready() -> void:
 	
 # 1. Move DOWN by 50 pixels over 0.5 seconds (In 2D, positive Y is down)
 	tween.tween_property(%Camera2D, "position:y", 7500, 2).as_relative()
-
+	
+	await get_tree().create_timer(2.5).timeout
 # 2. Move UP by 50 pixels over 0.5 seconds
-	tween.tween_property(%Camera2D, "position:y", -7559.0, 2).as_relative()
+	var tween2 = create_tween()
+	
+	tween2.set_trans(Tween.TRANS_SINE)
+	tween2.set_ease(Tween.EASE_IN_OUT)
+	tween2.tween_property(%Camera2D, "position:y", -7559.0, 2).as_relative()
 	I_CUTSCENE_Play = true
-
+	await get_tree().create_timer(1.5).timeout
+	%Explanatory_Panel.visible = false
+	
 func _process(delta: float) -> void:
 	if I_CUTSCENE_Play:
 		if %Camera2D.global_position.y < Camera_start_y:
