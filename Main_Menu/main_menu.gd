@@ -1,5 +1,6 @@
 extends Control
 
+@onready var video_player: VideoStreamPlayer = $Background_Animation
 @onready var BGM = %BackGround_Music
 func _process(delta: float) -> void:
 	BGM.volume_db = Settings.BackGround_Music3
@@ -23,4 +24,12 @@ func _on_settings_button_pressed() -> void:
 	
 func _on_test_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://TestScene/test_scene.tscn")
-	
+
+func _enter_tree() -> void:
+	if video_player:
+		video_player.stop() 
+		video_player.play()
+
+func _ready() -> void:
+	if video_player and not video_player.is_playing():
+		video_player.play()
