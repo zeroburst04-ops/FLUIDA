@@ -54,7 +54,6 @@ texture = ExtResource("2_ln8ka")
 
 [node name="Front_Normal" type="Sprite2D" parent="." unique_id=99261005]
 unique_name_in_owner = true
-visible = false
 z_index = -50
 z_as_relative = false
 position = Vector2(-202.8508, 8.500011)

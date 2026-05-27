@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="6_2ytag"]
 [ext_resource type="Texture2D" uid="uid://bdp6s631vuxp1" path="res://ASSETS/KyogreTutorialBackground.png" id="7_ali5n"]
 [ext_resource type="Texture2D" uid="uid://g4qnl4a2o6f4" path="res://ASSETS/FEEDKYOGREWATER.png" id="8_ali5n"]
-[ext_resource type="Texture2D" uid="uid://bsqfduigbh2hb" path="res://スクリーンショット 2026-05-24 185920.png" id="9_g0iwy"]
+[ext_resource type="Texture2D" uid="uid://cmyyvomrtrfwp" path="res://ASSETS/LMBSHITWOW.png" id="9_ali5n"]
 [ext_resource type="Texture2D" uid="uid://bchj24i06kjub" path="res://ASSETS/DONT KNOCK THE KYOGRE.png" id="10_ptshw"]
 
 [sub_resource type="Theme" id="Theme_ra02u"]
@@ -251,11 +251,13 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_g4b4y")
 [node name="Label" type="Label" parent="Tutorial/Tutorial_Segments/HBoxContainer/FeedKyogreWater" unique_id=1248573744]
 layout_mode = 0
 offset_left = 38.0
-offset_top = 29.0
+offset_top = 162.0
 offset_right = 753.0
-offset_bottom = 793.0
+offset_bottom = 926.0
+theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 98
-text = "Give Kyogre his water by redirecting pipes to his cup"
+text = "Give Kyogre his water by 
+redirecting pipes to his cup"
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -270,6 +272,12 @@ scale = Vector2(0.69752574, 0.69752574)
 mouse_filter = 2
 texture = ExtResource("8_ali5n")
 
+[node name="FeedKyogreWater2" type="Panel" parent="Tutorial/Tutorial_Segments/HBoxContainer" unique_id=1611715292]
+custom_minimum_size = Vector2(800, 1681)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4b4y")
+
 [node name="LMB and RMB" type="Panel" parent="Tutorial/Tutorial_Segments/HBoxContainer" unique_id=2081463479]
 custom_minimum_size = Vector2(800, 1681)
 layout_mode = 2
@@ -278,9 +286,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_g4b4y")
 [node name="Label2" type="Label" parent="Tutorial/Tutorial_Segments/HBoxContainer/LMB and RMB" unique_id=198468038]
 layout_mode = 0
 offset_left = 44.0
-offset_top = 29.0
+offset_top = 154.0
 offset_right = 759.0
-offset_bottom = 793.0
+offset_bottom = 918.0
+theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 98
 text = "LMB to drag pipes
 
@@ -295,8 +304,9 @@ offset_left = 25.0
 offset_top = 859.0
 offset_right = 775.0
 offset_bottom = 1609.0
+scale = Vector2(0.70074874, 0.70074874)
 mouse_filter = 2
-texture = ExtResource("9_g0iwy")
+texture = ExtResource("9_ali5n")
 
 [node name="Panel" type="Panel" parent="Tutorial/Tutorial_Segments/HBoxContainer" unique_id=737876794]
 custom_minimum_size = Vector2(800, 1681)
@@ -307,13 +317,12 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_g4b4y")
 [node name="Label3" type="Label" parent="Tutorial/Tutorial_Segments/HBoxContainer/Panel" unique_id=2143944197]
 layout_mode = 0
 offset_left = 50.0
-offset_top = 29.0
+offset_top = 200.0
 offset_right = 765.0
-offset_bottom = 793.0
+offset_bottom = 964.0
+theme_override_fonts/font = ExtResource("3_2jvup")
 theme_override_font_sizes/font_size = 98
-text = "Dont knock over 
-
-the kyogre"
+text = "Dont knock over the kyogre"
 horizontal_alignment = 1
 autowrap_mode = 2
 
