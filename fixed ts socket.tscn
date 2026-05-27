@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://cb8yogv01hhac"]
 
-[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="1_7u067"]
 [ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_fkm6c"]
+[ext_resource type="Texture2D" uid="uid://xc25do8wrxgt" path="res://1way_final_shi-removebg-preview.png" id="2_fkm6c"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_fkm6c"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_5j2qg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2f7dg"]
-size = Vector2(80, 10)
+size = Vector2(80, 7.250001)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64byl"]
 size = Vector2(77.93335, 38)
@@ -33,7 +33,7 @@ z_index = -50
 z_as_relative = false
 position = Vector2(198.6625, 6.173451)
 scale = Vector2(0.90334666, 1.811297)
-texture = ExtResource("1_7u067")
+texture = ExtResource("2_fkm6c")
 
 [node name="Front_Normal" type="Sprite2D" parent="." unique_id=1631520399]
 unique_name_in_owner = true
@@ -41,7 +41,7 @@ z_index = -50
 z_as_relative = false
 position = Vector2(-202.8508, 8.500011)
 scale = Vector2(1.009634, 1.8083334)
-texture = ExtResource("1_7u067")
+texture = ExtResource("2_fkm6c")
 
 [node name="TS_Socket Shape" type="Node2D" parent="." unique_id=1844349361]
 unique_name_in_owner = true
@@ -96,11 +96,13 @@ scale = Vector2(10, 10)
 position = Vector2(-0.17067337, 0)
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=1716687797]
-position = Vector2(-0.098667145, 15)
+position = Vector2(-0.09866714, 14.949998)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_2f7dg")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=161980419]
-position = Vector2(-0.098667145, -15)
+position = Vector2(-0.09866714, -14.324999)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_2f7dg")
 
 [node name="TS_Socket Area" type="Node2D" parent="." unique_id=581902813]

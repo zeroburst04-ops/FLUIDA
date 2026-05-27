@@ -1,20 +1,20 @@
 [gd_scene format=3 uid="uid://crwgphq1kfult"]
 
 [ext_resource type="Script" uid="uid://cwt55xwwewek" path="res://Fixed_Pipe.gd" id="1_w6t18"]
-[ext_resource type="Texture2D" uid="uid://o3rwlmkd82g1" path="res://1way-removebg-preview.png" id="2_k343j"]
+[ext_resource type="Texture2D" uid="uid://xc25do8wrxgt" path="res://1way_final_shi-removebg-preview.png" id="2_w6t18"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_fkm6c"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_5j2qg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2f7dg"]
-size = Vector2(80, 10)
+size = Vector2(38.000008, 6.7500014)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3atmk"]
-size = Vector2(40, 15)
+size = Vector2(40.305344, 4.2000003)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ax5n"]
-size = Vector2(17.248169, 9.939847)
+size = Vector2(17.248169, 4.9456453)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64byl"]
 size = Vector2(77.93335, 38)
@@ -39,14 +39,14 @@ z_index = -50
 z_as_relative = false
 position = Vector2(198.6625, 6.173451)
 scale = Vector2(0.90334666, 1.811297)
-texture = ExtResource("2_k343j")
+texture = ExtResource("2_w6t18")
 
 [node name="Front_Reducer" type="Sprite2D" parent="." unique_id=527805018]
 z_index = -51
 z_as_relative = false
 position = Vector2(-202.8508, 9.1733885)
 scale = Vector2(1.009634, 1.2428362)
-texture = ExtResource("2_k343j")
+texture = ExtResource("2_w6t18")
 
 [node name="TS_Socket Shape" type="Node2D" parent="." unique_id=1844349361]
 unique_name_in_owner = true
@@ -94,7 +94,6 @@ scale = Vector2(40, 6)
 mesh = SubResource("PrismMesh_5j2qg")
 
 [node name="TS_Socket Collision" type="Node2D" parent="." unique_id=1427464456]
-visible = false
 position = Vector2(0.7467346, 0)
 scale = Vector2(10, 10)
 
@@ -102,11 +101,13 @@ scale = Vector2(10, 10)
 position = Vector2(-0.17067337, 0)
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=1716687797]
-position = Vector2(-0.098667145, 15)
+position = Vector2(20.595999, 14.974999)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_2f7dg")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="TS_Socket Collision/StaticBody2D" unique_id=161980419]
-position = Vector2(-0.098667145, -15)
+position = Vector2(20.595999, -14.15)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_2f7dg")
 
 [node name="TS_Socket_Reducer Collision" type="Node2D" parent="TS_Socket Collision" unique_id=1925836106]
@@ -116,21 +117,24 @@ position = Vector2(-0.2293396, 0)
 unique_name_in_owner = true
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=148956117]
-position = Vector2(-20.04, 12.5)
+position = Vector2(-20.24533, 10.7)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_3atmk")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1177564592]
-position = Vector2(-20.04, -12.5)
+position = Vector2(-20.192663, -9.4)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_3atmk")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=1322103345]
-position = Vector2(6.782215, -12.247911)
+position = Vector2(5.954666, -11.900001)
 rotation = -0.2928449
 shape = SubResource("RectangleShape2D_8ax5n")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="TS_Socket Collision/TS_Socket_Reducer Collision/TS_Socket_Reducer Collision" unique_id=73876754]
-position = Vector2(6.959999, 12.319999)
-rotation = 0.2932153
+position = Vector2(6.7238793, 13.102044)
+rotation = 0.29321533
+scale = Vector2(0.99999964, 0.99999964)
 shape = SubResource("RectangleShape2D_8ax5n")
 
 [node name="TS_Socket Area" type="Node2D" parent="." unique_id=581902813]
@@ -148,10 +152,10 @@ shape = SubResource("RectangleShape2D_64byl")
 
 [node name="Rotate" type="Button" parent="." unique_id=1307313503]
 layout_mode = 0
-offset_left = -406.0
-offset_top = -207.0
-offset_right = 393.0
-offset_bottom = 213.0
+offset_left = -35.0
+offset_top = 371.0
+offset_right = 764.0
+offset_bottom = 791.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_fkm6c")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_5j2qg")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_2f7dg")

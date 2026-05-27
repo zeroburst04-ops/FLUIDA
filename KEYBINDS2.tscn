@@ -63,6 +63,7 @@ autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_8wdwb")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.44432542
@@ -200,7 +201,12 @@ offset_left = 189.00024
 offset_top = 3150.0
 offset_right = 3869.0002
 offset_bottom = 3658.0
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 300
 theme_override_styles/normal = SubResource("StyleBoxFlat_uud82")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="2" type="Label" parent="Fake_Container" unique_id=1485004070]
 layout_mode = 0
@@ -208,7 +214,12 @@ offset_left = 184.00024
 offset_top = 2443.0
 offset_right = 3864.0002
 offset_bottom = 2969.0
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 300
 theme_override_styles/normal = SubResource("StyleBoxFlat_8enj4")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="3" type="Label" parent="Fake_Container" unique_id=1827403140]
 layout_mode = 0
@@ -216,7 +227,12 @@ offset_left = 186.0
 offset_top = 1759.0
 offset_right = 3862.0
 offset_bottom = 2290.0
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 300
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fnu6")
+text = "RMB = Rotate Pipe"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="4" type="Label" parent="Fake_Container" unique_id=1978877715]
 layout_mode = 0
@@ -224,7 +240,12 @@ offset_left = 190.0
 offset_top = 1045.0
 offset_right = 3861.0
 offset_bottom = 1570.0
+theme_override_fonts/font = ExtResource("5_ot8rv")
+theme_override_font_sizes/font_size = 300
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ew0j")
+text = "LMB = Drag Pipe"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="BackButton" type="Button" parent="." unique_id=35635621]
 layout_mode = 0
