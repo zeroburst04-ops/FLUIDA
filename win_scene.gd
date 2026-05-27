@@ -4,8 +4,8 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	%CoolAnimation.play("RESET")
-	%Score.text = str(LevelData.Overall_Score)
-	%"Used-Pipes".text = str(LevelData.Pipe_Score)
+	%Score.text = "Score : " + str(LevelData.Overall_Score)
+	%"Used-Pipes".text = "Pipes used : " + str(LevelData.Pipe_Score)
 	
 	match LevelData.Level:
 		11:

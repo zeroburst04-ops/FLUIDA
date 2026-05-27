@@ -6,16 +6,16 @@ const SCORE_SECTION = "HighScores"
 # Storing your requested floats in a Dictionary.
 # These act as the default values if no save file exists.
 var scores: Dictionary = {
-	"Score_Normal_1": 0.0,
-	"Score_Normal_2": 0.0,
-	"Score_Normal_3": 0.0,
-	"Score_Normal_4": 0.0,
-	"Score_Normal_5": 0.0,
-	"Score_Hard_1": 0.0,
-	"Score_Hard_2": 0.0,
-	"Score_Hard_3": 0.0,
-	"Score_Hard_4": 0.0,
-	"Score_Hard_5": 0.0
+	"Score_Normal_1": 0,
+	"Score_Normal_2": 0,
+	"Score_Normal_3": 0,
+	"Score_Normal_4": 0,
+	"Score_Normal_5": 0,
+	"Score_Hard_1": 0,
+	"Score_Hard_2": 0,
+	"Score_Hard_3": 0,
+	"Score_Hard_4": 0,
+	"Score_Hard_5": 0
 }
 
 func _ready() -> void:
