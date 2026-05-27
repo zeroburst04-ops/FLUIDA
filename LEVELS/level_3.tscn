@@ -267,11 +267,11 @@ offset_bottom = 1568.0001
 rotation = -1.4425906
 
 [node name="fixed ts_socket57" parent="." unique_id=1419624302 instance=ExtResource("16_ibijo")]
-offset_left = 9997.0
-offset_top = -2885.0005
-offset_right = 9997.0
-offset_bottom = -2885.0005
-rotation = -0.6900905
+offset_left = 10414.0
+offset_top = -3341.9998
+offset_right = 10414.0
+offset_bottom = -3341.9998
+rotation = 0.008371526
 
 [node name="fixed ts_socket52" parent="." unique_id=1029865745 instance=ExtResource("16_ibijo")]
 offset_left = 9505.0
@@ -301,17 +301,6 @@ offset_right = 8866.628
 offset_bottom = 404.0
 rotation = -3.0270922
 
-[node name="Branches7" parent="." unique_id=1312025165 instance=ExtResource("17_nrsrv")]
-position = Vector2(6035, 385.99963)
-rotation = -3.829618
-scale = Vector2(-12.0660305, 9.905353)
-skew = -1.0929083
-
-[node name="Branches" parent="." unique_id=1630922892 instance=ExtResource("17_nrsrv")]
-position = Vector2(7920.0005, 237.99976)
-rotation = -0.632644
-scale = Vector2(7.109, 1.66)
-
 [node name="Branches2" parent="." unique_id=332273077 instance=ExtResource("17_nrsrv")]
 position = Vector2(12690.999, -33.99965)
 rotation = 3.95851
@@ -336,16 +325,16 @@ rotation = 6.4522586
 scale = Vector2(6.109, 1.426)
 
 [node name="fixed ts_socket43" parent="." unique_id=1787144078 instance=ExtResource("16_ibijo")]
-offset_left = 6873.0
-offset_top = -2574.0
-offset_right = 6873.0
-offset_bottom = -2574.0
+offset_left = 6169.0
+offset_top = -3577.0
+offset_right = 6169.0
+offset_bottom = -3577.0
 
 [node name="fixed ts_socket45" parent="." unique_id=188203736 instance=ExtResource("16_ibijo")]
-offset_left = 12618.0
-offset_top = -2950.0
-offset_right = 12618.0
-offset_bottom = -2950.0
+offset_left = 12734.0
+offset_top = -2853.0005
+offset_right = 12734.0
+offset_bottom = -2853.0005
 rotation = 0.77436686
 
 [node name="fixed ts_socket46" parent="." unique_id=1784024493 instance=ExtResource("16_ibijo")]
@@ -353,13 +342,13 @@ offset_left = 9605.0
 offset_top = -3344.9995
 offset_right = 9605.0
 offset_bottom = -3344.9995
-rotation = -0.7164161
+rotation = -0.0057191253
 
 [node name="fixed ts_tee6" parent="." unique_id=405732462 instance=ExtResource("18_0m8sj")]
-offset_left = 7617.0005
-offset_top = -4091.0
-offset_right = 7617.0005
-offset_bottom = -4091.0
+offset_left = 7596.0
+offset_top = -3596.0
+offset_right = 7596.0
+offset_bottom = -3596.0
 rotation = 0.0019319057
 
 [node name="fixed ts_tee8" parent="." unique_id=769901746 instance=ExtResource("18_0m8sj")]
@@ -369,6 +358,13 @@ offset_right = 12532.0
 offset_bottom = -4408.0
 rotation = 0.0019319057
 
+[node name="fixed ts_knee5" parent="." unique_id=1245467382 instance=ExtResource("15_a63b5")]
+offset_left = 6430.9995
+offset_top = -4281.9995
+offset_right = 6430.9995
+offset_bottom = -4281.9995
+rotation = -4.714589
+
 [node name="fixed ts_knee4" parent="." unique_id=593694108 instance=ExtResource("15_a63b5")]
 offset_left = 6392.0
 offset_top = -5715.0
@@ -377,18 +373,18 @@ offset_bottom = -5715.0
 rotation = -3.1323528
 
 [node name="fixed ts_knee16" parent="." unique_id=71733076 instance=ExtResource("15_a63b5")]
-offset_left = 6323.9995
-offset_top = -1269.0
-offset_right = 6323.9995
-offset_bottom = -1269.0
+offset_left = 6927.999
+offset_top = -1315.0001
+offset_right = 6927.999
+offset_bottom = -1315.0001
 rotation = 0.0040345676
 
 [node name="fixed ts_tee12" parent="." unique_id=585741480 instance=ExtResource("18_0m8sj")]
-offset_left = 7754.0
-offset_top = -2444.0
-offset_right = 7754.0
-offset_bottom = -2444.0
-rotation = 0.0019319057
+offset_left = 6330.9995
+offset_top = -1939.0
+offset_right = 6330.9995
+offset_bottom = -1939.0
+rotation = 3.1377687
 
 [node name="fixed ts_socket32" parent="." unique_id=1952805929 instance=ExtResource("16_ibijo")]
 offset_left = 11382.0
@@ -403,18 +399,18 @@ offset_right = 11200.0
 offset_bottom = -1728.0
 
 [node name="fixed ts_socket34" parent="." unique_id=1027466924 instance=ExtResource("16_ibijo")]
-offset_left = 12062.0
-offset_top = -3523.0005
-offset_right = 12062.0
-offset_bottom = -3523.0005
+offset_left = 12175.0
+offset_top = -3430.0
+offset_right = 12175.0
+offset_bottom = -3430.0
 rotation = 0.8199838
 
 [node name="fixed ts_socket28" parent="." unique_id=531025463 instance=ExtResource("16_ibijo")]
-offset_left = 7692.0
-offset_top = -3334.0
-offset_right = 7692.0
-offset_bottom = -3334.0
-rotation = 0.6875496
+offset_left = 8671.0
+offset_top = -2762.9995
+offset_right = 8671.0
+offset_bottom = -2762.9995
+rotation = -0.0020902157
 
 [node name="fixed ts_socket27" parent="." unique_id=288515539 instance=ExtResource("16_ibijo")]
 offset_left = 12157.0
@@ -464,15 +460,46 @@ offset_bottom = 1441.0
 rotation = 3.1212144
 
 [node name="fixed ts_tee13" parent="." unique_id=972730083 instance=ExtResource("18_0m8sj")]
-offset_left = 6884.0
-offset_top = -4209.0
-offset_right = 6884.0
-offset_bottom = -4209.0
-rotation = 0.0019319057
+offset_left = 6957.0005
+offset_top = -4185.0
+offset_right = 6957.0005
+offset_bottom = -4185.0
+rotation = -1.5749698
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1560402727]
 stream = ExtResource("19_4nx7w")
 autoplay = true
+
+[node name="Branches" parent="." unique_id=1312025165 instance=ExtResource("17_nrsrv")]
+position = Vector2(7282.9995, 254)
+rotation = -0.7666719
+
+[node name="fixed ts_socket41" parent="." unique_id=1881519052 instance=ExtResource("16_ibijo")]
+offset_left = 6969.0
+offset_top = -2763.0002
+offset_right = 6969.0
+offset_bottom = -2763.0002
+rotation = -0.007735124
+
+[node name="fixed ts_socket42" parent="." unique_id=1984282679 instance=ExtResource("16_ibijo")]
+offset_left = 6973.9995
+offset_top = -3569.9998
+offset_right = 6973.9995
+offset_bottom = -3569.9998
+rotation = 0.00010430813
+
+[node name="fixed ts_socket36" parent="." unique_id=218251342 instance=ExtResource("16_ibijo")]
+offset_left = 6266.0
+offset_top = -1257.0
+offset_right = 6266.0
+offset_bottom = -1257.0
+
+[node name="fixed ts_socket37" parent="." unique_id=1315822138 instance=ExtResource("16_ibijo")]
+offset_left = 6974.999
+offset_top = -1964.0
+offset_right = 6974.999
+offset_bottom = -1964.0
+rotation = 9.925617e-05
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]
