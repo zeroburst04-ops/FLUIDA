@@ -149,7 +149,7 @@ text = "BACK"
 unique_name_in_owner = true
 position = Vector2(576, 316)
 stream = ExtResource("7_6ym5a")
-volume_db = 18.955
+volume_db = 17.743
 autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_5f8d8")]

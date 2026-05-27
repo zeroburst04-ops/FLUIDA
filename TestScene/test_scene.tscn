@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d2ur1fd3lw6ah" path="res://TestScene/test_scene.gd" id="1_eaejv"]
 [ext_resource type="PackedScene" uid="uid://c1i6l2c53a6sm" path="res://Fluids/fluid_node.tscn" id="2_jtt75"]
-[ext_resource type="Script" path="res://TestScene/tl_pipe_data.gd" id="2_k8tjy"]
+[ext_resource type="Script" uid="uid://de261hwidbdet" path="res://TestScene/tl_pipe_data.gd" id="2_k8tjy"]
 [ext_resource type="Texture2D" uid="uid://stp23x0l4rff" path="res://istockphoto-1545637815-612x612.jpg" id="2_oisa6"]
 [ext_resource type="PackedScene" uid="uid://c2awvcje2atdu" path="res://Pipes/WaterCup/water_cup.tscn" id="3_udmxp"]
 [ext_resource type="Script" uid="uid://bjr07yppeeds" path="res://LEVELS/pipe_spawn_manager.gd" id="4_xd3t6"]
@@ -67,7 +67,6 @@ position = Vector2(-19, 19)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1874395895]
 unique_name_in_owner = true
 stream = ExtResource("9_xd3t6")
-volume_db = 1.831
 autoplay = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=147878158]

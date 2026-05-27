@@ -37,7 +37,7 @@ func _process(delta: float) -> void:
 		if overlap_text_timer >= 1:
 			overlap_text_timer = 0
 			%Overlap_text.visible = false
-	%AudioStreamPlayer.volume_db = Settings.BackGround_Music
+	%AudioStreamPlayer.volume_db = Settings.BackGround_Music2
 			
 func _on_start_pressed() -> void:
 	for i in range(%Pipes.get_child_count()):
