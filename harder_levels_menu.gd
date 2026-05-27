@@ -2,6 +2,7 @@ extends Control
 
 @onready var Brightness : = $Brightness_Overlay
 func _physics_process(delta:float) -> void:
+	_GET_SCORE()
 	Brightness.modulate.a = Settings.Brightness
 
 func _process(delta: float) -> void:
@@ -39,3 +40,10 @@ func _on_level_4_pressed() -> void:
 
 func _on_level_5_pressed() -> void:
 	SceneManager.load_scene("res://LEVELS/level_5.tscn")
+
+func _GET_SCORE():
+	%H1_Score.text = str(SAVE_DATA.get_score("Score_Normal_1"))
+	%H2_Score.text = str(SAVE_DATA.get_score("Score_Normal_2"))
+	%H3_Score.text = str(SAVE_DATA.get_score("Score_Normal_3"))
+	%H4_Score.text = str(SAVE_DATA.get_score("Score_Normal_4"))
+	%H5_Score.text = str(SAVE_DATA.get_score("Score_Normal_5"))
