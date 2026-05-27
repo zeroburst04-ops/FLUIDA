@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 	if $".".get_parent() == Pipe_Node:
 		Pipe_Area.monitorable = true
 		Pipe_Area.monitoring = true
-	
+	#EXPORTED
 	if not LevelData.I_Running:
 		for i in range(%StaticBody2D.get_child_count()):
 			%StaticBody2D.get_child(i).disabled = true
