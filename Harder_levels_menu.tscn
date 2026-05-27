@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://1ne51mnemb6w"]
+
+[ext_resource type="Script" path="res://harder_levels_menu.gd" id="1_rada2"]
+[ext_resource type="Texture2D" uid="uid://bvrab1ok3r7au" path="res://zsbynj4.jpg" id="2_ps5xc"]
+[ext_resource type="FontFile" uid="uid://cerepslg6748s" path="res://Branda-yolq.ttf" id="3_pc60j"]
+[ext_resource type="Texture2D" uid="uid://dc227ex8ysvp8" path="res://unnamed.png" id="4_6geal"]
+[ext_resource type="FontFile" uid="uid://din4ihm2th23i" path="res://ChrustyRock-ORLA.ttf" id="5_vanj8"]
+[ext_resource type="AudioStream" path="res://ASSETS/FINISHED AFTER 8 YEARS!  FAIRY KNIFE HELL.mp3" id="6_rada2"]
+[ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="7_4u6hs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyl7c"]
+bg_color = Color(0.5038092, 0, 0.0635143, 1)
+corner_radius_top_left = 32
+corner_radius_bottom_right = 32
+
+[node name="Harder_Levels_menu" type="Control" unique_id=971478389]
+layout_mode = 3
+anchor_left = 0.194
+anchor_top = 0.19100001
+anchor_right = 1.194
+anchor_bottom = 1.1910001
+offset_left = 0.5119934
+offset_top = 0.231987
+offset_right = 0.5119629
+offset_bottom = 0.2319336
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rada2")
+
+[node name="BACKGROUND" type="Sprite2D" parent="." unique_id=1883314658]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(471.00003, 299)
+scale = Vector2(0.5453125, 0.5534723)
+texture = ExtResource("2_ps5xc")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1260589596]
+position = Vector2(573, 327)
+
+[node name="Label" type="Label" parent="." unique_id=1913358045]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 38.0
+offset_right = 580.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("3_pc60j")
+theme_override_font_sizes/font_size = 94
+text = "HARD LEVELS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VScrollBar" type="VScrollBar" parent="." unique_id=2077216865]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 163.0
+offset_right = 508.0
+offset_bottom = 620.0
+custom_step = -0.675
+
+[node name="background" type="Sprite2D" parent="VScrollBar" unique_id=1153044485]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(220.25, 32.75)
+scale = Vector2(0.8623046, 0.13378903)
+texture = ExtResource("4_6geal")
+
+[node name="Level_1" type="Button" parent="VScrollBar" unique_id=546704909]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.009000001
+anchor_top = -0.009000001
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.9780002
+offset_top = 0.11300039
+offset_bottom = -388.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 1"
+
+[node name="background2" type="Sprite2D" parent="VScrollBar" unique_id=1507310412]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(220.99998, 132)
+scale = Vector2(0.86328125, 0.13183598)
+texture = ExtResource("4_6geal")
+
+[node name="Level_2" type="Button" parent="VScrollBar" unique_id=1366429412]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 95.0
+offset_right = 442.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 2"
+
+[node name="background5" type="Sprite2D" parent="VScrollBar" unique_id=1976137396]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(222.5, 227)
+scale = Vector2(0.85742193, 0.13671884)
+texture = ExtResource("4_6geal")
+
+[node name="Level_3" type="Button" parent="VScrollBar" unique_id=2018581802]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0020001
+anchor_bottom = 1.0
+offset_top = 190.0
+offset_right = 0.1159668
+offset_bottom = -195.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 3"
+
+[node name="background4" type="Sprite2D" parent="VScrollBar" unique_id=1520756947]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(221.99998, 325.6275)
+scale = Vector2(0.85937494, 0.13426754)
+texture = ExtResource("4_6geal")
+
+[node name="Level_4" type="Button" parent="VScrollBar" unique_id=1969654706]
+layout_mode = 0
+offset_top = 289.0
+offset_right = 442.0
+offset_bottom = 360.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 4"
+
+[node name="background3" type="Sprite2D" parent="VScrollBar" unique_id=1310491215]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(220.99998, 418.57794)
+scale = Vector2(0.86328125, 0.13836734)
+texture = ExtResource("4_6geal")
+
+[node name="Level_5" type="Button" parent="VScrollBar" unique_id=1572075483]
+layout_mode = 0
+offset_top = 382.0
+offset_right = 443.0
+offset_bottom = 454.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 5"
+
+[node name="BackButton" type="Button" parent="." unique_id=1735406266]
+layout_mode = 0
+offset_left = 994.0
+offset_top = 560.0
+offset_right = 1118.0
+offset_bottom = 622.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_fyl7c")
+text = "BACK"
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=1185042216]
+unique_name_in_owner = true
+position = Vector2(576, 316)
+stream = ExtResource("6_rada2")
+volume_db = 18.955
+autoplay = true
+
+[node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("7_4u6hs")]
+visible = false
+layout_mode = 1
+offset_left = -359.0
+offset_top = -250.0
+offset_right = 186.0
+offset_bottom = 201.0
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="." unique_id=1553499670]
+layout_mode = 0
+offset_left = 832.0
+offset_top = 32.0
+offset_right = 1133.0
+offset_bottom = 90.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+text = "FREE SIMULATION"
+
+[node name="Button2" type="Button" parent="." unique_id=1630413747]
+layout_mode = 0
+offset_left = 618.0
+offset_top = 32.0
+offset_right = 818.0
+offset_bottom = 90.0
+theme_override_fonts/font = ExtResource("5_vanj8")
+theme_override_font_sizes/font_size = 32
+text = "Easy Mode"
+
+[connection signal="pressed" from="VScrollBar/Level_1" to="." method="_on_level_1_pressed"]
+[connection signal="button_down" from="VScrollBar/Level_2" to="." method="_on_level_2_button_down"]
+[connection signal="pressed" from="VScrollBar/Level_3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
