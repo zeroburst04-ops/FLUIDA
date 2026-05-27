@@ -26,6 +26,11 @@ bg_color = Color(0.7251792, 0, 0.20635924, 1)
 [sub_resource type="FluidEffect2DSurfaceTensionAKINCI" id="FluidEffect2DSurfaceTensionAKINCI_s21lk"]
 fluid_tension_coefficient = 35.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4dpcq"]
+bg_color = Color(0.5038092, 0, 0.0635143, 1)
+corner_radius_top_left = 32
+corner_radius_bottom_right = 32
+
 [node name="level_5" type="Node2D" unique_id=2005978302]
 script = ExtResource("1_4dpcq")
 
@@ -248,9 +253,20 @@ rotation = -2.425311
 position = Vector2(6665, 3156)
 rotation = -0.7341004
 
+[node name="BackButton" type="Button" parent="." unique_id=31823130]
+offset_left = 6195.0
+offset_top = -6633.0
+offset_right = 6638.0
+offset_bottom = -6479.0
+theme_override_fonts/font = ExtResource("6_coceb")
+theme_override_font_sizes/font_size = 108
+theme_override_styles/normal = SubResource("StyleBoxFlat_4dpcq")
+text = "BACK"
+
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="End" to="." method="_on_end_pressed"]
 [connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Knee_Button" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_knee_button_button_down"]
 [connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Button" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_socket_button_button_down"]
 [connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Socket_Reducer_Button" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_socket_reducer_button_button_down"]
 [connection signal="button_down" from="Camera2D/Pipe_panel/MarginContainer/PipeContainer/TS_Tee" to="Camera2D/Pipe_panel/Pipe_Spawn_Manager" method="_on_ts_tee_button_down"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
