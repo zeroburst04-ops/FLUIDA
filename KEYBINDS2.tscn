@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://7vsklorsvnsu"]
 
-[ext_resource type="Script" path="res://keybinds_2.gd" id="1_8wdwb"]
+[ext_resource type="Script" uid="uid://dgq3nx62b2n3m" path="res://keybinds_2.gd" id="1_8wdwb"]
 [ext_resource type="PackedScene" uid="uid://br7o42f1dujmh" path="res://brightness_overlay.tscn" id="2_8wdwb"]
 [ext_resource type="AudioStream" uid="uid://lo45f5d7rqtf" path="res://pokemon-d-p-music-oreburgh-city-midday-52-dft-0.wav" id="2_pb4p8"]
 [ext_resource type="Texture2D" uid="uid://daurhxh0ol6n" path="res://c2c1e48c4a3e73212bb1005dc2bd0cfa.jpg" id="3_pb4p8"]
@@ -63,7 +63,6 @@ autoplay = true
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("2_8wdwb")]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.44432542

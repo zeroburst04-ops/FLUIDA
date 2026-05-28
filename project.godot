@@ -13,7 +13,6 @@ config_version=5
 config/name="SaveTheKyogre"
 run/main_scene="uid://cg3ay761aruim"
 config/features=PackedStringArray("4.6", "Forward Plus")
-boot_splash/image="uid://c56l84v7rjw77"
 config/icon="uid://j5oh608jjleg"
 config/windows_native_icon="res://ASSETS/WINDOWS_ICON.ico"
 

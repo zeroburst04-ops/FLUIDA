@@ -86,7 +86,6 @@ grow_vertical = 2
 script = ExtResource("1_e582s")
 
 [node name="Brightness_Overlay" parent="." unique_id=632565448 instance=ExtResource("6_2ytag")]
-visible = false
 z_as_relative = false
 layout_mode = 1
 offset_left = -622.0
