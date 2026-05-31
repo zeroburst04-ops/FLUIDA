@@ -42,6 +42,7 @@ anchors_preset = 0
 script = ExtResource("1_y6wc5")
 
 [node name="Model" type="Sprite2D" parent="." unique_id=504199230]
+modulate = Color(0.83137256, 0.8, 0.60784316, 1)
 z_index = -50
 position = Vector2(6.841376, -10.080608)
 rotation = -1.5728091

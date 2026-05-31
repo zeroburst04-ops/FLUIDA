@@ -29,6 +29,7 @@ anchors_preset = 0
 script = ExtResource("1_fkm6c")
 
 [node name="Back" type="Sprite2D" parent="." unique_id=2024122441]
+modulate = Color(0.83137256, 0.8, 0.60784316, 1)
 z_index = -50
 z_as_relative = false
 position = Vector2(198.6625, 6.173451)
@@ -37,6 +38,7 @@ texture = ExtResource("2_fkm6c")
 
 [node name="Front_Normal" type="Sprite2D" parent="." unique_id=1631520399]
 unique_name_in_owner = true
+modulate = Color(0.83137256, 0.8, 0.60784316, 1)
 z_index = -50
 z_as_relative = false
 position = Vector2(-202.8508, 8.500011)

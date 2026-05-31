@@ -49,6 +49,7 @@ script = ExtResource("1_j2jdq")
 
 [node name="Model" type="Sprite2D" parent="." unique_id=779595370]
 unique_name_in_owner = true
+modulate = Color(0.83137256, 0.8, 0.60784316, 1)
 z_index = -50
 z_as_relative = false
 position = Vector2(11.000007, -10.000027)
